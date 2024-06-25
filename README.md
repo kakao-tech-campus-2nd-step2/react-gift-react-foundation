@@ -4,6 +4,8 @@
 
 - [x] CRA로 만들어진 프로젝트에 Typescript 로 세팅
 
+- [x] ESLint 및 Prettier 추가 후 자신만의 세팅하기
+
 - [ ] Storybook 을 사용하여 재사용 가능한 컴포넌트 구현
 
 - [ ] 코딩 컨벤션 준수
