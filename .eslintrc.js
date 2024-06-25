@@ -40,7 +40,6 @@ module.exports = {
       },
     ],
     'react/no-unstable-nested-components': 'off', // 컴포넌트 분리
-    camelcase: 'off',
     'react/function-component-definition': 'off',
     'no-use-before-define': 'off',
     'no-shadow': 'off',
@@ -59,7 +58,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-curly-newline': 'off',
     'no-console': 'off',
-    indent: 'off', // tab 공백 에러,
     'implicit-arrow-linebreak': 0,
     'import/no-unresolved': [2, { caseSensitive: false }], // import 절대경 지정 문제('https://xxxxersuy.com/19'),
     'operator-linebreak': 0,
