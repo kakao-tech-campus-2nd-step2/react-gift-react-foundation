@@ -22,7 +22,13 @@
          "@assets/*": ["assets/*"],
          "@pages/*": ["pages/*"],
          "@styles/*": ["styles/*"]
-      }
+      },
+      "strictNullChecks": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true
    },
    "include": ["src"]
 }
