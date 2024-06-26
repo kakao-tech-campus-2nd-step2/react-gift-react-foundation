@@ -14,3 +14,21 @@ FE 카카오 선물하기 1주차 과제: React 기초
 -  reset css 적용하기
 -  gitignore를 추가하기
 -  프로젝트에 불필요한 코드들은 정리하기(ex. 사용하지 않는 icon 등)
+
+2. 폴더 구조
+   src
+   ┣ assets
+   ┃ ┗ .gitkeep
+   ┣ components
+   ┃ ┗ .gitkeep
+   ┣ pages
+   ┃ ┗ .gitkeep
+   ┣ styles
+   ┃ ┗ reset.css
+   ┣ utils
+   ┃ ┗ .gitkeep
+   ┣ App.css
+   ┣ App.tsx
+   ┣ index.tsx
+   ┣ react-app-env.d.ts
+   ┗ styles.d.ts
