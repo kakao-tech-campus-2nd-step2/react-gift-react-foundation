@@ -1,7 +1,5 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import { Global, css } from '@emotion/react'
+import { Global } from '@emotion/react'
 import emotionReset from 'emotion-reset'
 
 function App() {
@@ -10,7 +8,6 @@ function App() {
       <Global styles={emotionReset.styles} />
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
