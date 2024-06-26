@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
