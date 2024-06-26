@@ -4,7 +4,6 @@ import App from './App';
 import { Global } from '@emotion/react';
 import reportWebVitals from './reportWebVitals';
 
-import './index.css';
 import reset from './styles/reset';
 
 const root = ReactDOM.createRoot(
