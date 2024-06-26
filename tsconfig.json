@@ -13,7 +13,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "baseUrl": "src",
-    "paths": {},
+    "paths": {
+      "@components/": ["components/*"],
+      "@styles/": ["styles/*"],
+      "@images/": ["images/*"]
+    },
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
