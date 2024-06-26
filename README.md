@@ -8,7 +8,7 @@
 
 - [ ] 폴더 구조를 나누고 README.md 에 폴더 구조에 대한 설명 작성 
 
-- [ ] emotion 스타일 라이브러리 추가, reset CSS 적용
+- [x] emotion 스타일 라이브러리 추가, reset CSS 적용
 
 - [x] .gitignore 를 추가, 프로젝트에 불 필요한 코드들은 정리
 
