@@ -6,17 +6,17 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ### 프로젝트 초기화
 
-- [v] Create React App 기반 프로젝트 생성
+- [x] Create React App 기반 프로젝트 생성
 
-- [v] Typescript 세팅
+- [x] Typescript 세팅
 
 ### 프로젝트 관리
 
 - [ ] .gitignore 추가
 
-- [v] 폴더 구조 관리
+- [x] 폴더 구조 관리
 
-- [ ] 불필요한 코드 정리
+- [x] 불필요한 코드 정리
 
 - [ ] 절대 경로로 Import 할 수 있도록 alias를 설정
 
