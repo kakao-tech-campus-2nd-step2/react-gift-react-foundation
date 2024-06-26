@@ -16,6 +16,8 @@ FE 카카오 선물하기 1주차 과제: React 기초
 -  프로젝트에 불필요한 코드들은 정리하기(ex. 사용하지 않는 icon 등)
 
 2. 폴더 구조
+
+```
    src
    ┣ assets
    ┃ ┗ .gitkeep
@@ -32,3 +34,10 @@ FE 카카오 선물하기 1주차 과제: React 기초
    ┣ index.tsx
    ┣ react-app-env.d.ts
    ┗ styles.d.ts
+```
+
+-  `assets`: 이미지, 폰트 관리
+-  `components`: 재사용 가능한 컴포넌트들 관리
+-  `pages`: 페이지 컴포넌트들 관리, 페이지 단위의 컴포넌트 폴더로 구성 (ex) Login, MyPage
+-  `styles`: css 파일들 관리
+-  `utils`: 공통 함수 등 공통으로 사용하는 util 파일들 관리
