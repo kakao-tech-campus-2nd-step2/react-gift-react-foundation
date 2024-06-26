@@ -29,7 +29,8 @@
       "react/prop-types": "off",
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
       "import/extensions": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-      "import/no-unresolved": [2, { "caseSensitive": false }]
+      "import/no-unresolved": [2, { "caseSensitive": false }],
+      "react/self-closing-comp": "off"
    },
    "env": {
       "browser": true,
