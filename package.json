@@ -1,0 +1,19 @@
+{
+  "name": "react-gift-react-foundation",
+  "version": "1.0.0",
+  "description": "FE 카카오 선물하기 1주차 과제: React 기초",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaeanHan/react-gift-react-foundation.git"
+  },
+  "author": "jaean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaeanHan/react-gift-react-foundation/issues"
+  },
+  "homepage": "https://github.com/JaeanHan/react-gift-react-foundation#readme"
+}
