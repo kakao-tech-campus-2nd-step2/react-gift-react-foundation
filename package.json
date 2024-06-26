@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/JaeanHan/react-gift-react-foundation/issues"
   },
-  "homepage": "https://github.com/JaeanHan/react-gift-react-foundation#readme"
+  "homepage": "https://github.com/JaeanHan/react-gift-react-foundation#readme",
+  "dependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "babel-loader": "^9.1.3"
+  }
 }
