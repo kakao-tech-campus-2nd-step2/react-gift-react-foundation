@@ -1,6 +1,6 @@
 import React from 'react';
 import { Global } from '@emotion/react';
-import { ResetCss } from '../public/styles/reset.js';
+import { ResetCss } from 'public/styles/reset.js';
 
 function App() {
   return (
