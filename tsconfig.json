@@ -19,11 +19,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src", // 절대 경로를 위한 baseUrl 설정
+    "baseUrl": ".", // 절대 경로를 위한 baseUrl 설정
     "paths": {
       // 필요한 alias(별칭) 설정
-      "@components/*": ["components/*"],
-      "@utils/*": ["utils/*"]
+      "@/*": ["src/*"]
     },
     "jsxImportSource": "@emotion/react"
   },
