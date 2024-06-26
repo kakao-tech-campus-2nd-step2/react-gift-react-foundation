@@ -6,15 +6,15 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ### 프로젝트 초기화
 
-- [ ] Create React App 기반 프로젝트 생성
+- [v] Create React App 기반 프로젝트 생성
 
-- [ ] Typescript 세팅
+- [v] Typescript 세팅
 
 ### 프로젝트 관리
 
 - [ ] .gitignore 추가
 
-- [ ] 폴더 구조 관리
+- [v] 폴더 구조 관리
 
 - [ ] 불필요한 코드 정리
 
