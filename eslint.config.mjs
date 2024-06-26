@@ -13,7 +13,7 @@ export default {
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'react'],
-  rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }]
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
   }
 };
