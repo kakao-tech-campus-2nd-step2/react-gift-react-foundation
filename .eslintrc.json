@@ -4,6 +4,7 @@
     "es2021": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "airbnb",
@@ -21,12 +22,20 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+          "endOfLine": "auto"
+      }
+  ],
     "react/jsx-filename-extension": [
       "warn",
       {
         "extensions": [".tsx"]
       }
     ],
+    
+    "import/no-extraneous-dependencies": 0,
     "import/extensions": [
       "error",
       "ignorePackages",

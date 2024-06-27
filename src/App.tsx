@@ -1,20 +1,12 @@
 import React from "react";
-import "./App.css";
+import reset from "./reset"
+import { Global } from "@emotion/react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>설치잘됨</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Global styles={reset} />
+      카카오
     </div>
   );
 }
