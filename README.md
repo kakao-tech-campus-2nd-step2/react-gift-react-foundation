@@ -27,7 +27,7 @@ FE 카카오 선물하기 1주차 과제: React 기초 Step1
 
 > - 포크해온 Repo에 개인 브랜치에서 과제 Repo의 개인 브랜치로 pull request해야하는데 포크해온 Repo의 개인 브랜치에서 과제 Repo의 main 브랜치로 Pull request해 수정하려다 rm -rf 명령어를 사용해 다시 처음부터 하게되었습니다. git을 잘못 작성했을 때 수정 및 복구하는 과정이 너무 어렵습니다.
 
-> - 노션에 올라온 kakao-tech-campus-2nd-step2/FE-kakao-gift 과제 repo에를 클론했는데 알고보니 과제 repo 제출 repo가 아니였어서 3번째 과제 제출을 시도하고 있습니다. react 초보자지만 이번 기회를 통해 좀 더 익숙해질 수 있었던 것 같습니다.
+> - 노션에 올라온 kakao-tech-campus-2nd-step2/FE-kakao-gift 과제 repo에를 클론했는데 알고보니 과제 repo 제출 repo가 아니였어서 3번째 과제 제출을 시도하고 있습니다. react 초보자지만 여러 시행 착오를 겪으며 이번 기회를 통해 좀 더 익숙해질 수 있었던 것 같습니다!
 
 **마무리 및 질문**
 
