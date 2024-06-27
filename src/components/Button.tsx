@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-
+/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
 interface ButtonProps {
@@ -24,7 +24,7 @@ function Button(props: ButtonProps) {
       css={css`
         width: ${width}px;
         height: ${height}px;
-        borderradius: '10px';
+        border-radius: 10px;
         background-color: ${bgColor};
         color: ${textColor};
       `}
