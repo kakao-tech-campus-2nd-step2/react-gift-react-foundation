@@ -33,8 +33,14 @@
       "components/*": [
         "src/components/*"
       ],
+      "commons/*": [
+        "src/components/commons/*"
+      ],
       "pages/*": [
         "src/pages/*"
+      ],
+      "store/*": [
+        "src/store/*"
       ],
       "assets/*": [
         "src/assets/*"
