@@ -1,8 +1,6 @@
 // craco.config.js
 
-const { CracoAliasPlugin } = require("react-app-alias");
-
-const options = {}; // default is empty for most cases
+const { CracoAliasPlugin } = require('react-app-alias');
 
 module.exports = {
   plugins: [
@@ -11,4 +9,5 @@ module.exports = {
       options: {},
     },
   ],
+  eslint: null,
 };
