@@ -12,7 +12,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ### 프로젝트 관리
 
-- [ ] .gitignore 추가
+- [x] .gitignore 추가
 
 - [x] 폴더 구조 관리
 
@@ -20,7 +20,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 - [x] 절대 경로로 Import 할 수 있도록 alias를 설정
 
-- [ ] tsconfig 구성 확인 후 자유롭게 설정
+- [x] tsconfig 구성 확인 후 자유롭게 설정
 
 ### 코드 스타일
 
@@ -32,9 +32,9 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ### 스타일
 
-- [ ] emotion 스타일 라이브러리 추가
+- [x] emotion 스타일 라이브러리 추가
 
-- [ ] reset.css 적용
+- [x] reset.css 적용
 
 ## ✔️ 유념해야 할 사항
 
