@@ -1,4 +1,6 @@
 import './App.css';
+import { Global } from '@emotion/react';
+import reset from './reset.css';
 
 function App() {
   return (
