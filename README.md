@@ -10,7 +10,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [x] tsconfig 구성
 - [x] ESLint, Prettier 설치
 - [x] Lint 룰 설정
-- [ ] emotion 스타일 라이브러리 추가
-- [ ] reset css 적용
+- [x] emotion 스타일 라이브러리 추가
+- [x] reset css 적용
 - [x] gitignore 추가
 - [ ] 프로젝트에 불필요한 파일 정리
