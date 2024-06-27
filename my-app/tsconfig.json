@@ -25,10 +25,12 @@
   "include": [ // 컴파일할 파일을 찾을 패턴을 지정
     "src"
   ],
-  "baseUrl": "src",
+  "baseUrl": "./src",
   "paths": {
+    "@components/*": ["components/*"],
+    "@styles/*": ["styles/*"],
     "@/*": ["*"]
-  }
+  },
   //"exclude": 제외할 파일 지정
   //"extends": 다른 'tsconfig.json' 파일에서 설정을 확장할 때 사용
   //"compileOnSave": 저장할 때마다 자동으로 컴파일 실행 여부 설정

@@ -1,4 +1,4 @@
-@import url('./reset.css');
+@import url('@styles/reset.css');
 
 .App {
   text-align: center;
