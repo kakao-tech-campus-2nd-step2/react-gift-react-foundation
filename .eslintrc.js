@@ -6,6 +6,8 @@ module.exports = {
   },
   "extends": ['airbnb', 'plugin:storybook/recommended'],
   "rules": {
+    'react/jsx-one-expression-per-line': 'off',
+    "react/jsx-filename-extension":["warn",{"extensions":[".tsx"]}],
     "react/require-default-props": "off",
     "import/no-extraneous-dependencies": [
         "error",
@@ -17,6 +19,17 @@ module.exports = {
           "peerDependencies": true
         }
       ]
+  },
+  "settings": {
+    "import/resolver" : {
+      "typescript": {
+        "directory": "./src",
+        "alias": {
+          "@/components": "./src/components/*",
+          "@/styles": "./src/styles/*"
+        }
+      }
+    }
   }
 };
 
