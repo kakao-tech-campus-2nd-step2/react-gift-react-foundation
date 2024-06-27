@@ -6,7 +6,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [X] 절대 경로로 import 가능하도록 alias 설정
 - [X] tsconfig 살펴보고 필요한 것 설정
 - [X] ESLint, 나만의 Lint 룰 설정
-- [ ] Prettier 추가
+- [X] Prettier 추가
 - [ ] emotion 스타일 라이브러리 추가
 - [ ] reset.css 적용
 - [X] gitignore 추가
