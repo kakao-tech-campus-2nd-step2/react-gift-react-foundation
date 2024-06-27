@@ -13,18 +13,16 @@ export const Danger: Story = {
   args: {
     width: 100,
     height: 30,
-    bgColor: 'red',
-    textColor: 'white',
+    theme: 'danger',
     children: '위험',
   },
 };
 
-export const Default: Story = {
+export const Primary: Story = {
   args: {
     width: 100,
     height: 30,
-    bgColor: 'blue',
-    textColor: 'white',
+    theme: 'primary',
     children: '기본',
   },
 };

@@ -5,19 +5,27 @@ import { css } from '@emotion/react';
 interface ButtonProps {
   width?: number;
   height?: number;
-  bgColor?: string;
-  textColor?: string;
+  theme?: string;
   children: ReactNode;
 }
 
+const primary = css`
+  background-color: blue;
+  color: white;
+`;
+const danger = css`
+  background-color: red;
+  color: white;
+`;
+
 function Button(props: ButtonProps) {
-  const {
-    width = 300,
-    height = 50,
-    bgColor = 'gray',
-    textColor = 'black',
-    children,
-  } = props;
+  const { width = 300, height = 50, theme = 'primary', children } = props;
+  let themeBtn;
+  if (theme === 'primary') {
+    themeBtn = primary;
+  } else if (theme === 'danger') {
+    themeBtn = danger;
+  }
   return (
     <button
       type="button"
@@ -25,8 +33,8 @@ function Button(props: ButtonProps) {
         width: ${width}px;
         height: ${height}px;
         border-radius: 10px;
-        background-color: ${bgColor};
-        color: ${textColor};
+        border: none;
+        ${themeBtn}
       `}
     >
       {children}
