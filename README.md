@@ -18,7 +18,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 - [x] 불필요한 코드 정리
 
-- [ ] 절대 경로로 Import 할 수 있도록 alias를 설정
+- [x] 절대 경로로 Import 할 수 있도록 alias를 설정
 
 - [ ] tsconfig 구성 확인 후 자유롭게 설정
 
