@@ -13,4 +13,4 @@
 - [X] TypeScript로 세팅 절대경로 설정
 - [X] ESLint, Prettier 설치 및 설정
 - [X] emotion 스타일 라이브러리 추가
-- [X]gitignore 추가
+- [X] gitignore 추가
