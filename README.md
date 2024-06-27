@@ -13,7 +13,7 @@ FE 카카오 선물하기 1주차 과제: React 기초 Step1
 - [x] ESLint, Prettier 추가 (eslint-config-airbnb 적용)
 - [x] emotion 스타일 라이브러리 추가, reset css 적용
 - [x] gitignore 추가하고, 프로젝트에 불필요한 코드 정리
-- [ ] 폴더 구조 정리
+- [x] 폴더 구조 정리
 
 </br>
 
