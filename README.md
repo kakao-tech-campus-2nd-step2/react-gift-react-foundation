@@ -35,6 +35,7 @@ src
 ├── interfaces                  // TypeScript 인터페이스 및 타입 정의
 ├── mocks                       // 테스트에 사용할 모의 데이터나 API 응답
 ├── pages                       // 애플리케이션의 각 페이지 컴포넌트
+├── stories                     // Storybook
 ├── services                    // API 호출 및 외부 서비스와의 통신 로직
 ├── styles                      // 전역에서 사용할 스타일 컴포넌트
 │   └── GlobalStyle.tsx
