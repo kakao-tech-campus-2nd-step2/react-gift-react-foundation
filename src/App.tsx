@@ -5,14 +5,12 @@ import emotionReset from 'emotion-reset'
 function App() {
   return (
     <>
-      <Global styles={emotionReset.styles} />
+      <Global styles={emotionReset} />
       <div className="App">
         <header className="App-header">
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-            Learn React
+          <p>Hello World!</p>
+          <a className="App-link" href="https://naver.com" target="_blank" rel="noopener noreferrer">
+            GOGOGO
           </a>
         </header>
       </div>
