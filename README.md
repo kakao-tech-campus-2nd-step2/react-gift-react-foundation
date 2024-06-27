@@ -2,6 +2,29 @@
 
 FE 카카오 선물하기 1주차 과제: React 기초
 
+## 📂 폴더구조
+
+```
+📦 public
+📦 src
+ ┣ 📂 apis
+ ┣ 📂 assets
+ ┣ 📂 components
+ ┣ 📂 constants
+ ┣ 📂 hooks
+ ┣ 📂 interface
+ ┣ 📂 pages
+ ┣ 📂 store
+ ┣ 📂 styles
+ ┣ 📂 utils
+ ┣ 📜 App.css
+ ┣ 📜 App.tsx
+ ┣ 📜 index.css
+ ┣ 📜 main.tsx
+ ┣ ...
+ ┗ 📜 vite.config.ts
+```
+
 ## 📝 과제 요구사항
 
 - [x] Create React App을 기반으로 프로젝트를 생성해요.
