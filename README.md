@@ -28,6 +28,7 @@
 
 ```zsh
 src
+├── api                         // API 호출 및 외부 서비스와의 통신 로직
 ├── assets                      // 이미지, 아이콘 등 정적 파일
 ├── components                  // 재사용 가능한 React 컴포넌트
 ├── constants                   // 애플리케이션 전반에 사용가능한 상수 값
@@ -36,7 +37,6 @@ src
 ├── mocks                       // 테스트에 사용할 모의 데이터나 API 응답
 ├── pages                       // 애플리케이션의 각 페이지 컴포넌트
 ├── stories                     // Storybook
-├── services                    // API 호출 및 외부 서비스와의 통신 로직
 ├── styles                      // 전역에서 사용할 스타일 컴포넌트
 │   └── GlobalStyle.tsx
 ├── utils                       // 공통으로 사용되는 유틸리티 함수들
