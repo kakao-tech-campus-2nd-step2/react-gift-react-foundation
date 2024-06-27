@@ -1,45 +1,14 @@
 {
-  //ts컴파일러에 .ts파일을 컴파일하는 방법 지시
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "jsx": "react",
-    "target": "es2016", //컴파일된 코드가 어떤 환경에서 실행될지 정의
-    "module": "commonjs", //어떤 모듈 시스템 사용할지 정의
+    "target": "es2016",
+    "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "dist", //컴파일된 파일 어디에 저장될지 경로 설정
-    "baseUrl": "./", //기본경로
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"]
-    },
+    "outDir": "dist",
     "types": ["@emotion/react/types/css-prop"]
   },
-  "include": ["src/**/*"], //어떤 파일 컴파일할 것인지
-  "exclude": ["node_modules"] //어떤 파일 컴파일 제외할지
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
-// {
-//   "compilerOptions": {
-//     "target": "es5",
-//     "lib": [
-//       "dom",
-//       "dom.iterable",
-//       "esnext"
-//     ],
-//     "allowJs": true,
-//     "skipLibCheck": true,
-//     "esModuleInterop": true,
-//     "allowSyntheticDefaultImports": true,
-//     "strict": true,
-//     "forceConsistentCasingInFileNames": true,
-//     "noFallthroughCasesInSwitch": true,
-//     "module": "esnext",
-//     "moduleResolution": "node",
-//     "resolveJsonModule": true,
-//     "isolatedModules": true,
-//     "noEmit": true,
-//     "jsx": "react-jsx"
-//   },
-//   "include": [
-//     "src"
-//   ]
-// }
