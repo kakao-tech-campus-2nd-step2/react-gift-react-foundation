@@ -12,7 +12,7 @@ module.exports = {
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@stories': path.resolve(__dirname, 'src/stories'),
       '@styles': path.resolve(__dirname, 'src/styles'),
-      '@utils': path.resolve(__dirname, 'src/utils')
-    }
-  }
+      '@utils': path.resolve(__dirname, 'src/utils'),
+    },
+  },
 };
