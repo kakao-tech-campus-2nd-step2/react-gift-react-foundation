@@ -11,7 +11,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"]
-    }
+    },
+    "types": ["@emotion/react/types/css-prop"]
   },
   "include": ["src/**/*"], //어떤 파일 컴파일할 것인지
   "exclude": ["node_modules"] //어떤 파일 컴파일 제외할지
