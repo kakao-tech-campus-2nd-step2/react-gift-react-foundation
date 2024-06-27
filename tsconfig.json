@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    // "baseUrl": ".",
+    // "paths": {
+    //   "@/*": ["./*"]
+    // },
     "target": "ES6",
     "module": "commonjs", //무슨 import 문법 쓸건지 'commonjs', 'amd', 'es2015', 'esnext'
     "allowJs": true, // js 파일들 ts에서 import해서 쓸 수 있는지
@@ -18,5 +22,5 @@
     "noFallthroughCasesInSwitch": true //switch문 이상하면 에러내기
   },
   "include": ["src/*"],
-  "exclude": ["src/tmp*.ts"]
+  "exclude": ["src/test*.ts"]
 }
