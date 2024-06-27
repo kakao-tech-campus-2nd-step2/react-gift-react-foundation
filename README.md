@@ -31,9 +31,7 @@ FE 카카오 선물하기 1주차 과제: React 기초 Step1
 
 > - eslint와 prettier를 다운로드 하는 과정에서 peerdeps를 사용할 수 없어 직접 다운로드 했는데 제대로 추가된 것이 맞는지 그리고 왜 peerdeps를 사용할 때 오류가 나는지 궁금합니다.
 
-> - CRA 설치 후 git add를 하는데 Line Endding을 처리하는 방식에 대해 경고하는 내용 내용이 떴지만 무시하고 진행했습니다. core.autocrlf를 이용해서 오류를 해결하는게 맞나요? eslint와 prettier에서 LF를 지정하는 방법이 나은가요? 혹시 다른 방법도 있나요?
-
-> - reportWebVitals()는 현재 사용하지 않아 삭제했는데 실제로 현업에서 이 내용을 사용하나요?
+> - CRA 설치 후 git add를 하는데 Line Endding을 처리하는 방식에 대해 경고하는 내용 내용이 떴지만 무시하고 진행했습니다. core.autocrlf를 이용해서 오류를 해결하는게 맞나요? eslint와 prettier에서 LF를 지정하는 방법이 나은가요? 추천하는 오류 해결 방식이 있으시다면 조언해주시면 감사하겠습니다!
 
 </br>
 
