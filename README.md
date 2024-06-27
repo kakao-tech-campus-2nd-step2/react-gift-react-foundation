@@ -8,6 +8,6 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [X] ESLint, 나만의 Lint 룰 설정
 - [X] Prettier 추가
 - [X] emotion 스타일 라이브러리 추가
-- [ ] reset.css 적용
+- [X] reset css 적용
 - [X] gitignore 추가
 - [X] 프로젝트에 불필요한 파일 정리
