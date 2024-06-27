@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-/** @jsxImportSource @emotion/react */
+
 import { css } from '@emotion/react';
 
 interface ButtonProps {
