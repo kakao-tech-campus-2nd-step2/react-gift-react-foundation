@@ -11,20 +11,20 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [ ] gitignore를 추가하고, 프로젝트에 불필요한 코드들 정리하기
 
 2. 폴더 구조
-    root
-    ┣ public
-      ┗ index.html
-      ┗ manifest.json
-    ┣ src
-        ┣ components
-        ┣ pages
-        ┣ styles
-        ┃ ┗ reset.css
-        ┣ App.css
-        ┣ App.tsx
-        ┣ index.tsx
-        ┣ .eslintrc.json
-        ┣ .prettierrc
-        ┣ .gitignore
-        ┣ package.json
-        ┗ tsconfig.json
+root
+┣ public
+┃ ┣ index.html
+┃ ┗ manifest.json
+┣ src
+┃ ┣ components
+┃ ┣ pages
+┃ ┣ styles
+┃ ┃ ┗ reset.css
+┃ ┣ App.css
+┃ ┣ App.tsx
+┃ ┣ index.tsx
+┃ ┣ .eslintrc.json
+┃ ┣ .prettierrc
+┃ ┣ .gitignore
+┃ ┣ package.json
+┃ ┗ tsconfig.json
