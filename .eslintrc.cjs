@@ -27,7 +27,6 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
-
     },
   },
   // [rules] 상세 규칙
@@ -46,7 +45,7 @@ module.exports = {
     'import/prefer-default-export': ['off'], // export문이 하나일 때 default export 사용 권장 경고 비 활성화
     'react-hooks/exhaustive-deps': ['warn'], // react hooks의 의존성배열이 충분하지 않을 때 경고 표시
     'react/jsx-pascal-case': 'warn', // 컴포넌트 이름은 PascalCase로
-    'react/jsx-key': 'warn', // 반복문으로 생성하는 요소에 key 강
+    'react/jsx-key': 'warn', // 반복문으로 생성하는 요소에 key 강제
     'no-debugger': 'off', // 디버그 허용
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'react/function-component-definition': [
@@ -57,18 +56,18 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'react/jsx-one-expression-per-line': 0,
     'no-nested-ternary': 0,
-    'react/require-default-props': 'off',
-    'react/no-unescaped-entities': 'off',
+    'react/require-default-props': 'off', // 컴포넌트의 props에 기본값을 설정하지 않아도 오류 X
+    'react/no-unescaped-entities': 'off', // React 컴포넌트 내에서 HTML 엔티티를 사용해도 오류 X
     'react/jsx-curly-brace-presence': [
       'warn',
       { props: 'always', children: 'always' },
     ],
     'import/no-unresolved': ['error', { caseSensitive: false }], // 파일의 경로가 틀렸는지 확인하는 옵션 false
-    'react/jsx-props-no-spreading': [1, { custom: 'ignore' }],     // props spreading 허용하지 않는 경고 표시
+    'react/jsx-props-no-spreading': [1, { custom: 'ignore' }], // props spreading 허용하지 않는 경고 표시
     'linebreak-style': 0,
     'import/extensions': 0,
     'no-use-before-define': 0,
-    'import/no-extraneous-dependencies': 0,    // 테스트 또는 개발환경을 구성 파일에서는 devDependency 사용 허용
+    'import/no-extraneous-dependencies': 0, // 테스트 또는 개발환경을 구성 파일에서는 devDependency 사용 허용
     'no-shadow': 0,
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     quotes: ['error', 'single', { avoidEscape: true }], // 따옴표 규칙 추가
