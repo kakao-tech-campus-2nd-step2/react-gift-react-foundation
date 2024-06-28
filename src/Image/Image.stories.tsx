@@ -9,7 +9,7 @@ export default {
   argTypes: {
     ratio: {
       control: 'select',
-      options: ['16:9', '4:3', '1:1', 16 / 9, 4 / 3, 1], // ratio options에 다양한 number 추가
+      options: ['16:9', '4:3', '1:1', 'square', 16 / 9], // ratio options에 다양한 number 추가
     },
     src: {
       control: 'text',
@@ -21,6 +21,12 @@ export default {
 } as Meta;
 
 const Template: StoryFn<ImageProps> = (args) => <Image {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  src: 'https://via.placeholder.com/800x450',
+  alt: 'Default Image',
+};
 
 export const SixteenByNine = Template.bind({});
 SixteenByNine.args = {
@@ -41,6 +47,13 @@ OneByOne.args = {
   src: 'https://via.placeholder.com/800x800',
   alt: '1:1 Image',
   ratio: '1:1',
+};
+
+export const Square = Template.bind({});
+Square.args = {
+  src: 'https://via.placeholder.com/800x800',
+  alt: 'Square Image',
+  ratio: 'square', // square 비율 추가
 };
 
 export const NumericSixteenByNine = Template.bind({});
