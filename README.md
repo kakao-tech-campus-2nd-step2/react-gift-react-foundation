@@ -2,33 +2,16 @@
 
 FE 카카오 선물하기 1주차 과제: React 기초
 
-> 2단계 storybook을 사용한 컴포넌트 구현
+> 3단계 질문의 답변을 README에 작성
 
-## 구현할 기능 목록
+### 질문 1. webpack은 무엇이고 어떤 역할을 하고 있나요?
 
-#### 세팅
+- webpack은 JavaScript 애플리케이션 번들러입니다. JavaScript, CSS, 이미지, 폰트 등 다양한 파일과 모듈을 하나로 묶어 최적화합니다. 이러한 번들링 과정을 통해 웹 애플리케이션의 로딩 속도를 향상시키고, 의존성 관리를 효율적으로 할 수 있습니다. 또한, webpack은 다양한 최적화 기능을 제공하여 불필요한 코드를 제거하고, 파일 크기를 줄이는 데 도움을 줍니다. Create React App(CRA)에서도 기본적으로 webpack을 사용하여 개발 환경을 설정합니다.
 
-- [x] Storybook 설치
-- [ ] emotion theme 설정
+### 질문 2. 브라우저는 어떻게 JSX 파일을 읽을 수 있나요?
 
-#### 공통 컴포넌트 구현
+- JSX는 JavaScript의 확장 문법으로, 브라우저는 이를 직접 인식할 수 없습니다. 따라서 JSX를 Babel과 같은 트랜스파일러를 사용해 일반 JavaScript로 변환해야 합니다. 변환된 JavaScript 코드와 다른 모듈들은 webpack과 같은 번들러를 통해 하나의 파일로 묶여 최적화됩니다. 이 번들 파일을 브라우저가 로드하게 되면, 브라우저는 JSX로 작성된 React 컴포넌트를 이해하고 렌더링할 수 있게 됩니다.
 
-- [x] Button
-- [x] Input
-- [x] Image
-- [x] GoodsItem
-- [x] Grid
-- [x] Container
+### 질문 3. React에서 상태 변화가 생겼을 때 어떻게 변화를 알아챌 수 있나요?
 
-#### story 추가하기
-
-- [x] Button
-- Form
-  - [x] Input
-- [x] Image
-- GoodsItem
-  - [x] default
-  - [x] ranking
-- Layout
-  - [x] Grid
-  - [x] Container
+- React에서 상태 변화는 setState 함수를 통해 감지됩니다. 상태가 변경되면 React는 해당 컴포넌트의 렌더링을 다시 트리거하여 UI를 업데이트합니다. React는 이전 상태와 새로운 상태를 비교하여 실제 DOM에 최소한의 변경만을 적용합니다. 상태가 객체일 때는 얕은 비교를 사용하므로, 객체의 일부 속성만 변경되더라도 전체 객체를 새로운 객체로 만들어 setState를 호출해야 합니다. 또한, setState는 비동기적으로, 배치로(한번에) 처리되기 때문에 상태 업데이트 직후에 상태 값을 읽을 때는 컴포넌트의 라이프 사이클을 고려해야 합니다.
