@@ -67,6 +67,7 @@
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1",
     "storybook": "^8.1.11",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
     "typescript-eslint": "^7.14.1",
     "webpack": "^5.92.1"
   }

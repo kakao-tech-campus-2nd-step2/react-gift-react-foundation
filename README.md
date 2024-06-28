@@ -17,7 +17,12 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ### STEP2
 - [x] Storybook 설치
-- [ ] Button 컴포넌트 구현
+- [x] Button 컴포넌트 구현
+  - [x] Theme Props에 따라 버튼 디자인 다름
+        true : 파란색 활성화 디자인 / false : 하얀색 비활성화 디자인
+  - [x] Size Props에 따라 버튼 크기 다름
+        small, medium, large
+        responsive인 경우 미디어 쿼리에 따라 사이즈 변경
 - [ ] Input 컴포넌트 구현
 - [ ] Image 컴포넌트 구현
 - [ ] GoodsItem 컴포넌트 구현

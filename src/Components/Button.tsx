@@ -3,38 +3,23 @@ import './button.css';
 
 interface ButtonProps {
   /**
-   * Is this the principal call to action on the page?
+   * true : 활성화느낌 / false : 비활성화느낌
    */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
+  theme?: boolean;
   backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
+  size?: 'small' | 'medium' | 'large' | 'responsive';
   label: string;
-  /**
-   * Optional click handler
-   */
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({
-  primary = false,
+  theme = false,
   size = 'medium',
   backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = theme ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
       type="button"
