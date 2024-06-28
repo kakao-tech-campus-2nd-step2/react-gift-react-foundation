@@ -29,7 +29,9 @@ FE 카카오 선물하기 1주차 과제: React 기초
   - [x] Size Props에 따라 버튼 크기 다름
         small, medium, large
         responsive인 경우 미디어 쿼리에 따라 사이즈 변경
-- [ ] Image 컴포넌트 구현
+- [x] Image 컴포넌트 구현
+  - [x] ratio Props에 따라 이미지 비율 설정
+  - [x] radius Props에 따라 모서리 둥근 정도 설정
 - [ ] GoodsItem 컴포넌트 구현
 - [ ] Grid 컴포넌트 구현
 - [ ] Container 컴포넌트 구현
