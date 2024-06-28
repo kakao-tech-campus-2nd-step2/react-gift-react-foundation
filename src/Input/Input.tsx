@@ -6,7 +6,7 @@ export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   isInvalid?: boolean; // invalid Props 추가
-  inputSize?: 'small' | 'medium' | 'large';
+  inputSize?: 'small' | 'medium' | 'large' | 'responsive';
 }
 
 const InputStyled = styled.input<{
@@ -53,6 +53,25 @@ const InputStyled = styled.input<{
     css`
       padding: 15px;
       font-size: 20px;
+    `}
+
+    ${(props) =>
+    props.sizeType === 'responsive' &&
+    css`
+      @media (max-width: 600px) {
+        padding: 5px;
+        font-size: 12px;
+      }
+
+      @media (max-width: 601px) and (max-width: 1200px) {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      @media (max-width: 1201px) {
+        padding: 15px;
+        font-size: 20px;
+      }
     `}
 `;
 

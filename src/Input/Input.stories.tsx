@@ -9,6 +9,7 @@ export default {
   argTypes: {
     disabled: {
       control: 'boolean',
+      defaultValue: false,
     },
     isInvalid: {
       control: 'boolean',
@@ -16,7 +17,7 @@ export default {
     },
     inputSize: {
       control: 'select',
-      options: ['small', 'medium', 'large'], // inputSize options 추가
+      options: ['small', 'medium', 'large', 'responsive'], // inputSize options 추가
     },
   },
 } as Meta;
@@ -61,4 +62,12 @@ Large.args = {
   disabled: false,
   isInvalid: false,
   inputSize: 'large',
+};
+
+export const Responsive = Template.bind({});
+Responsive.args = {
+  label: 'Responsive Input',
+  disabled: false,
+  isInvalid: false,
+  inputSize: 'responsive',
 };
