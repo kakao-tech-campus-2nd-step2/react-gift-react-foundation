@@ -14,9 +14,9 @@
     "resolveJsonModule": true,
     "baseUrl": "src",
     "paths": {
-      "@components/": ["components/*"],
-      "@styles/": ["styles/*"],
-      "@images/": ["images/*"]
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@images/*": ["images/*"]
     },
     "isolatedModules": true,
     "noEmit": true,
