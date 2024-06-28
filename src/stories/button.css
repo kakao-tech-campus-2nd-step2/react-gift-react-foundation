@@ -1,30 +1,63 @@
 .storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
   border: 0;
-  border-radius: 3em;
+  font-size: 15px;
+  border-radius: 4px;
   cursor: pointer;
+  width: 120px;
+  height: 40px;
   display: inline-block;
   line-height: 1;
 }
-.storybook-button--primary {
+
+.first {
+  outline: 3px solid #7ab2fe;
+}
+.kakao {
+  background-color: #fee602;
+  color: black;
+}
+.kakao:hover {
+  background-color: #fbd90f;
+}
+.light {
+  background-color: white;
+  color: black;
+  border: 1px solid #f7f7f7;
+}
+.light:hover {
+  background-color: #f7f7f7;
+}
+.dark {
+  background-color: black;
   color: white;
-  background-color: #1ea7fd;
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+.dark:hover {
+  color: lightskyblue;
 }
+
 .storybook-button--small {
   font-size: 12px;
   padding: 10px 16px;
 }
 .storybook-button--medium {
-  font-size: 14px;
+  font-size: 15px;
   padding: 11px 20px;
 }
 .storybook-button--large {
-  font-size: 16px;
+  font-size: 18px;
   padding: 12px 24px;
+}
+.storybook-button--responsive {
+  font-size: 15px;
+  padding: 11px 20px;
+}
+@media (max-width: 500px) {
+  .storybook-button--responsive {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .storybook-button--responsive {
+    font-size: 18px;
+  }
 }
