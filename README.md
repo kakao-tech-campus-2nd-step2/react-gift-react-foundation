@@ -20,9 +20,9 @@ FE 카카오 선물하기 1주차 과제: React 기초
       (value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 달라지도록 구현)
     - [X] Button Element의 기본 속성들을 모두 사용 가능하도록 구현
   - Input 컴포넌트 구현
-    - [ ] disabled Props에 따라 Input이 비활성화되고, UI에서도 비활성화 됨을 인지 가능하도록 구현
-    - [ ] invaid Props에 따라 Input의 값이 잘못되었음을 UI에서 인지 가능하도록 구현
-    - [ ] Size Props에 따라 버튼의 Size가 다르게 보이도록 구현
+    - [X] disabled Props에 따라 Input이 비활성화되고, UI에서도 비활성화 됨을 인지 가능하도록 구현
+    - [X] invaid Props에 따라 Input의 값이 잘못되었음을 UI에서 인지 가능하도록 구현
+    - [X] Size Props에 따라 버튼의 Size가 다르게 보이도록 구현
       (value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 달라지도록 구현)
   - Image 컴포넌트 구현
     - [X] ratio Props에 따라 이미지 비율 설정 가능하도록 구현
