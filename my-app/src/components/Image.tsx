@@ -4,7 +4,7 @@ import '../styles/Image.css'
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string
   alt?: string
-  ratio?: number | 'square'
+  ratio?: number | 'auto' | 'square'
   radius?: number | 'circle'
   width?: string
 }
