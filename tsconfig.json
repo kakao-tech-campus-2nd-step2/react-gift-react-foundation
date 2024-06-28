@@ -1,10 +1,11 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./",
     "paths": {
-      "@components/*": ["presentation/components/*"],
-      "@utils/*": ["shared/utils/*"],
-      "@hooks/*": ["presentation/hooks/*"]
+      "@components/*": ["src/presentation/components/*"],
+      "@utils/*": ["src/shared/utils/*"],
+      "@hooks/*": ["src/presentation/hooks/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
