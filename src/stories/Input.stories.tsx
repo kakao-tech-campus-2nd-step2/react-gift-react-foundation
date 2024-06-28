@@ -29,7 +29,6 @@ PrimaryTextfield.args = {
   placeholder: '입력입력',
   isInvalid: false,
   isDisabled: false,
-  size: "medium",
 }
 
 export const inValidTextfield = Template.bind({});
