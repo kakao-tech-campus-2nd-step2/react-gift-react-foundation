@@ -1,14 +1,21 @@
 import React from 'react';
 import './goodsitem.css';
 
-const GoodsItem: React.FC = () => {
+export interface GoodsItemProps {
+  imageSrc: string;
+  subtitle: string;
+  title: string;
+  amount: number;
+}
+
+const GoodsItem: React.FC<GoodsItemProps> = ({ imageSrc, subtitle, title, amount }) => {
   return (
-    <div className="goodsitem">
-      <img src="https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png" alt="Placeholder" className="goodsitem-image" />
-      <div className="goodsitem-content">
-        <div className="goodsitem-subtitle">Subtitle</div>
-        <div className="goodsitem-title">Title</div>
-        <div className="goodsitem-amount">$100</div>
+    <div>
+      <img src={imageSrc} alt={title} />
+      <div>
+        <div>{subtitle}</div>
+        <div>{title}</div>
+        <div>{amount.toLocaleString()}원</div>
       </div>
     </div>
   );

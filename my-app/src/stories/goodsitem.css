@@ -1,25 +1,33 @@
 .goodsitem {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .goodsitem-image {
   width: 100%;
-  height: auto;
+  height: 8px;
 }
-.goodsitem-content {
+.goods-info {
   text-align: center;
+  margin-top: 10px;
 }
-.goodsitem-ranking {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: gray;
-  color: white;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.goods-subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+.goods-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.goods-amount {
+  font-size: 18px;
+  color: #000;
 }
