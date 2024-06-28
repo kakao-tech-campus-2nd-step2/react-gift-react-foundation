@@ -1,7 +1,9 @@
 # react-gift-react-foundation
 FE 카카오 선물하기 1주차 과제: React 기초
 
-### Step1 요구사항
+## Step1
+
+### 요구사항
 - Create React App을 기반으로 프로젝트를 생성한다.
 - Typescript로 프로젝트가 동작되게 세팅한다.
 - 절대 경로로 Import 할 수 있게 alias를 설정한다.
@@ -13,7 +15,10 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - 본인만의 기준으로 일관된 코드를 작성한다.
 - 기능 단위로 나누어 커밋한다.
 
-### Step2 요구사항
+
+## Step2
+
+### 요구사항
 - 본인만의 기준으로 일관된 코드를 작성한다.
 - 기능 단위로 나누어 커밋한다.
 - Stroybook을 추가한다.
@@ -36,3 +41,8 @@ FE 카카오 선물하기 1주차 과제: React 기초
         - 공통으로 imageSrc, subtitle, title, amount Props를 넘겨받는다.
         - Ranking 컴포넌트의 경우 rankingIndex Props를 추가로 넘겨받는다. 1~3까지는 분홍색, 나머지 숫자에는 회색의 랭킹 뱃지가 보여지게 한다.
         - Grid, Container 컴포넌트를 구현한다.
+
+### 개발 중 애로사항
+- storybook을 설치했으나 eslint, prettier과의 충돌로 인해 컴파일 되지 않음
+    - 버전 호환성 차이라고 생각하며 삭제하고 다시 설치해보았지만 같은 오류 발생
+    - .eslintrc.json 파일과 package.json 파일이 문제인가 싶어 자료를 찾아보고 수정해보았지만 같은 오류 발생
