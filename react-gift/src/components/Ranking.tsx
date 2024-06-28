@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, ImageContainer, Image, Info, Title, Subtitle, Amount, RankingBadge } from '../styles/GoodsItemStyle';
 
-interface RankingGoodsItemProps {
+export interface RankingGoodsItemProps {
   imageSrc: string;
   title: string;
   subtitle: string;
