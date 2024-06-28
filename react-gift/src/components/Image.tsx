@@ -23,7 +23,7 @@ const ImageStyle = styled.img<ImageStyleProps>`
   object-fit: cover;
 `;
 
-interface ImageProps extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'width' | 'height'> {
+export interface ImageProps extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'width' | 'height'> {
   width?: string;
   height?: string;
   ratio?: number | string;

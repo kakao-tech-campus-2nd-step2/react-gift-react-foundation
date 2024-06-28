@@ -1,7 +1,7 @@
 import React from 'react';
 import { GridContainer } from '../styles/GridStyle';
 
-interface GridProps {
+export interface GridProps {
   columns: number;
   gap?: number;
   children: React.ReactNode;
