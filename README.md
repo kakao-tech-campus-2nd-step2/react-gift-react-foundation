@@ -6,7 +6,7 @@ FE 카카오 선물하기 1주차 과제: React 기초 Step2
 
 **할 일 목록 STEP2 :**
 
-- [ ] Storybook 추가
+- [x] Storybook 추가
 - [ ] Buttone 컴포넌트 구현
 - [ ] input 컴포넌트 구현
 - [ ] image 컴포넌트 구현
