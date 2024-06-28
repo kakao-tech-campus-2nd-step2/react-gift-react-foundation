@@ -2,7 +2,7 @@ import Item from './Item';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'COMMON/GoodSItems/Default',
+  title: 'COMMON/GoodsItem/Default/Default',
   component: Item,
   tags: ['autodocs'],
 } satisfies Meta<typeof Item>;

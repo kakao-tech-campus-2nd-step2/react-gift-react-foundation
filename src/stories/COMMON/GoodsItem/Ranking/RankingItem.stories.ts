@@ -2,7 +2,7 @@ import RankingItem from './RankingItem';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'COMMON/Ranking/Default',
+  title: 'COMMON/GoodsItem/Ranking/Default',
   component: RankingItem,
   tags: ['autodocs'],
 } satisfies Meta<typeof RankingItem>;
