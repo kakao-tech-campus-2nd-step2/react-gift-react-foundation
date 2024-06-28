@@ -1,15 +1,12 @@
-import { defineConfig } from '@craco/craco'
-import path from 'path'
-import { fileURLToPath } from 'url'
-import { dirname } from 'path'
+const path = require('path')
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-export default defineConfig({
+module.exports = {
   webpack: {
     alias: {
+      '@src': path.resolve(__dirname, 'src'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
       '@components': path.resolve(__dirname, 'src/components'),
+      '@utils': path.resolve(__dirname, 'src/utils'),
     },
   },
-})
+}
