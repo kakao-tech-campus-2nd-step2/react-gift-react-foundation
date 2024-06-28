@@ -1,12 +1,13 @@
 module.exports = {
-  parser: '@typescript-eslint/parser', // TypeScript 파서를 사용
+  parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'airbnb', // Airbnb 스타일 가이드 적용
-    'prettier', // Prettier와 충돌하는 ESLint 규칙을 비활성화
-    'plugin:prettier/recommended', // Prettier 규칙을 ESLint 규칙으로 추가
+    'airbnb',
+    'prettier',
+    'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   plugins: ['react', '@typescript-eslint', 'prettier'],
   env: {
@@ -27,10 +28,13 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'prettier/prettier': 'error', // Prettier 규칙을 ESLint 규칙으로 추가
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+    ],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'react/react-in-jsx-scope': 'off', // React 17+에서는 필요 없음
+    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
   },
 };
