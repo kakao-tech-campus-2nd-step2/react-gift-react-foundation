@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import GoodsItem from './GoodsItem';
 
 const meta = {
-  title: 'Example/GoodsItem',
+  title: 'COMMON/GoodsItem',
   component: GoodsItem,
 } satisfies Meta<typeof GoodsItem>;
 

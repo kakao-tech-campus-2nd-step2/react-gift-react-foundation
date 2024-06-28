@@ -13,7 +13,7 @@ const GoodsItem = (props: GoodsItemProps) => {
 
   let rankingBgColor = 'gray';
   if (rankingIndex && rankingIndex <= 3) {
-    rankingBgColor = 'orange';
+    rankingBgColor = '#FD7364';
   }
 
   return (
@@ -34,23 +34,27 @@ const GoodsItem = (props: GoodsItemProps) => {
           border-radius: 3px;
         `}
       >
-        <div
-          css={css`
-            width: 18px;
-            height: 18px;
-            background-color: ${rankingBgColor};
-            color: white;
-            border-radius: 3px;
-            font-size: 12px;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            top: 3px;
-            left: 3px;
-          `}
-        >
-          {rankingIndex}
-        </div>
+        {rankingIndex && (
+          <div
+            css={css`
+              width: 18px;
+              height: 18px;
+              background-color: ${rankingBgColor};
+              color: white;
+              border-radius: 3px;
+              font-size: 10px;
+              font-weight: bold;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              top: 3px;
+              left: 3px;
+            `}
+          >
+            {rankingIndex}
+          </div>
+        )}
       </div>
       <div
         css={css`
