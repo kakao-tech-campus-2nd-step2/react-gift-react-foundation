@@ -28,3 +28,11 @@
   font-size: 16px;
   padding: 12px 24px;
 }
+.storybook-button--responsive {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .storybook-button--responsive {
+    width: auto;
+  }
+}
