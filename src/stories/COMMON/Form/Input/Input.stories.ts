@@ -2,7 +2,7 @@ import Input from './Input';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'FORM/Input/UnderlineTextField',
+  title: 'COMMON/Form/Input/UnderlineTextField',
   component: Input,
   tags: ['autodocs'],
 } satisfies Meta<typeof Input>;
