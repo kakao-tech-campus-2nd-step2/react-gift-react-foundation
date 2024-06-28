@@ -1,3 +1,17 @@
+To-dos
+step1. 프로젝트 세팅
+- typescript 설치
+- eslint & prettier 설치
+- emotion 라이브러리 설치
+
+step2. 기능 구현
+- storybook 설치하기
+- Button Component 만들기
+- Input Component 만들기
+- Image Component 만들기
+- GoodsItem Component 만들기
+- Grid, Container Component 만들기
+
 1주차 질문 
 - 질문1. Webpack은 무엇이고, 어떤 역할을 하나요?
 - Answer. Webpack은 개발 중에 작성된 여러 파일들을 하나의 파일로 묶어주는 도구입니다.
