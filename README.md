@@ -20,3 +20,13 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - utils: 정규 표현식 패턴이나 공통함수 등의 유틸 파일
 - apis: API 관련 로직 모듈 파일
 - styles: css 파일
+
+## 2단계 - Storybook을 사용하여 재사용 가능한 컴포넌트 구현
+
+- [x] Storybook 추가
+- [ ] Button 컴포넌트 구현
+- [ ] Input 컴포넌트 구현
+- [ ] Image 컴포넌트 구현
+- [ ] GoodsItem 컴포넌트 구현
+- [ ] Grid 컴포넌트 구현
+- [ ] Container 컴포넌트 구현
