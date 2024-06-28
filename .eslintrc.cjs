@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: ['airbnb', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'operator-linebreak': ['error', 'before'],
