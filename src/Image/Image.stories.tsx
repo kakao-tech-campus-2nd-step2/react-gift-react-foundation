@@ -81,3 +81,11 @@ RoundedCornersNumber.args = {
   ratio: '16:9',
   radius: 20, // 모서리를 둥글게 설정 (숫자)
 };
+
+export const Circle = Template.bind({});
+Circle.args = {
+  src: 'https://via.placeholder.com/800x800',
+  alt: 'Circle Image',
+  ratio: 'square', // 비율을 square로 설정
+  radius: 'circle', // radius를 circle로 설정
+};
