@@ -16,26 +16,11 @@
 - [X] ESLint, Prettier 설치 및 설정
 - [X] emotion 스타일 라이브러리 추가
 - [X] gitignore 추가
-- [ ] storybook 추가
-- [ ] Button 컴포넌트 구현
-- [ ] Input 컴포넌트 구현
-- [ ] GoodItem 컴포넌트 구현
-- [ ] Layout 컴포넌트 구현(Container, Grid)
-
-### 1주차 질문 답변
-1. webpack은 무엇이고 어떤 역할을 하고 있나요?
-
-    **A:** 
-
-
-2. 브라우저는 어떻게 JSX 파일을 읽을 수 있나요?
-
-    **A:**
-
-3. React에서 상태 변화가 생겼을 때 어떻게 변화를 알아챌 수 있나요?
-
-    **A:**
-
+- [X] storybook 추가
+- [X] Button 컴포넌트 구현
+- [X] Input 컴포넌트 구현
+- [X] GoodItem 컴포넌트 구현
+- [X] Layout 컴포넌트 구현(Container, Grid)
 
 ### Storybook
 [리액트를 위한 스토리북 튜토리얼](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/)에 따르면, 스토리북은 비즈니스 로직과 context로부터 분리된 UI 컴포넌트를 만들 수 있도록 도와준다고 한다.
