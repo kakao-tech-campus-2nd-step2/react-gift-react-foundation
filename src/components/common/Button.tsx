@@ -2,24 +2,16 @@
 /* eslint-disable react/button-has-type */
 /** @jsxImportSource @emotion/react */
 
-import { ThemeColor, ThemeName } from "@constants/theme";
-import { css } from "@emotion/react";
+import "@styles/button.css";
 
 type ButtonProps = {
-  Theme: ThemeName;
-  Size: "sm" | "md" | "lg";
+  Theme: "apple" | "orange" | "mango" | "melon" | "peach";
+  Size: "sm" | "md" | "lg" | "responsive";
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 function Button({ Theme, Size, ...rest }: ButtonProps) {
-  const themeColor = ThemeColor[Theme];
-
   return (
-    <button
-      css={css({
-        backgroundColor: themeColor,
-      })}
-      {...rest}
-    >
+    <button className={`button button--${Theme} button--${Size}`} {...rest}>
       Click me
     </button>
   );
