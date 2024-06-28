@@ -32,6 +32,7 @@ module.exports = {
     "react/button-has-type": "off",
     "no-nested-ternary": "off",
     "no-undef": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [
       2,
       { extensions: [".js", ".jsx", ".ts", ".tsx"] },
