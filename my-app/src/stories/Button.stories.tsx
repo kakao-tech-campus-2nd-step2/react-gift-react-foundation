@@ -12,8 +12,8 @@ const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  theme: 'default',
-  size: 'medium',
+  theme: 'kakao',
+  size: 'large',
   children: 'Default Button',
   onClick: action('clicked'),
 }

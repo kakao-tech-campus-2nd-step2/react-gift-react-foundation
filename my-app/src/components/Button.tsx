@@ -4,13 +4,13 @@ import '../styles/Button.css'
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  theme?: 'default' | 'primary' | 'secondary' | 'kakao'
-  size?: 'small' | 'medium' | 'large' | 'responsive'
+  theme?: 'kakao' | 'outline' | 'black' | 'lightGray' | 'darkGray'
+  size?: 'large' | 'small' | 'responsive'
 }
 
 const Button: React.FC<ButtonProps> = ({
-  theme = 'default',
-  size = 'medium',
+  theme = 'kakao',
+  size = 'large',
   children,
   ...props
 }) => {
@@ -22,8 +22,14 @@ const Button: React.FC<ButtonProps> = ({
 }
 
 Button.propTypes = {
-  theme: PropTypes.oneOf(['default', 'primary', 'secondary', 'kakao']),
-  size: PropTypes.oneOf(['small', 'medium', 'large', 'responsive']),
+  theme: PropTypes.oneOf([
+    'kakao',
+    'outline',
+    'black',
+    'lightGray',
+    'darkGray',
+  ]),
+  size: PropTypes.oneOf(['large', 'small', 'responsive']),
   children: PropTypes.node.isRequired,
 }
 
