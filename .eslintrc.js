@@ -3,7 +3,14 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'airbnb', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
+  ],
   overrides: [
     {
       env: {
@@ -133,5 +140,9 @@ module.exports = {
 
     //require 사용 경고를 비활성화
     '@typescript-eslint/no-var-requires': 'off',
+
+    'react/require-default-props': 'off',
+
+    'import/no-extraneous-dependencies': 'off',
   },
 };

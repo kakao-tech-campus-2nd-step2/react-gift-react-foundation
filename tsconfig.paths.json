@@ -13,7 +13,8 @@
       "@utils/*": ["src/utils/*"],
       "@interfaces/*": ["src/interfaces/*"],
       "@constants/*": ["src/constants/*"],
-      "@mocks/*": ["src/mocks/*"]
+      "@mocks/*": ["src/mocks/*"],
+      "@stories/*": ["src/stories/*"]
     }
   }
 }
