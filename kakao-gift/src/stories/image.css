@@ -10,6 +10,10 @@
   overflow: hidden;
 }
 
+.image-ratio {
+  aspect-ratio: inherit;
+}
+
 .image-ratio-circle {
   width: 200px;
   height: 200px;
@@ -20,8 +24,4 @@
 .image-ratio-square {
   width: 200px;
   aspect-ratio: 1 / 1;
-}
-
-.image-ratio {
-  aspect-ratio: inherit;
 }

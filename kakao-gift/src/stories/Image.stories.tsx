@@ -10,6 +10,8 @@ const meta: Meta<typeof Image> = {
   tags: ['autodocs'],
   argTypes: {
     ratio: { control: 'text' },
+    radius: { control: 'text' },
+    title: { control: 'text' },
   },
 }
 
@@ -23,11 +25,11 @@ export const DefaultImage: Story = {
   },
 }
 
-export const RatioNbyN: Story = {
+export const Ratio16by9: Story = {
   args: {
     src: 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png',
     alt: 'KAKAO FRIENDS',
-    ratio: 'N/N',
+    ratio: '16/9',
   },
 }
 
@@ -44,5 +46,29 @@ export const SquareImage: Story = {
     src: 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png',
     alt: 'KAKAO FRIENDS',
     ratio: 'square',
+  },
+}
+
+export const RoundedCornersImage: Story = {
+  args: {
+    src: 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png',
+    alt: 'KAKAO FRIENDS',
+    radius: 20,
+  },
+}
+
+export const CircleRadiusImage: Story = {
+  args: {
+    src: 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png',
+    alt: 'KAKAO FRIENDS',
+    radius: 'circle',
+  },
+}
+
+export const ImageWithTitle: Story = {
+  args: {
+    src: 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png',
+    alt: 'KAKAO FRIENDS',
+    title: 'KAKAO FRIENDS Image',
   },
 }

@@ -42,8 +42,8 @@ FE 카카오 선물하기 1주차 과제: React 기초
 ### Image 컴포넌트 구현
 
 - [x] ratio Props에 따라 이미지 비율을 설정한다. (number가 16/9라면 16:9 비율, circle이라면 원형)
-- [ ] radius Props에 따라 모서리 둥글게 한다. (number만큼 모서리 둥글게, circle이라면 원형)
-- [ ] Img Element의 기본 속성을 모두 사용한다.
+- [x] radius Props에 따라 모서리 둥글게 한다. (number만큼 모서리 둥글게, circle이라면 원형)
+- [x] Img Element의 기본 속성을 모두 사용한다.
 
 ### GoodsItem 컴포넌트 구현
 
