@@ -7,7 +7,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [x] Create React App을 기반으로 프로젝트 생성
 - [x] Typescript로 프로젝트가 동작되게 세팅
 - [x] 절대 경로로 Import 할 수 있게 alias를 설정
-- [ ] ESLint, Prettier 추가
+- [x] ESLint, Prettier 추가
 - [ ] emotion 스타일 라이브러리 추가
 - [ ] reset.css 적용
 
