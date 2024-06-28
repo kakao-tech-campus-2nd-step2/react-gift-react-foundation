@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
-import '../styles/image.css'
+import './image.css'
 
 
 export default function Image(props) {

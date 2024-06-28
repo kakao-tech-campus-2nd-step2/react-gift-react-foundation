@@ -1,6 +1,6 @@
 import React from "react";
 
-import Input from "../components/Input.tsx";
+import Input from "./Input.tsx";
 
 export default {
   component: Input,

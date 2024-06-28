@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "../components/Image.tsx";
+import Image from "./Image.tsx";
 
 export default {
   component: Image,

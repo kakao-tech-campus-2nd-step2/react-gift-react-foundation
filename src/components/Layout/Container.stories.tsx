@@ -1,6 +1,6 @@
 import React from "react";
 
-import Container from "../components/Layout/Container.tsx";
+import Container from "./Container.tsx";
 
 export default {
   component: Container,

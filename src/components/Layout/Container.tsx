@@ -1,4 +1,4 @@
-import '../../styles/Container.css'
+import './Container.css'
 
 export default function Container(props) {
   const {maxWidth, children, flexDirection, justifyContent, alignItems} = props;

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "../styles/input.css"
+import "./input.css"
 
 export default function Input(props) {
 

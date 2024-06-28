@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/button.css';
+import './button.css';
 
 export default function Button(props) {
   const {size="medium", label, theme="kakao"} = props;
