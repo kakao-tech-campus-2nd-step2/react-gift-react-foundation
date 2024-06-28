@@ -2,7 +2,7 @@
 
 FE 카카오 선물하기 1주차 과제: React 기초
 
-## 1주차 과제 : 2단계 - Storybook을 사용하여 재사용 가능한 컴포넌트 구현
+## 1주차 과제 : 3단계 - 질문의 답변을 README에 작성
 
 **Storybook을 프로젝트에 추가**하고 프로젝트에 사용할 **컴포넌트**들을 Storybook으로 볼 수 있게 해요.
 
@@ -12,23 +12,46 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ---
 
-✔️ Stroybook을 추가해요.  
-✔️ 공통 컴포넌트에 아래와 같은 컴포넌트를 구현하고, Storybook에서 확인 할 수 있게 해요. (자세한 내용은 스토리북 링크 참고)  
-✔️ Button 컴포넌트를 구현해요.  
-✔️ Theme Props에 따라 버튼의 컬러와 디자인이 다르게 보여져요.  
-✔️ Size Props에 따라 버튼의 Size가 다르게 보여져요. (value가 responsive 인 경우 미디어 쿼리에 따라 사이즈가 달라지게 만들어요.)  
-✔️ Button Element의 기본 속성들을 모두 사용할 수 있게 해요.  
-✔️ Input 컴포넌트를 구현해요.  
-✔️ disabled Props에 따라 Input이 비활성화 되고, UI에서도 비활성화 됨을 인지할 수 있게 해요.  
-✔️ invalid Props 에 따라 Input의 값이 잘 못되었음을 UI에서 인지할 수 있게 해요.  
-✔️ Size Props에 따라 버튼의 Size가 다르게 보여져요. (value가 responsive 인 경우 미디어 쿼리에 따라 사이즈가 달라지게 만들어요.)  
-✔️ Input Element의 기본 속성들을 모두 사용할 수 있게 해요.  
-✔️ Image 컴포넌트를 구현해요.  
-✔️ ratio Props에 따라 이미지 비율을 설정할 수 있게 해요. (value가 number로 16/9로 넘겨진 경우 16:9비율로 보여짐, square을 설정한 경우 정사각형으로 보여짐)  
-✔️ radius Props에 따라 모서리가 둥글게 해요. (value가 number인 경우 number만큼 모서리가 둥글게 적용, circle인 경우 원형으로 보여짐)  
-✔️ Img Element의 기본 속성들을 모두 사용할 수 있게 해요.  
-✔️ GoodsItem 컴포넌트를 구현해요.  
-✔️ Default 형태와 Ranking 형태의 컴포넌트를 각각 구현해요. (자세한 디자인은 스토리북 참고)  
-✔️ 공통으로 imageSrc, subtitle, title, amount Props를 넘겨받아요.  
-✔️ Ranking 컴포넌트의 경우 rankingIndex Props를 추가로 넘겨받아요. ✔️ 1~3까지는 분홍색, 나머지 숫자에는 회색의 랭킹 뱃지가 보여져요  
-✔️ Grid, Container 컴포넌트를 구현해요.
+### ✔️ 질문 1. webpack은 무엇이고 어떤 역할을 하고 있나요?
+
+![alt text](image.png)
+
+#### 알고 있는 지식
+
+webpack은 모듈 번들러로, 작성한 JavaScript 파일들을 하나로 묶어주는 역할을 하는 도구로 알고 있습니다.
+
+#### 참고 레퍼런스
+
+https://velog.io/@gusdh2/Webpack%EC%9D%B4%EB%9E%80-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%A0%EA%B9%8C%EC%9A%94
+
+### ✔️ 질문 2. 브라우저는 어떻게 JSX 파일을 읽을 수 있나요?
+
+#### 알고 있는 지식
+
+- React에서 사용되는 JavaScript의 확장 문법입니다. 하지만 브라우저는 JSX 코드를 직접 이해할 수 없습니다. 따라서 JSX 코드는 다음과 같은 과정을 거쳐 브라우저가 이해할 수 있는 JavaScript 코드로 변환됩니다:
+
+- Babel 변환: JSX 코드는 <span style="color: red">**Babel**</span>과 같은 JavaScript 컴파일러를 사용하여 일반 JavaScript 코드로 변환됨. 이 과정에서 JSX에서 사용되는 React의 createElement 함수 호출로 변환됨.
+
+```javascript
+// JSX 코드
+const element = <h1>Hello, world!</h1>;
+
+// Babel 변환 후 JavaScript 코드
+const element = React.createElement('h1', null, 'Hello, world!');
+```
+
+#### 참고 레퍼런스
+
+https://m.blog.naver.com/wjdrudtn0225/221239750635
+
+### ✔️ 질문 3. React에서 상태 변화가 생겼을 때 어떻게 변화를 알아챌 수 있나요?
+
+#### 알고 있는 지식
+
+- React에서 **상태 변화**가 발생하면, 컴포넌트는 자동으로 **리렌더링**되어 화면에 반영됩니다. 이 과정에서 상태 변화를 알아차리고 처리하기 위해
+  <span style="color: red">**setState**</span> 또는 **React Hook 인
+  <span style="color: red">useState**</span>를 사용할 수 있습니다.
+
+#### 참고 레퍼런스
+
+https://velog.io/@badahertz52/react-rendering-%EA%B3%BC-state-%EB%B3%80%EA%B2%BD%EA%B0%90%EC%A7%80
