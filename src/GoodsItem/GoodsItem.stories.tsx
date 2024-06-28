@@ -25,6 +25,9 @@ export default {
     ranking: {
       control: 'number',
     },
+    rankingIndex: {
+      control: 'number',
+    },
   },
 } as Meta;
 
@@ -46,4 +49,5 @@ Ranking.args = {
   amount: '$29.99',
   description: 'This is a ranked goods item.',
   ranking: 1, // 랭킹 설정
+  rankingIndex: 5,
 };

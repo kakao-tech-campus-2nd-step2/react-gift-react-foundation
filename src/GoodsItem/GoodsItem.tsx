@@ -10,6 +10,7 @@ export interface GoodsItemProps {
   amount: string;
   description?: string;
   ranking?: number;
+  rankingIndex?: number;
 }
 
 const GoodsItemWrapper = styled.div`
@@ -56,6 +57,7 @@ const GoodsItem: React.FC<GoodsItemProps> = ({
   amount,
   description,
   ranking,
+  rankingIndex,
 }) => {
   return (
     <GoodsItemWrapper>
@@ -65,6 +67,7 @@ const GoodsItem: React.FC<GoodsItemProps> = ({
       <GoodsSubtitle>{subtitle}</GoodsSubtitle>
       <GoodsAmount>{amount}</GoodsAmount>
       {description && <GoodsDescription>{description}</GoodsDescription>}
+      {rankingIndex !== undefined && <div>Ranking Index: {rankingIndex}</div>}
     </GoodsItemWrapper>
   );
 };
