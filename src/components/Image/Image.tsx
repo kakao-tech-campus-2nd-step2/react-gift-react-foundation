@@ -4,8 +4,8 @@ import 'components/Image/image.css';
 interface ImageProps {
   src: string;
   width: string;
-  ratio: number | string;
-  radius: string | number;
+  ratio?: number | string;
+  radius?: string | number;
   desc?: string;
 }
 
