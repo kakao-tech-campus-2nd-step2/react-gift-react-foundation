@@ -5,6 +5,8 @@
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@storybook/preview-api": "^8.1.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -26,7 +28,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 ./public",
     "build-storybook": "storybook build"
   },
   "browserslist": {
