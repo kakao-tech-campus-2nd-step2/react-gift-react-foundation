@@ -1,7 +1,7 @@
 import React from 'react';
 import './image.css';
 
-interface ImageProps{
+interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement>{
   ratio?: '16/9' | 'square'; // 비율 설정
   radius?: number | 'circle';
   src?: string;
