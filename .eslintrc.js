@@ -2,13 +2,14 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'prettier'],
   extends: [
-    'airbnb', // or airbnb-base
+    'airbnb',
     'plugin:react/recommended',
-    'plugin:jsx-a11y/recommended', // 설치 한경우
-    'plugin:import/errors', // 설치한 경우
-    'plugin:import/warnings', // 설치한 경우
+    'plugin:jsx-a11y/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   rules: {
     'linebreak-style': 0,
@@ -22,7 +23,11 @@ module.exports = {
     'react/prop-types': 0,
     'prettier/prettier': 'error', // Prettier 오류를 ESLint 오류로 처리
     'global-require': 'off', // require 구문 허용
+    'react/require-default-props': 'off', // 기본값 설정을 강제하지 않음
     'import/no-dynamic-require': 'off', // 동적 require 허용
+    'react/function-component-definition': 'off', // 함수형 컴포넌트 정의 규칙 끄기
+    'react/jsx-props-no-spreading': 'off', // prop spreading 허용
+    'react/no-unescaped-entities': 'off', // 이스케이프되지 않은 엔티티 오류로 처리
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
