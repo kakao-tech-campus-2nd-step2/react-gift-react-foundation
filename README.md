@@ -36,7 +36,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 ### Input 컴포넌트 구현
 
 - [x] disabled Props에 따라 Input이 비활성화되고, 이를 UI에서 인지한다.
-- [ ] invalid Props에 따라 Input 값이 잘못됨을 UI에서 인지한다.
+- [x] invalid Props에 따라 Input 값이 잘못됨을 UI에서 인지한다.
 - [ ] Input Element의 기본 속성을 모두 사용한다.
 
 ### Image 컴포넌트 구현

@@ -10,6 +10,7 @@ const meta: Meta<typeof Input> = {
   tags: ['autodocs'],
   argTypes: {
     disabled: { control: 'boolean' },
+    invalid: { control: 'boolean' },
     placeholder: { control: 'text' },
   },
 }
@@ -21,6 +22,7 @@ export const Enabled: Story = {
   args: {
     placeholder: 'Enabled Input',
     disabled: false,
+    invalid: false,
   },
 }
 
@@ -28,5 +30,14 @@ export const Disabled: Story = {
   args: {
     placeholder: 'Disabled Input',
     disabled: true,
+    invalid: false,
+  },
+}
+
+export const Invalid: Story = {
+  args: {
+    placeholder: 'Invalid Input',
+    disabled: false,
+    invalid: true,
   },
 }

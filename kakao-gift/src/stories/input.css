@@ -10,3 +10,8 @@
   color: #aaa;
   cursor: not-allowed;
 }
+
+.storybook-input--invalid {
+  border-color: red;
+  background-color: #ffe6e6;
+}
