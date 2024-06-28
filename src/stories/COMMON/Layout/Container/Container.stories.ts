@@ -2,7 +2,7 @@ import Container from './Container';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'COMMON/Layout/Default',
+  title: 'COMMON/Layout/Container',
   component: Container,
   tags: ['autodocs'],
 } satisfies Meta<typeof Container>;
