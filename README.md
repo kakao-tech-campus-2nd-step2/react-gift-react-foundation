@@ -16,7 +16,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [x] 프로젝트에 불필요한 파일 정리
 
 ### STEP2
-- [ ] Storybook 설치
+- [x] Storybook 설치
 - [ ] Button 컴포넌트 구현
 - [ ] Input 컴포넌트 구현
 - [ ] Image 컴포넌트 구현
