@@ -6,7 +6,8 @@ import Ranking from './Ranking';
 export interface GoodsItemProps {
   imageSrc: string;
   title: string;
-  price: string;
+  subtitle: string;
+  amount: string;
   description?: string;
   ranking?: number;
 }
@@ -25,12 +26,18 @@ const GoodsImage = styled.img`
   height: auto;
 `;
 
+const GoodsSubtitle = styled.h4`
+  font-size: 16px;
+  margin: 8px 0;
+  color: #777;
+`;
+
 const GoodsTitle = styled.h3`
   font-size: 18px;
   margin: 10px 0;
 `;
 
-const GoodsPrice = styled.p`
+const GoodsAmount = styled.p`
   font-size: 16px;
   color: #b12704;
   margin: 5px 0;
@@ -45,7 +52,8 @@ const GoodsDescription = styled.p`
 const GoodsItem: React.FC<GoodsItemProps> = ({
   imageSrc,
   title,
-  price,
+  subtitle,
+  amount,
   description,
   ranking,
 }) => {
@@ -54,7 +62,8 @@ const GoodsItem: React.FC<GoodsItemProps> = ({
       {ranking !== undefined && <Ranking ranking={ranking} />}
       <GoodsImage src={imageSrc} alt={title} />
       <GoodsTitle>{title}</GoodsTitle>
-      <GoodsPrice>{price}</GoodsPrice>
+      <GoodsSubtitle>{subtitle}</GoodsSubtitle>
+      <GoodsAmount>{amount}</GoodsAmount>
       {description && <GoodsDescription>{description}</GoodsDescription>}
     </GoodsItemWrapper>
   );

@@ -13,7 +13,10 @@ export default {
     title: {
       control: 'text',
     },
-    price: {
+    subtitle: {
+      control: 'text',
+    },
+    amount: {
       control: 'text',
     },
     description: {
@@ -31,7 +34,7 @@ export const Default = Template.bind({});
 Default.args = {
   imageSrc: 'https://via.placeholder.com/300',
   title: 'Sample Goods Item',
-  price: '$19.99',
+  amount: '$19.99',
   description: 'This is a sample description of the goods item.',
 };
 
@@ -39,7 +42,8 @@ export const Ranking = Template.bind({});
 Ranking.args = {
   imageSrc: 'https://via.placeholder.com/300',
   title: 'Ranked Goods Item',
-  price: '$29.99',
+  subtitle: 'Top Ranked',
+  amount: '$29.99',
   description: 'This is a ranked goods item.',
   ranking: 1, // 랭킹 설정
 };
