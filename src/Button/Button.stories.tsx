@@ -13,7 +13,7 @@ export default {
     },
     size: {
       control: 'select',
-      options: ['small', 'medium', 'large'],
+      options: ['small', 'medium', 'large', 'responsive'],
     },
   },
 } as Meta;
@@ -53,4 +53,11 @@ Large.args = {
   label: 'Large Button',
   theme: 'primary',
   size: 'large',
+};
+
+export const Responsive = Template.bind({});
+Responsive.args = {
+  label: 'Responsive Button',
+  theme: 'primary',
+  size: 'responsive',
 };
