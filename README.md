@@ -37,14 +37,12 @@ Polyfill이란? <br/>
 Object.entries()와 같은 최신문법을 지원하지 않는 브라우저에게 직접 구현해 주는 것
 
 ## step2
-- [x] storybook 추가
+- [x] storybook 사용
 - [x] Button 컴포넌트 추가
 - [x] Input 컴포넌트 추가
 - [x] Image 컴포넌트 추가
 - [x] GoodsItem 컴포넌트 추가
 - [x] Grid, Container 컴포넌트 추가
-<br/>
-기본 속성들을 모두 사용할 수 있게 하라는 조건이 이해가 잘 안됐었습니다.
 
 ## step3
 
