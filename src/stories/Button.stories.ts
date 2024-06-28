@@ -1,6 +1,6 @@
+import Button from "@components/common/Button";
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
-import { Button } from "./Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -14,7 +14,14 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    Theme: {
+      options: ["apple", "orange", "mango", "banana", "melon"],
+      control: { type: "select" },
+    },
+    Size: {
+      options: ["sm", "md", "lg"],
+      control: { type: "radio" },
+    },
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   args: { onClick: fn() },
@@ -24,29 +31,37 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {
+export const AppleBtn: Story = {
   args: {
-    primary: true,
-    label: "Button",
+    Theme: "apple",
+    Size: "md",
   },
 };
 
-export const Secondary: Story = {
+export const OrangeBtn: Story = {
   args: {
-    label: "Button",
+    Theme: "orange",
+    Size: "md",
   },
 };
 
-export const Large: Story = {
+export const MangoBtn: Story = {
   args: {
-    size: "large",
-    label: "Button",
+    Theme: "mango",
+    Size: "md",
   },
 };
 
-export const Small: Story = {
+export const BananaBtn: Story = {
   args: {
-    size: "small",
-    label: "Button",
+    Theme: "banana",
+    Size: "md",
+  },
+};
+
+export const MelonBtn: Story = {
+  args: {
+    Theme: "melon",
+    Size: "md",
   },
 };

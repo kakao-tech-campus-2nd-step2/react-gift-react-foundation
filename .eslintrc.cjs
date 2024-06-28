@@ -35,5 +35,6 @@ module.exports = {
     "no-extra-semi": "error",
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": ["error", { ignore: ["css"] }],
   },
 };
