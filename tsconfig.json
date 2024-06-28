@@ -33,9 +33,6 @@
       "components/*": [
         "src/components/*"
       ],
-      "commons/*": [
-        "src/components/commons/*"
-      ],
       "pages/*": [
         "src/pages/*"
       ],
