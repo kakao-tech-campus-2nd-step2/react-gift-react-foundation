@@ -27,7 +27,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [x] Button 컴포넌트 구현
 - [x] Input 컴포넌트 구현
 - [x] Image 컴포넌트 구현
-- [ ] GoodsItem 컴포넌트 구현
+- [x] GoodsItem 컴포넌트 구현
 - [ ] Grid 컴포넌트 구현
 - [ ] Container 컴포넌트 구현
 
