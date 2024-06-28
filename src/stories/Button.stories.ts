@@ -1,4 +1,4 @@
-import { Button, IButtonProps } from '@stories/Button';
+import { Button, IButtonProps } from './Button';
 import { Meta } from '@storybook/react';
 import { fn } from '@storybook/test';
 
