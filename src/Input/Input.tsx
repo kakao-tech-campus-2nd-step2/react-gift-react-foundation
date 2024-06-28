@@ -6,9 +6,14 @@ export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   isInvalid?: boolean; // invalid Props 추가
+  inputSize?: 'small' | 'medium' | 'large';
 }
 
-const InputStyled = styled.input<{ isDisabled: boolean; isInvalid: boolean }>`
+const InputStyled = styled.input<{
+  isDisabled: boolean;
+  isInvalid: boolean;
+  sizeType: string;
+}>`
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -27,6 +32,27 @@ const InputStyled = styled.input<{ isDisabled: boolean; isInvalid: boolean }>`
     css`
       border-color: red;
       background-color: #ffe6e6;
+    `}
+
+  ${(props) =>
+    props.sizeType === 'small' &&
+    css`
+      padding: 5px;
+      font-size: 12px;
+    `}
+
+   ${(props) =>
+    props.sizeType === 'medium' &&
+    css`
+      padding: 10px;
+      font-size: 16px;
+    `}
+
+    ${(props) =>
+    props.sizeType === 'large' &&
+    css`
+      padding: 15px;
+      font-size: 20px;
     `}
 `;
 
@@ -47,6 +73,7 @@ export const Input: React.FC<InputProps> = ({
   label,
   disabled,
   isInvalid,
+  inputSize = 'medium',
   ...props
 }) => {
   return (
@@ -55,6 +82,7 @@ export const Input: React.FC<InputProps> = ({
       <InputStyled
         isDisabled={!!disabled}
         isInvalid={!!isInvalid}
+        sizeType={inputSize}
         disabled={disabled}
         {...props}
       />

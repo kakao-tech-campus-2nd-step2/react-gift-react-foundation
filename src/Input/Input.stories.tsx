@@ -12,6 +12,11 @@ export default {
     },
     isInvalid: {
       control: 'boolean',
+      defaultValue: false,
+    },
+    inputSize: {
+      control: 'select',
+      options: ['small', 'medium', 'large'], // inputSize options 추가
     },
   },
 } as Meta;
@@ -23,6 +28,7 @@ Enabled.args = {
   label: 'Enabled Input',
   disabled: false,
   isInvalid: false,
+  inputSize: 'medium',
 };
 
 export const Disabled = Template.bind({});
@@ -30,6 +36,7 @@ Disabled.args = {
   label: 'Disabled Input',
   disabled: true,
   isInvalid: false,
+  inputSize: 'medium',
 };
 
 export const Invalid = Template.bind({});
@@ -37,4 +44,21 @@ Invalid.args = {
   label: 'Invalid Input',
   disabled: false,
   isInvalid: true,
+  inputSize: 'medium',
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  label: 'Small Input',
+  disabled: false,
+  isInvalid: false,
+  inputSize: 'small',
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  label: 'Large Input',
+  disabled: false,
+  isInvalid: false,
+  inputSize: 'large',
 };
