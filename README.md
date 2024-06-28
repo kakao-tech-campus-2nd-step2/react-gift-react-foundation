@@ -47,9 +47,9 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ### GoodsItem 컴포넌트 구현
 
-- [ ] Default 형태와 Ranking 형태를 각각 구현한다.
+- [x] Default 형태와 Ranking 형태를 각각 구현한다.
 - [x] 공통으로 imageSrc, subtitle, title, amount Props를 넘겨받는다.
-- [ ] Ranking 컴포넌트의 경우, rankingIndex Props를 추가로 넘겨받는다. (1~3까지는 분홍색, 나머지는 회색의 랭킹 뱃지)
+- [x] Ranking 컴포넌트의 경우, rankingIndex Props를 추가로 넘겨받는다. (1~3까지는 분홍색, 나머지는 회색의 랭킹 뱃지)
 
 ### Grid 컴포넌트 구현
 

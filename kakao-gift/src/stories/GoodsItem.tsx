@@ -18,6 +18,10 @@ interface GoodsItemProps {
    * Amount of the item
    */
   amount?: number
+  /**
+   * Ranking index of the item
+   */
+  rankingIndex?: number
 }
 
 /**
@@ -28,11 +32,22 @@ export const GoodsItem = ({
   title = '[특가] 카카오 프렌즈 특별 한정판 브라이트 쿠션',
   subtitle = '카카오 프렌즈 특별 한정판',
   amount = 100000000000,
+  rankingIndex,
 }: GoodsItemProps) => {
+  const getBadgeColor = (index?: number) => {
+    if (index !== undefined && index >= 1 && index <= 3) {
+      return 'badge-pink'
+    }
+    return 'badge-gray'
+  }
+
   return (
     <div className="goods-item">
       <div className="goods-item-image-wrapper">
         <img src={src} alt={title} className="goods-item-image" />
+        {rankingIndex !== undefined && (
+          <div className={`ranking-badge ${getBadgeColor(rankingIndex)}`}>{rankingIndex}</div>
+        )}
       </div>
       <div className="goods-item-details">
         <p className="goods-item-subtitle">{subtitle}</p>
