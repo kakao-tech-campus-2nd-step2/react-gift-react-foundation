@@ -4,7 +4,7 @@ import './button.css';
 interface ButtonProps {
   theme?: 'primary' | 'secondary';
   backgroundColor?: string;
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large' | 'responsive';
   label: string;
   onClick?: () => void;
 }
@@ -17,11 +17,12 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const themeClass = `storybook-button--${theme}`;
+  const sizeClass = size === 'responsive' ? 'storybook-button--responsive' : `storybook-button--${size}`;
 
   return (
     <button
       type="button"
-      className={`storybook-button ${themeClass}`}
+      className={`storybook-button ${sizeClass} ${themeClass}`}
       style={{ backgroundColor }}
       {...props}
     >
@@ -29,3 +30,5 @@ export const Button = ({
     </button>
   );
 };
+
+export default Button;
