@@ -9,5 +9,7 @@
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
-  }
+  },
+  "files.eol": "\n",
+  "prettier.endOfLine": "auto"
 }

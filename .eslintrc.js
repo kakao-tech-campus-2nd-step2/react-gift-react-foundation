@@ -5,9 +5,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'airbnb',
-    'prettier',
     'plugin:prettier/recommended',
-    'plugin:storybook/recommended',
   ],
   plugins: ['react', '@typescript-eslint', 'prettier'],
   env: {
@@ -36,5 +34,14 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
+    'react/require-default-props': 'off',
+    'no-unused-vars': 'warn',
+    'import/no-unresolved': 'off', // 임시로 경고 무시
+    'import/extensions': 'off', // 임시로 경고 무시
+    'react/function-component-definition': [
+      2,
+      { namedComponents: 'arrow-function' },
+    ],
+    'react/jsx-props-no-spreading': 'off',
   },
 };
