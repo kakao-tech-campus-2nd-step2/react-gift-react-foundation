@@ -14,10 +14,10 @@ const ButtonStyled = styled.button<ButtonProps>`
       : props.theme === 'black'
         ? 'black'
         : props.theme === 'lightGray'
-          ? 'lightgray'
+          ? 'rgb(240, 240, 240)'
           : props.theme === 'darkGray'
-            ? 'darkgray'
-            : 'yellow'};
+            ? 'rgb(68, 68, 68)'
+            : 'rgb(254, 229, 0);'};
   outline: ${props =>
     props.theme === 'outline' ? '1px solid lightGray' : 'none'};
   color: ${props => (props.theme === 'black' ? 'white' : 'black')};
