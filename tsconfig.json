@@ -16,11 +16,11 @@
     //더 엄격한 타입 검사 활성화
     "strict": true,
     //모듈 해석의 기본 경로 설정
-    "baseUrl": "./src",
+    "baseUrl": "./",
     //모듈 경로의 별칭 설정
     "paths": {
-      "@components/*": ["components/*"],
-      "@utils/*": ["utils/*"]
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
     },
     //타입스크립트가 jsx 구문을 올바르게 처리하도록 함
     "jsx": "react-jsx"

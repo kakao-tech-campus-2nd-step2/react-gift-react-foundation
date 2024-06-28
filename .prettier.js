@@ -8,9 +8,9 @@ module.exports = {
   //들여쓰기 너비 2칸
   tabWidth: 2,
   //배열, 키 값 뒤 항상 콤마
-  trailingComma: "all",
+  trailingComma: 'all',
   //코드 한 줄이 최대 80칸
   printWidth: 80,
   //화살표 함수의 매개변수가 1개일 때 괄호 생략
-  arrowParens: "avoid",
+  arrowParens: 'avoid',
 };
