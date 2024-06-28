@@ -15,7 +15,13 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [x] .gitignore 추가
 
 - [x] 폴더 구조 관리
-
+  ```
+  assets      : 이미지, 폰트 관리
+  components  : 컴포넌트 관리
+  pages       : 페이지 컴포넌트 관리
+  styles      : css 파일 관리
+  utils       : 재사용 가능한 유틸리티 함수 관리
+  ```
 - [x] 불필요한 코드 정리
 
 - [x] 절대 경로로 Import 할 수 있도록 alias를 설정
