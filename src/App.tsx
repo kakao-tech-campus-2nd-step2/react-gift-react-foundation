@@ -1,13 +1,12 @@
 import React from 'react';
-import { Reset } from 'styled-reset';
+import { Global } from '@emotion/react';
+import resetStyles from '@styles/resetStyles';
 
-function App() {
-  return (
-    <>
-      <Reset />
-      <div className="App">Hello World!</div>
-    </>
-  );
-}
+const App = () => (
+  <>
+    <Global styles={resetStyles} />
+    <div className="App">Hello World!</div>
+  </>
+);
 
 export default App;
