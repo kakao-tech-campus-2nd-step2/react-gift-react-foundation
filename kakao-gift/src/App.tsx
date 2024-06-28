@@ -1,5 +1,5 @@
-import React from 'react';
-import Header from '@components/Header';
+import React from 'react'
+import Header from '@components/Header'
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <Header />
       <p>Hello World!</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
