@@ -15,7 +15,7 @@ const InputStyle = styled.input<InputStyleProps>`
   ${(props) => props.invalid && invalidStyle}
 `;
 
-interface InputProps extends InputStyleProps, React.InputHTMLAttributes<HTMLInputElement> {}
+export interface InputProps extends InputStyleProps, React.InputHTMLAttributes<HTMLInputElement> {}
 
 const Input: React.FC<InputProps> = ({ inputsize, disabled, invalid, ...props }) => (
   <InputStyle inputsize={inputsize} disabled={disabled} invalid={invalid} {...props} />
