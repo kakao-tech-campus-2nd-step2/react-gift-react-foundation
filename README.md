@@ -25,11 +25,11 @@ FE 카카오 선물하기 1주차 과제: React 기초
     - [ ] Size Props에 따라 버튼의 Size가 다르게 보이도록 구현
       (value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 달라지도록 구현)
   - Image 컴포넌트 구현
-    - [ ] ratio Props에 따라 이미지 비율 설정 가능하도록 구현
+    - [X] ratio Props에 따라 이미지 비율 설정 가능하도록 구현
       (value가 number로 16/9로 넘겨진 경우 16:9 비율로 보여지고, square를 설정한 경우 정사각형으로 보여지도록 구현)
-    - [ ] radius Props에 따라 모서리가 둥글어지도록 구현
+    - [X] radius Props에 따라 모서리가 둥글어지도록 구현
       (value가 number인 경우 number만큼 모서리가 둥글게 적용, circle인 경우 원형으로 보여지도록 구현)
-    - [ ] Img Element의 기본 속성들을 모두 사용 가능하도록 구현
+    - [X] Img Element의 기본 속성들을 모두 사용 가능하도록 구현
   - GoodsItem 컴포넌트 구현
     - [ ] Default 형태와 Ranking 형태의 컴포넌트를 각각 구현
     - [ ] 공통으로 imageSrc, subtitle, title, amount Props를 넘겨받음
