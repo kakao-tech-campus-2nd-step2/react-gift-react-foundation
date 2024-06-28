@@ -1,5 +1,5 @@
 import React from 'react';
-import './button.css';
+import 'components/Button/button.css';
 
 interface ButtonProps {
   /**
@@ -15,12 +15,11 @@ interface ButtonProps {
 export const Button = ({
   primary = false,
   size = 'medium',
-  theme,
+  theme = 'kakao',
   label,
   ...props
 }: ButtonProps) => {
   const firstMeetBorder = primary ? 'first' : '';
-
   return (
     <button
       type="button"
@@ -30,6 +29,12 @@ export const Button = ({
         theme,
         firstMeetBorder,
       ].join(' ')}
+      // className={[
+      //   styles.storybookButton,
+      //   styles[`button--${size}`],
+      //   styles[theme],
+      //   styles[firstMeetBorder],
+      // ].join(' ')}
       {...props}
     >
       {label}
