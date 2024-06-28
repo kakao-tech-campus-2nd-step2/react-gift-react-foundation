@@ -12,7 +12,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier", "@emotion"],
   "extends": [
     "prettier",
     "airbnb",
@@ -23,7 +23,9 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "@emotion/jsx-import": "off",
     "react/require-default-props": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }],
     "react/no-unescaped-entities": 0,
     "import/prefer-default-export": "off",
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
@@ -38,7 +40,7 @@
       }
     ],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/exhaustive-deps": "off",
     "react/jsx-props-no-spreading": "off",
     "import/no-extraneous-dependencies": [
       "error",
