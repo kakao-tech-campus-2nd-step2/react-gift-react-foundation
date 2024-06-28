@@ -23,9 +23,21 @@ module.exports = {
   rules: {
     quotes: ["error", "double"],
     "jsx-quotes": ["error", "prefer-double"],
-    "react/jsx-filename-extension": [1, { extensions: [".tsx", ".ts"] }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "prettier/prettier": "error",
+    "import/no-unresolved": "off",
+    "react/require-default-props": "off",
+    "react/button-has-type": "off",
+    "no-nested-ternary": "off",
+    "no-undef": "off",
+    "react/jsx-filename-extension": [
+      2,
+      { extensions: [".js", ".jsx", ".ts", ".tsx"] },
+    ],
     "import/extensions": [
-      "error",
+      2,
       "ignorePackages",
       {
         js: "never",

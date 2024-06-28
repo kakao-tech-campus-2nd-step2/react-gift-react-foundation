@@ -4,3 +4,4 @@ dist
 public
 src/assets
 src/stories
+src/compoents/atoms/stories
