@@ -22,11 +22,10 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
-      "@images/*": ["images/*"],
-      "@styles/*": ["styles/*"]
     }
   },
   "include": [
-    "src"
+    "src",
+    ".storybook"
   ]
 }
