@@ -33,7 +33,7 @@ module.exports = {
     'import/extensions': 'off',
 
     // 절대 경로 import시 ESLint 오류를 무시
-    'import/no-unresolved': [2, { ignore: ['^@'] }],
+    'import/no-unresolved': 'off',
 
     // 안정적이지 않은 중첩 컴포넌트 비활성화
     'react/no-unstable-nested-components': 'off',
@@ -144,5 +144,7 @@ module.exports = {
     'react/require-default-props': 'off',
 
     'import/no-extraneous-dependencies': 'off',
+
+    'import/order': 'off',
   },
 };
