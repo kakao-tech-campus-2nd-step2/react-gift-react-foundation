@@ -6,7 +6,7 @@ export interface RankingProps {
   ranking: number;
 }
 
-const RankingBadge = styled.div`
+const RankingBadge = styled.div<{ ranking: number }>`
   position: absolute;
   top: 10px;
   left: 10px;
@@ -15,10 +15,12 @@ const RankingBadge = styled.div`
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 14px;
+  background-color: ${(props) => (props.ranking <= 3 ? '#ff69b4' : '#ccc')};
+  color: #fff;
 `;
 
 const Ranking: React.FC<RankingProps> = ({ ranking }) => {
-  return <RankingBadge>#{ranking}</RankingBadge>;
+  return <RankingBadge ranking={ranking}>#{ranking}</RankingBadge>;
 };
 
 export default Ranking;
