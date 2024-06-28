@@ -7,7 +7,15 @@
   ],
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "arrowParens": "avoid",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false
+      }
+    ],
     "no-console": "warn",
     "no-unused-vars": "warn",
     "@typescript-eslint/no-unused-vars": ["error"]
