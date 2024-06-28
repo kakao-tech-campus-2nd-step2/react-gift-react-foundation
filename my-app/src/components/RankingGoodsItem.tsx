@@ -61,7 +61,7 @@ const Badge = styled.div<{ rankingIndex: number }>`
 	position: absolute;
 	top: 8px;
 	left: 8px;
-	background-color: #ff0000;
+	background-color: ${(props) => (props.rankingIndex <= 3 ? '#ff4081' : '#bdbdbd')};
 	color: white;
 	border-radius: 5px;
 	width: 22px;
