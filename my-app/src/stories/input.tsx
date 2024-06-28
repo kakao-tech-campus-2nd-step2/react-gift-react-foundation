@@ -1,4 +1,5 @@
 import React from 'react';
+import './input.css';
 
 interface InputProps {
   disabled?: boolean; // disabled prop 추가
