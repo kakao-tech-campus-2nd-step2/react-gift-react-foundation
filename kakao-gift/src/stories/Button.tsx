@@ -1,27 +1,31 @@
-import React from 'react';
-import './button.css';
+import React from 'react'
+import './button.css'
 
 interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  primary?: boolean;
+  primary?: boolean
   /**
    * What background color to use
    */
-  backgroundColor?: string;
+  backgroundColor?: string
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large'
   /**
    * Button contents
    */
-  label: string;
+  label: string
   /**
    * Optional click handler
    */
-  onClick?: () => void;
+  onClick?: () => void
+  /**
+   * Theme
+   */
+  theme?: 'kakao' | 'outline' | 'black' | 'lightGray'
 }
 
 /**
@@ -32,17 +36,19 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
+  theme = 'kakao',
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary'
+  const themeClass = `storybook-button--${theme}`
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['storybook-button', `storybook-button--${size}`, mode, themeClass].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
       {label}
     </button>
-  );
-};
+  )
+}
