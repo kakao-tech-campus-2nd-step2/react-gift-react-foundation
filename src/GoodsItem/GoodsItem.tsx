@@ -1,12 +1,14 @@
 // src/GoodsItem/GoodsItem.tsx
 import React from 'react';
 import styled from 'styled-components';
+import Ranking from './Ranking';
 
 export interface GoodsItemProps {
   imageSrc: string;
   title: string;
   price: string;
   description?: string;
+  ranking?: number;
 }
 
 const GoodsItemWrapper = styled.div`
@@ -15,6 +17,7 @@ const GoodsItemWrapper = styled.div`
   overflow: hidden;
   max-width: 300px;
   text-align: center;
+  position: relative;
 `;
 
 const GoodsImage = styled.img`
@@ -44,9 +47,11 @@ const GoodsItem: React.FC<GoodsItemProps> = ({
   title,
   price,
   description,
+  ranking,
 }) => {
   return (
     <GoodsItemWrapper>
+      {ranking !== undefined && <Ranking ranking={ranking} />}
       <GoodsImage src={imageSrc} alt={title} />
       <GoodsTitle>{title}</GoodsTitle>
       <GoodsPrice>{price}</GoodsPrice>
