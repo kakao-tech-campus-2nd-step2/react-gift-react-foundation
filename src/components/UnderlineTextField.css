@@ -1,0 +1,41 @@
+.underline-textfield {
+  box-sizing: border-box;
+  color: rgb(25, 25, 25);
+  transition: border-color 200ms ease 0s;
+  border-style: solid;
+  min-height: 42px;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 9px 0px;
+  border-width: 0px 0px 1px;
+  border-color: rgb(204, 204, 204);
+}
+
+.underline-textfield.invalid {
+  border-bottom-color: red;
+}
+
+.underline-textfield:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.underline-textfield:focus {
+  outline: none;
+  border-color: black;
+}
+
+.underline-textfield.small {
+  font-size: 14px;
+}
+
+.underline-textfield.large {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .underline-textfield.responsive {
+    width: 100%;
+    max-width: 500px;
+  }
+}
