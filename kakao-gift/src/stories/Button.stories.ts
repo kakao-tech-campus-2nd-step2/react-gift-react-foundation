@@ -60,3 +60,11 @@ export const Small: Story = {
     theme: 'kakao',
   },
 }
+
+export const Responsive: Story = {
+  args: {
+    size: 'responsive',
+    label: 'Responsive Button',
+    theme: 'kakao',
+  },
+}
