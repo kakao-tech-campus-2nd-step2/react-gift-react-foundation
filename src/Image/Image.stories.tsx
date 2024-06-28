@@ -73,3 +73,11 @@ RoundedCorners.args = {
   ratio: '16:9',
   radius: '10px', // 모서리를 둥글게 설정
 };
+
+export const RoundedCornersNumber = Template.bind({});
+RoundedCornersNumber.args = {
+  src: 'https://via.placeholder.com/800x450',
+  alt: 'Rounded Corners Number Image',
+  ratio: '16:9',
+  radius: 20, // 모서리를 둥글게 설정 (숫자)
+};

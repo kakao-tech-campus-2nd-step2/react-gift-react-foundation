@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components';
 // ImageProps 인터페이스를 내보내도록 수정
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   ratio?: '16:9' | '4:3' | '1:1' | 'square' | number; // ratio Props에 number 추가
-  radius?: string;
+  radius?: string | number;
 }
 
 const calculatePaddingTop = (ratio: string | number = '16:9'): string => {
@@ -19,13 +19,20 @@ const calculatePaddingTop = (ratio: string | number = '16:9'): string => {
   return `${(height / width) * 100}%`;
 };
 
-const ImageWrapper = styled.div<{ ratio: string | number; radius?: string }>`
+const calculateBorderRadius = (radius: string | number = '0'): string => {
+  return typeof radius === 'number' ? `${radius}px` : radius;
+};
+
+const ImageWrapper = styled.div<{
+  ratio: string | number;
+  radius?: string | number;
+}>`
   position: relative;
   width: 100%;
   ${({ ratio }) => css`
     padding-top: ${calculatePaddingTop(ratio)};
   `}
-  border-radius: ${(props) => props.radius || '0'};
+  border-radius: ${(props) => calculateBorderRadius(props.radius)};
 
   img {
     position: absolute;
