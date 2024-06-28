@@ -13,8 +13,8 @@ const Template: StoryFn<ButtonProps> = (args) => (
 	</Button>
 );
 
-export const ButtonStyle = Template.bind({});
-ButtonStyle.args = {
+export const Default = Template.bind({});
+Default.args = {
 	children: 'Button',
 	theme: 'kakao',
 	size: 'large',
