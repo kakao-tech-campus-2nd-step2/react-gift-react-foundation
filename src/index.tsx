@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from '@/App';
 import Button from './components/Button';
+import Input from './components/Input';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -9,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <div style={{ width: '120px' }}>
       <Button
         width="responsive"
-        height="responsive"
+        height="100px"
         buttonColor="#e8e92e"
         hasBorder
         fontColor="black"
@@ -20,6 +21,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       >
         button
       </Button>
+      <Input
+        placeholder="입력"
+        styleProps={{ width: '200px', height: '100px' }}
+        disabled
+      />
     </div>
   </React.StrictMode>,
 );
