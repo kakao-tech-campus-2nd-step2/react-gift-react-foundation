@@ -4,7 +4,10 @@ import Input from './Input';
 
 const meta = {
     title: 'Input',
-    component: Input
+    component: Input,
+    args: {
+        placeholder: "placeholder"
+    }
 } satisfies Meta<typeof Input>;
 
 export default meta;
@@ -15,27 +18,27 @@ export const Default: Story = {
     args: {
         disabled: false,
         invalid: false,
-        size: 'responsive'
+        sizeI: 'responsive'
     },
 }
 export const SizeChange: Story = {
     args: {
         disabled: false,
         invalid: false,
-        size: 50
+        sizeI: 50
     },
 }
 export const Disabled: Story = {
     args: {
         disabled: false,
         invalid: true,
-        size: 'responsive'
+        sizeI: 'responsive'
     }
 }
 export const Invalid: Story = {
     args: {
         disabled: false,
         invalid: true,
-        size: 'responsive'
+        sizeI: 'responsive'
     }
 }

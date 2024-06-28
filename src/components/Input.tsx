@@ -1,7 +1,9 @@
 import { InputProps } from "../types/PropsType";
+import InputStyle from "../styles/InputStyle";
 
-export default ({}: InputProps) => {
+export default ({disabled, invalid, sizeI}: InputProps) => {
     return(
-        <div></div>
+        <InputStyle disabled={disabled} invalid={invalid} sizeI={sizeI}>
+        </InputStyle>
     )
 }

@@ -3,8 +3,8 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     size: number | 'responsive'
 }
 
-export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>{
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement>{
     disabled: boolean,
     invalid: boolean,
-    size: number | 'responsive'
+    sizeI: number | 'responsive'
 }
