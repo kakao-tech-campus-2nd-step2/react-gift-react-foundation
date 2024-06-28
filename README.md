@@ -50,9 +50,8 @@ Object.entries()와 같은 최신문법을 지원하지 않는 브라우저에�
 번들러입니다. bundling, minification, code splitting, tree shaking등을 수행합니다. <br/>
 
 ### 질문 2. 브라우저는 어떻게 JSX 파일을 읽을 수 있나요? <br/>
-Babel을 통해 변환되어 읽습니다. JSX -> React -> DOM <br/>
-JSX -> React의 과정을 Babel을 통해 수행합니다. <br/>
+Babel을 통해 변환되어 읽습니다. JSX -> React <br/>
+JSX -> React의 과정을 Babel이 수행합니다. <br/>
 
 ### 질문 3. React에서 상태 변화가 생겼을 때 어떻게 변화를 알아챌 수 있나요? <br/>
 useState훅 또는 class component의 setState함수를 통한 값의 변화를 감지해 알아챕니다.
-
