@@ -2,43 +2,26 @@ import React from 'react';
 import './button.css';
 
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
+  theme?: 'primary' | 'secondary';
   backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
   size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
   label: string;
-  /**
-   * Optional click handler
-   */
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({
-  primary = false,
+  theme = 'primary',
   size = 'medium',
   backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const themeClass = `storybook-button--${theme}`;
+
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={`storybook-button ${themeClass}`}
       style={{ backgroundColor }}
       {...props}
     >
