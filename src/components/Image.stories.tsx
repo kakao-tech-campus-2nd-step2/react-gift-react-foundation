@@ -2,29 +2,33 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Image from './Image';
 
 const meta = {
-  title: 'Example/Image',
+  title: 'COMMON/Image',
   component: Image,
 } satisfies Meta<typeof Image>;
 
 export default meta;
 type Story = StoryObj<typeof Image>;
 
-export const BigImage: Story = {
+export const RatioSquare: Story = {
   args: {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURRMlonPjwPwrXHMGeHD9QZlczNQCqbKMEA&s',
-    alt: '짱구',
-    ratio: '16/9',
-    width: 500,
-    radius: 10,
+    src: 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png',
+    width: 100,
   },
 };
 
-export const SmallImage: Story = {
+export const RadiusCircle: Story = {
   args: {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURRMlonPjwPwrXHMGeHD9QZlczNQCqbKMEA&s',
-    alt: '짱구',
-    ratio: '2/3',
-    width: 200,
+    src: 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png',
+    width: 100,
     radius: 'circle',
+  },
+};
+
+export const RadiusRound: Story = {
+  args: {
+    src: 'https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png',
+    ratio: '16/9',
+    width: 500,
+    radius: 10,
   },
 };
