@@ -1,0 +1,44 @@
+.underline--input {
+    box-sizing: border-box;
+    border-style: solid;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 9px 0;
+    border-width: 0 0 1px;
+    border-color: rgb(204, 204, 204);
+    width: 100%;
+    min-width: 400px;
+}
+@media (max-width: 500px) {
+    .underline--input.responsive {
+        font-size: 20px;
+        max-width: 400px;
+        color:red;
+    }
+}
+
+@media (min-width: 1200px) {
+    .underline--input.responsive {
+        font-size: 30px;
+        min-width: 1000px;
+    }
+}
+.underline--input:focus {
+    border-color: black;
+    outline: none;
+}
+.invalid {
+    border-color: red;
+}
+.invalid:focus {
+    border-color: darkred;
+}
+.small {
+    font-size: 20px;
+}
+.medium {
+    font-size: 25px;
+}
+.large {
+    font-size: 30px;
+}
