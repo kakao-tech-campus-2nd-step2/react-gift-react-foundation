@@ -6,11 +6,13 @@ export interface GoodsItemProps {
   subtitle: string;
   title: string;
   amount: number;
+  rankingIndex?: number
 }
 
-const GoodsItem: React.FC<GoodsItemProps> = ({ imageSrc, subtitle, title, amount }) => {
+const GoodsItem: React.FC<GoodsItemProps> = ({ imageSrc, subtitle, title, amount, rankingIndex }) => {
   return (
     <div>
+      {rankingIndex && <div>{rankingIndex}</div>}
       <img src={imageSrc} alt={title} />
       <div>
         <div>{subtitle}</div>
