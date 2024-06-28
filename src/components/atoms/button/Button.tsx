@@ -2,8 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  theme?: 'kakao' | 'naver';
+  theme?: 'kakao' | 'naver' | 'discord';
   elementSize?: 'small' | 'medium' | 'large' | 'responsive';
+  text?: string;
+  backgroundColor?: string;
 }
 
 const getSizeStyles = (size: 'small' | 'medium' | 'large' | 'responsive') => {
@@ -36,16 +38,21 @@ const getSizeStyles = (size: 'small' | 'medium' | 'large' | 'responsive') => {
   }
 };
 
-const getThemeStyles = (theme: 'kakao' | 'naver') => {
+const getThemeStyles = (theme: 'kakao' | 'naver' | 'discord') => {
   switch (theme) {
     case 'kakao':
       return {
-        backgroundColor: '#007bff',
-        color: '#fff',
+        backgroundColor: '#ffeb3b',
+        color: '#000',
       };
     case 'naver':
       return {
-        backgroundColor: '#6c757d',
+        backgroundColor: '#5ac467',
+        color: '#fff',
+      };
+    case 'discord':
+      return {
+        backgroundColor: '#7289da',
         color: '#fff',
       };
     default:
@@ -69,8 +76,8 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `;
 
-const Button: React.FC<ButtonProps> = ({ theme = 'kakao', elementSize = 'medium', ...props }) => {
-  return <StyledButton theme={theme} elementSize={elementSize} {...props} />;
+const Button: React.FC<ButtonProps> = ({ theme = 'kakao', elementSize = 'medium', text, ...props }) => {
+  return <StyledButton theme={theme} elementSize={elementSize} {...props}>{text}</StyledButton>;
 };
 
 export default Button;
