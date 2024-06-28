@@ -34,7 +34,6 @@ const meta = {
   args: {},
 } satisfies Meta<typeof Container>;
 
-export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
@@ -49,3 +48,5 @@ export const FullScreen: Story = {
     maxWidth: '100%',
   },
 };
+
+export default meta;

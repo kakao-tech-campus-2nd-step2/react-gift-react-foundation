@@ -18,7 +18,6 @@ const meta = {
   args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
 
-export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
@@ -39,3 +38,5 @@ export const Primary: Story = {
     onClick: () => alert('primary button'),
   },
 };
+
+export default meta;

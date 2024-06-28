@@ -21,7 +21,7 @@ const meta = {
   },
   args: {},
 } satisfies Meta<typeof DefaultGoodsItems>;
-export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 const imgSrc =
@@ -38,3 +38,5 @@ export const Default: Story = {
     amount: amount,
   },
 };
+
+export default meta;

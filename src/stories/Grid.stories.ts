@@ -19,7 +19,6 @@ const meta = {
   args: {},
 } satisfies Meta<typeof Grid>;
 
-export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const NumberColumns: Story = {
@@ -40,3 +39,5 @@ export const ResponsiveColumns: Story = {
     },
   },
 };
+
+export default meta;

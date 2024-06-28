@@ -20,7 +20,6 @@ const meta = {
   args: {},
 } satisfies Meta<typeof UnderlineTextField>;
 
-export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
@@ -31,3 +30,5 @@ export const Default: Story = {
     placeholder: 'placeholder',
   },
 };
+
+export default meta;

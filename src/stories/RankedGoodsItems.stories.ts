@@ -24,7 +24,7 @@ const meta = {
   },
   args: {},
 } satisfies Meta<typeof RankedGoodsItems>;
-export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 const imgSrc =
@@ -43,3 +43,5 @@ export const Default: Story = {
     width: '160px',
   },
 };
+
+export default meta;

@@ -21,7 +21,7 @@ const meta = {
   },
   args: {},
 } satisfies Meta<typeof Image>;
-export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 const imgSrc =
@@ -50,3 +50,5 @@ export const RadiusRound: Story = {
     radius: 10,
   },
 };
+
+export default meta;
