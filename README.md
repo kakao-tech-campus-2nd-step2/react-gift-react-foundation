@@ -57,4 +57,4 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ### Container 컴포넌트 구현
 
-- [ ] Container 컴포넌트를 구현한다.
+- [x] Container 컴포넌트를 구현한다.
