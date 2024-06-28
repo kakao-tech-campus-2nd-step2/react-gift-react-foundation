@@ -31,7 +31,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 - [x] Theme Props에 따라 버튼 컬러 및 디자인이 다르게 보인다.
 - [x] Size Props에 따라 버튼의 크기가 다르게 보인다. (responsive라면 미디어 쿼리에 따라 사이즈가 다르다)
-- [ ] Button Element의 기본 속성을 모두 사용한다.
+- [x] Button Element의 기본 속성을 모두 사용한다.
 
 ### Input 컴포넌트 구현
 

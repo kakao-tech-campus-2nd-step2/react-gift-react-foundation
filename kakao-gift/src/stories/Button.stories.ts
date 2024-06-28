@@ -9,8 +9,12 @@ const meta: Meta<typeof Button> = {
   },
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: { control: 'color' },
     theme: { control: 'radio', options: ['kakao', 'outline', 'black', 'lightGray'] },
+    size: { control: 'select', options: ['small', 'medium', 'large', 'responsive'] },
+    type: { control: 'select', options: ['button', 'submit', 'reset'] },
+    disabled: { control: 'boolean' },
+    title: { control: 'text' },
+    onClick: { action: 'clicked' },
   },
 }
 
@@ -19,28 +23,28 @@ type Story = StoryObj<typeof meta>
 
 export const Kakao: Story = {
   args: {
-    label: 'Kakao Button',
+    title: 'Button',
     theme: 'kakao',
   },
 }
 
 export const Outline: Story = {
   args: {
-    label: 'Outline Button',
+    title: 'Outline Button',
     theme: 'outline',
   },
 }
 
 export const Black: Story = {
   args: {
-    label: 'Black Button',
+    title: 'Black Button',
     theme: 'black',
   },
 }
 
 export const LightGray: Story = {
   args: {
-    label: 'Light Gray Button',
+    title: 'Light Gray Button',
     theme: 'lightGray',
   },
 }
@@ -48,7 +52,7 @@ export const LightGray: Story = {
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Large Button',
+    title: 'Large Button',
     theme: 'kakao',
   },
 }
@@ -56,7 +60,7 @@ export const Large: Story = {
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Small Button',
+    title: 'Small Button',
     theme: 'kakao',
   },
 }
@@ -64,7 +68,42 @@ export const Small: Story = {
 export const Responsive: Story = {
   args: {
     size: 'responsive',
-    label: 'Responsive Button',
+    title: 'Responsive Button',
     theme: 'kakao',
+  },
+}
+
+export const Disabled: Story = {
+  args: {
+    size: 'medium',
+    title: 'Disabled Button',
+    theme: 'kakao',
+    disabled: true,
+  },
+}
+
+export const WithTitle: Story = {
+  args: {
+    size: 'medium',
+    title: 'Button with Title',
+    theme: 'kakao',
+  },
+}
+
+export const SubmitButton: Story = {
+  args: {
+    size: 'medium',
+    title: 'Submit Button',
+    theme: 'kakao',
+    type: 'submit',
+  },
+}
+
+export const WithOnClick: Story = {
+  args: {
+    size: 'medium',
+    title: 'Button with onClick',
+    theme: 'kakao',
+    onClick: () => alert('Button clicked!'),
   },
 }
