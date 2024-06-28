@@ -32,6 +32,7 @@ module.exports = {
     "react/button-has-type": "off",
     "no-nested-ternary": "off",
     "no-undef": "off",
+    "import/order": "off",
     "no-unused-vars": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [
