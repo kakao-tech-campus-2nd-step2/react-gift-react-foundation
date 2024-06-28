@@ -10,7 +10,8 @@ interface RankingGoodsItemProps {
 }
 
 const RankingGoodsItem: React.FC<RankingGoodsItemProps> = (
-  { imageSrc, subtitle, title, amount, rankingIndex }) =>(
+  { imageSrc, subtitle, title, amount, rankingIndex },
+) => (
   <GoodsItemContainer>
     <RankingBadge rankingIndex={rankingIndex}>{rankingIndex}</RankingBadge>
     <Image src={imageSrc} alt={title} />
