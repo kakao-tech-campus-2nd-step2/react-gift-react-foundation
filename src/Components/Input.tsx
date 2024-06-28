@@ -2,7 +2,6 @@ import React from 'react';
 import './input.css';
 
 interface InputProps {
-    value?:string,
     /**
      * input란이 활성화되었는지 여부
      */
@@ -16,7 +15,6 @@ interface InputProps {
 }
 
 export const Input = ({
-    value = "",
   disabled = false,
   invalid = true,
   size = 'medium',
@@ -26,7 +24,6 @@ export const Input = ({
   return (
     <input
       type="input"
-      value={value}
       disabled={disabled}
       required={invalid}
       className={['storybook-input', `storybook-input--${size}`].join(' ')}

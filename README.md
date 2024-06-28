@@ -23,15 +23,22 @@ FE 카카오 선물하기 1주차 과제: React 기초
   - [x] Size Props에 따라 버튼 크기 다름
         small, medium, large
         responsive인 경우 미디어 쿼리에 따라 사이즈 변경
+  - [x] 스토리북 설정 완료
 - [x] Input 컴포넌트 구현
   - [x] disabled Props에 따라 input 비활성화
   - [x] invalid Props에 따라 input 값 검증
   - [x] Size Props에 따라 버튼 크기 다름
         small, medium, large
         responsive인 경우 미디어 쿼리에 따라 사이즈 변경
+  - [x] 스토리북 설정 완료
 - [x] Image 컴포넌트 구현
   - [x] ratio Props에 따라 이미지 비율 설정
   - [x] radius Props에 따라 모서리 둥근 정도 설정
-- [ ] GoodsItem 컴포넌트 구현
+  - [x] 스토리북 설정 완료
+- [x] GoodsItem 컴포넌트 구현
+  - [x] Default, Ranking 형태 컴포넌트 각각 구현
+  - [x] 공통으로 imageSrc, subtitle, title, amount 프롭스 사용
+  - [x] Ranking 컴포넌트의 경우 rankingIndex 프롭스로, 1~3은 분홍, 나머지는 회색
+  - [x] 스토리북 설정 완료
 - [ ] Grid 컴포넌트 구현
 - [ ] Container 컴포넌트 구현

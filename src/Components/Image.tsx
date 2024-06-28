@@ -10,7 +10,7 @@ interface ImageProps {
 
 export const Image = ({
   src= "",
-  width = "100px",
+  width = "300px",
   ratio = 0,
   radius = 0,
   ...props
