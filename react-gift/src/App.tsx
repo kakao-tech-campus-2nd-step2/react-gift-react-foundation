@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from './components/Button';
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Button state="normal" size="small" colorType="black" onClick={handleClick}>
-        Small Black Button
+        버튼
       </Button><br/>
     </div>
   );
