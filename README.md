@@ -12,11 +12,38 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - 본인만의 기준으로 일관된 코드를 작성
 - 기능 단위로 나누어 커밋
 
-## 과제 진행 요구 사항
-- 미션은 week1 react 파운데이션으로 포크하고 클론하는 것으로 시작
-- 온라인 코드 리뷰 요청 1단계 문서를 참고하여 실습환경을 구축
-   1. 미션 시작 버튼을 클릭하여 미션을 시작
-   2. 저장소에 GitHub 사용자 이름으로 브랜치가 생성되었는지 확인한다.
-   3. 저장소에 내 계정으로 포크한다.
-- 기능을 구현하기 전 README.md 에 구현할 기능 목록을 정리해 추가
+### 폴더구조
+ src/
+├── assets/			   //로컬 환경의 이미지들
+├── components/		//공용으로 쓰이는 react 컴포넌트
+├── hooks/			   //React hooks
+├── interfaces/		//typescript 의  type
+├── pages/			   //각 페이지별 컴포넌트들
+├── services/			//api관련, 통신관련
+├── stores/			   //상태관리
+├── styles/			   //공용으로 쓰이는 스타일
+├── utils/				//유틸리티 함수들
+├── App.tsx
+└── index.tsx
 
+### 코딩 컨벤션을 준수하고 있는가?
+1. 폴더 및 파일 구조
+('assets','components','constants','hooks' 등) 폴더 구조가 기능별로 나눠져있다.
+
+2. 파일 명명 규칙
+파일명이 ('App.tsx','index.tsx')처럼 적절하게 준수
+
+3. 코드 스타일
+- 'ESLint'와 'Prettier'가 설정되어 있으므로 코드 스타일은 자동 포맷팅되고 일관되게 유지 가능
+- 'eslintrc.json' , '.prettierrc'파일 존재
+
+4. TypeScript 사용
+TypeScript를 사용하고 있으며, 'tsconfig.json' 및 'tsconfig.paths.json'설정이 있다.
+
+5. 커밋 메시지
+해당되는 기능에 맞게 나누서 커밋 메시지가 명확하고 일관적이다.
+
+6. 기타 설정
+gitignore 파일이 설정되어 불필요한 파일이 커밋되지 않도록 관리
+
+이를 통해서 현재 코딩 컨벤션을 준수하고있고 기능별로 나누어 커밋하고 있다고 할 수 있습니다.
