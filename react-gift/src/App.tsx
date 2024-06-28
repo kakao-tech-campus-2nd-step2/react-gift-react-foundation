@@ -1,6 +1,15 @@
 import React, { useState, ChangeEvent } from 'react';
 import Button from './components/Button';
 import Input from './components/Input';
+import Image from './components/Image';
+import GoodsItem from './components/Default';
+import RankingGoodsItem from './components/Ranking';
+import Grid from './components/Grid';
+import Container from './components/Container';
+
+
+
+
 
 function App() {
   const [inputValue, setInputValue] = useState<string>('');

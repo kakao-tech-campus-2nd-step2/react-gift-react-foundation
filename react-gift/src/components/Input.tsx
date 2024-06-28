@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Size, disabledStyle, invalidStyle} from '../styles/InputStyle';
+import { Size, disabledStyle, invalidStyle } from '../styles/InputStyle';
 
 type InputStyleProps = {
   inputsize: 'small' | 'medium' | 'large' | 'responsive';
@@ -17,7 +17,7 @@ const InputStyle = styled.input<InputStyleProps>`
 
 interface InputProps extends InputStyleProps, React.InputHTMLAttributes<HTMLInputElement> {}
 
-const Input = ({ inputsize, disabled, invalid, ...props }:InputProps) => (
+const Input: React.FC<InputProps> = ({ inputsize, disabled, invalid, ...props }) => (
   <InputStyle inputsize={inputsize} disabled={disabled} invalid={invalid} {...props} />
 );
 
