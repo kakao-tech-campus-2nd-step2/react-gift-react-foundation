@@ -5,6 +5,7 @@ const config: StorybookConfig = {
     '../src/**/*.mdx',
     '../src/Button/**/*.stories.@(js|jsx|mjs|ts|tsx)',
     '../src/Input/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    '../src/Image/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
   addons: [
     '@storybook/preset-create-react-app',
