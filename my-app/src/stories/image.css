@@ -27,3 +27,6 @@
   width: 100%;
   height: 100%;
 }
+.storybook-image--circle img {
+  border-radius: 50%;
+}

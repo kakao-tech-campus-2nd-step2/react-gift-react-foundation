@@ -3,19 +3,21 @@ import './image.css';
 
 interface ImageProps{
   ratio?: '16/9' | 'square'; // 비율 설정
-  radius?: number;
+  radius?: number | 'circle';
+  src?: string;
 }
 
 const Image: React.FC<ImageProps> = ({
   ratio = '16/9', // 기본값
-  radius = 10,
-  ...props
-}: ImageProps) => {
+  radius = 0,
+  src,
+}) => {
   const ratioClass = `storybook-image--${ratio.replace('/', '-')}`;
+  const radiusClass = typeof radius === 'number' ? '' : 'storybook-image--circle';
 
   return (
-    <div className={`storybook-image ${ratioClass}`} style={{ borderRadius: `${radius}px` }}>
-      <img />
+    <div className={`storybook-image ${ratioClass} ${radiusClass}`} style={{ borderRadius: typeof radius === 'number' ? `${radius}px` : '50%' }}>
+      <img src={src} />
     </div>
   );
 };
