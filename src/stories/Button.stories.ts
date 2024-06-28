@@ -26,6 +26,7 @@ export const Default: Story = {
     size: 'responsive',
     theme: 'kakao',
     label: '버튼',
+    onClick: () => alert('버튼 클릭'),
   },
 };
 
@@ -35,5 +36,6 @@ export const Primary: Story = {
     size: 'responsive',
     theme: 'kakao',
     label: '버튼',
+    onClick: () => alert('primary button'),
   },
 };

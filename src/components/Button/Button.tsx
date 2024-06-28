@@ -2,9 +2,6 @@ import React from 'react';
 import 'components/Button/button.css';
 
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
   primary?: boolean;
   theme?: string;
   size?: 'small' | 'medium' | 'large' | 'responsive';
@@ -29,12 +26,6 @@ export const Button = ({
         theme,
         firstMeetBorder,
       ].join(' ')}
-      // className={[
-      //   styles.storybookButton,
-      //   styles[`button--${size}`],
-      //   styles[theme],
-      //   styles[firstMeetBorder],
-      // ].join(' ')}
       {...props}
     >
       {label}
