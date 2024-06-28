@@ -16,7 +16,8 @@
 
 안녕하세요. 강사님 1주차 과제를 진행하던 중 몇가지 질문이 있습니다.
 - 저는 react가 아직까지도 익숙치 않아서 초기 설정을 하는데 많이 애를 먹었습니다.
-- 그래서 구글링을 하다가 https://velog.io/@junghyeonsu/React-create-react-app-Typescript-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC?utm_source=oneoneone 해당 사이트를 참고했는데 초기 세팅이 잘 됐는지 궁금합니다.
+- 그래서 구글링을 하다가 https://velog.io/@junghyeonsu/React-create-react-app-Typescript-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC?utm_source=oneoneone
+- 해당 사이트를 참고했는데 초기 세팅이 잘 됐는지 궁금합니다.
 - 그리고 파일 구조를 샘플처럼 구성해야 하는지 궁금합니다.
 - 또한 visual studio view에는 layout폴더에 grid와 component를 구성했는데 storybook에서는 폴더 구조가 보이지 않습니다.
 - Connection lost Lost connection to the Storybook server. Try refreshing the page. 스토리북을 처음에 실행하면 해당 문구가 뜨는데 설정에 문제가 있는건지 궁금합니다.
