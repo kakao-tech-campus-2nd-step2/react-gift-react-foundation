@@ -1,46 +1,69 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
-import { StoryObj, Meta } from '@storybook/react';
-import GoodsItem, { GoodsItemProps } from './GoodsItem';
+import { css, SerializedStyles } from '@emotion/react';
+import styled from '@emotion/styled';
 
-export default {
-  title: 'Common/GoodsItem',
-  component: GoodsItem,
-  argTypes: {
-    imageSrc: {
-      control: 'text',
-    },
-    subtitle: {
-      control: 'text',
-    },
-    title: {
-      control: 'text',
-    },
-    amount: {
-      control: 'text',
-    },
-    rankingIndex: {
-      control: { type: 'number', min: 1 },
-    },
-  },
-} as Meta<typeof GoodsItem>;
+type Size = 'large' | 'small' | 'responsive';
 
-type Story = StoryObj<GoodsItemProps>;
-
-export const Default: Story = {
-  args: {
-    imageSrc: 'https://via.placeholder.com/200',
-    subtitle: '카카오 프렌즈 특가',
-    title: '[특가] 카카오 프렌즈 특별 한정판 브라이트 쿠션',
-    amount: '10000원',
-  },
+export type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
+  size?: Size;
+  invalid?: boolean;
 };
 
-export const Ranking: Story = {
-  args: {
-    imageSrc: 'https://via.placeholder.com/200',
-    subtitle: '카카오 프렌즈 특가',
-    title: '[특가] 카카오 프렌즈 특별 한정판 브라이트 쿠션',
-    amount: '10000원',
-    rankingIndex: 1,
-  },
+const sizeStyles: Record<Size, SerializedStyles> = {
+  large: css`
+    font-size: 18px;
+    padding: 12px 24px;
+  `,
+  small: css`
+    font-size: 12px;
+    padding: 6px 12px;
+  `,
+  responsive: css`
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px; /* Right padding adjusted */
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+      padding: 8px 16px 8px 16px; /* Right padding adjusted */
+    }
+
+    @media (min-width: 600px) {
+      font-size: 18px;
+      padding: 12px 24px 12px 24px; /* Right padding adjusted */
+    }
+  `,
 };
+
+interface StyledInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  size: Size;
+  invalid?: boolean;
+}
+
+const StyledInput = styled('input')<StyledInputProps>`
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  ${({ size }) => size && sizeStyles[size]}
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      background-color: #f5f5f5;
+      cursor: not-allowed;
+    `}
+  ${({ invalid }) =>
+    invalid &&
+    css`
+      border-color: red;
+    `}
+`;
+
+const Input: React.FC<InputProps> = ({
+  size = 'large',
+  invalid = false,
+  ...props
+}) => {
+  return <StyledInput size={size} invalid={invalid} {...props} />;
+};
+
+export default Input;
