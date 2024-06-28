@@ -1,0 +1,66 @@
+
+.storybook-button {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 120px;
+  }
+
+  .storybook-button--outline {
+    background-color: transparent;
+    outline: 1px solid lightgray;
+    color: black;
+  }
+  
+  .storybook-button--black {
+    background-color: black;
+    color: white;
+  }
+  
+  .storybook-button--lightGray {
+    background-color: lightgray;
+    color: black;
+  }
+  
+  .storybook-button--darkGray {
+    background-color: darkgray;
+    color: black;
+  }
+  
+  .storybook-button--kakao {
+    background-color: yellow;
+    color: black;
+  }
+  
+  /* Size styles */
+  .storybook-button--small {
+    height: 40px;
+  }
+  
+  .storybook-button--medium {
+    height: 60px;
+  }
+  
+  .storybook-button--large {
+    height: 60px; /* 기본값인 large는 60px로 설정 */
+  }
+  
+  /* Responsive size styles */
+  @media (max-width: 600px) {
+    .storybook-button--responsive {
+      height: 40px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .storybook-button--responsive {
+      height: 50px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .storybook-button--responsive {
+      height: 60px;
+    }
+  }
+  

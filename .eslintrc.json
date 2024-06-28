@@ -14,8 +14,6 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
     "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -57,7 +55,8 @@
     "react/function-component-definition": [
       2,
       { "namedComponents": ["arrow-function", "function-declaration"] }
-    ]
+    ],
+    "no-alert": "off"
   },
   "settings": {
     "import/resolver": {
