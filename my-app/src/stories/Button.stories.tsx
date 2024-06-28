@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import Button, { ButtonProps } from '../components/Button'; // 절대 경로가 안되서 상대경로로 지정
 
 export default {
-	title: 'Components/Button',
+	title: 'Common/Button',
 	component: Button,
 } as Meta;
 
