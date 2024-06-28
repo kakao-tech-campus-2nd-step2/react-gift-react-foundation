@@ -38,15 +38,16 @@ const StyledButton = styled.button<ButtonProps>`
   ${(props) =>
     props.theme === "primary" &&
     css`
-      background-color: ${props.theme.primary};
+      background-color: #007bff;
+      border-radius: 40px;
     `}
   ${(props) =>
     props.theme === "secondary" &&
     css`
-      background-color: ${props.theme.secondary};
+      background-color: #6c757d;
     `}
   &:disabled {
-    background-color: ${(props) => props.theme.disabled};
+    background-color: #ced4da;
     cursor: not-allowed;
   }
 `;
