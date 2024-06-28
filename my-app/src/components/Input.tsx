@@ -2,19 +2,15 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 interface SizeProps {
-	padding: string;
 	fontSize: string;
 	responsive?: {
 		small: {
-			padding: string;
 			fontSize: string;
 		};
 		medium: {
-			padding: string;
 			fontSize: string;
 		};
 		large: {
-			padding: string;
 			fontSize: string;
 		};
 	};
@@ -28,44 +24,41 @@ export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElem
 
 const sizeStyles: { [key: string]: SizeProps } = {
 	large: {
-		padding: '20px 30px',
-		fontSize: '16px',
+		fontSize: '20px',
 	},
 	small: {
-		padding: '10px 15px',
-		fontSize: '12px',
+		fontSize: '14px',
 	},
 	responsive: {
-		padding: '15px 25px',
-		fontSize: '14px',
+		fontSize: '16px',
 		responsive: {
 			small: {
-				padding: '10px 15px',
-				fontSize: '12px',
-			},
-			medium: {
-				padding: '12px 24px',
 				fontSize: '14px',
 			},
-			large: {
-				padding: '20px 30px',
+			medium: {
 				fontSize: '16px',
+			},
+			large: {
+				fontSize: '20px',
 			},
 		},
 	},
 };
 
 const InputStyled = styled.input<{ inputSize?: 'large' | 'small' | 'responsive'; invalid?: boolean }>`
-	padding: ${(props) => sizeStyles[props.inputSize || 'large'].padding};
+	border: none;
+	border-bottom: 1px solid ${(props) => (props.invalid ? 'red' : '#ccc')};
 	font-size: ${(props) => sizeStyles[props.inputSize || 'large'].fontSize};
-	border: 1px solid ${(props) => (props.invalid ? 'red' : '#ccc')};
-	border-radius: 4px;
 	outline: none;
-	box-sizing: border-box;
 	transition: border-color 0.3s;
+	padding: 10px 0;
+
+	&:focus {
+		border-bottom-color: #000;
+	}
 
 	&:disabled {
-		background-color: #f5f5f5;
+		background-color: transparent;
 		cursor: not-allowed;
 	}
 
@@ -73,15 +66,12 @@ const InputStyled = styled.input<{ inputSize?: 'large' | 'small' | 'responsive';
 		props.inputSize === 'responsive' &&
 		`
     @media (max-width: 600px) {
-      padding: ${sizeStyles.responsive.responsive?.small.padding};
       font-size: ${sizeStyles.responsive.responsive?.small.fontSize};
     }
     @media (min-width: 601px) and (max-width: 900px) {
-      padding: ${sizeStyles.responsive.responsive?.medium.padding};
       font-size: ${sizeStyles.responsive.responsive?.medium.fontSize};
     }
     @media (min-width: 901px) {
-      padding: ${sizeStyles.responsive.responsive?.large.padding};
       font-size: ${sizeStyles.responsive.responsive?.large.fontSize};
     }
   `}
