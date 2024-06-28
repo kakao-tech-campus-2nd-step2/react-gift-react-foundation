@@ -13,7 +13,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    placeholder: '버튼',
+    placeholder: 'placeholder',
     disabled: false,
     invalid: false,
     inputSize: 'large',
