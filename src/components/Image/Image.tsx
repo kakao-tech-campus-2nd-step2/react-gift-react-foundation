@@ -1,42 +1,56 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
-import { StoryObj, Meta } from '@storybook/react';
-import Container from './Container';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
-export default {
-  title: 'Common/Container',
-  component: Container,
-  argTypes: {
-    padding: { control: 'text' },
-    maxWidth: { control: 'text' },
-    flexDirection: { control: 'radio', options: ['row', 'column'] },
-    justifyContent: {
-      control: 'radio',
-      options: [
-        'center',
-        'flex-start',
-        'flex-end',
-        'space-between',
-        'space-around',
-      ],
-    },
-    alignItems: {
-      control: 'radio',
-      options: ['center', 'flex-start', 'flex-end', 'baseline', 'stretch'],
-    },
-    children: { control: 'text' },
-  },
-} as Meta<typeof Container>;
+type Ratio = 'square' | 'auto' | number;
+type Radius = 'circle' | number;
 
-type Story = StoryObj<React.ComponentProps<typeof Container>>;
-
-export const Default: Story = {
-  args: {
-    padding: '16px',
-    maxWidth: '1200px',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    children: 'Hello World!',
-  },
-  render: (args) => <Container {...args} />,
+export type ImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
+  ratio?: Ratio;
+  radius?: Radius;
 };
+
+const ratioStyles = (ratio: Ratio) => {
+  if (ratio === 'square') {
+    return css`
+      aspect-ratio: 1 / 1;
+    `;
+  }
+  if (ratio === 'auto') {
+    return css`
+      width: auto;
+      height: auto;
+    `;
+  }
+  return css`
+    aspect-ratio: ${ratio};
+  `;
+};
+
+const radiusStyles = (radius: Radius) => {
+  if (radius === 'circle') {
+    return css`
+      border-radius: 50%;
+    `;
+  }
+  return css`
+    border-radius: ${radius}px;
+  `;
+};
+
+const StyledImage = styled.img<ImageProps>`
+  width: 100%;
+  ${({ ratio }) => ratio && ratioStyles(ratio)}
+  ${({ radius }) => radius && radiusStyles(radius)}
+`;
+
+const Image: React.FC<ImageProps> = ({
+  ratio = 'auto',
+  radius = 0,
+  ...props
+}) => {
+  return <StyledImage ratio={ratio} radius={radius} {...props} />;
+};
+
+export default Image;
