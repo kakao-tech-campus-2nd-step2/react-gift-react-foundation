@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+📝 Requirements
+1주차 질문
+- 질문 1. webpack은 무엇이고 어떤 역할을 하고 있나요?
+  > webpack은 JavaScript 애플리케이션을 위한 모듈 번들러입니다. 개발자가 작성한 여러 개의 파일과 자원을 하나의 번들로 묶어주는 역할을 합니다.
+    모듈 번들링: 여러 개의 모듈(파일)을 하나의 번들로 묶어줍니다.
+    의존성 관리: 모듈 간의 의존성을 파악하고, 필요한 모듈을 자동으로 로드해줍니다.
+    변환 작업: JavaScript 외에도 CSS, 이미지, 폰트, JSON 등 다양한 파일 형식을 변환하고 처리할 수 있습니다.
+    플러그인 시스템: 다양한 플러그인을 통해 기능을 확장할 수 있습니다. 예를 들어, HTML 템플릿 생성, 파일 압축, 코드 분할 등이 가능합니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+-
+-   질문 2. 브라우저는 어떻게 JSX 파일을 읽을 수 있나요?
+  > 브라우저는 기본적으로 JSX를 직접 이해하거나 실행할 수 없지만 실행을 위해 변환 과정을 거칩니다.
 
-In the project directory, you can run:
+  트랜스파일링: Babel과 같은 트랜스파일러를 사용하여 JSX를 순수 JavaScript로 변환합니다. Babel은 JSX 코드를 React.createElement 호출로 변환하여 브라우저가 이해할 수 있도록 만듭니다.
+  번들링: 변환된 JavaScript 파일을 webpack과 같은 번들러를 통해 하나의 번들로 묶습니다.
+  브라우저에서 실행: 변환되고 번들링된 JavaScript 파일을 브라우저가 로드하고 실행합니다.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ 
+- 질문 3. React에서 상태 변화가 생겼을 때 어떻게 변화를 알아챌 수 있나요?
+  > React는 Virtual DOM을 사용하여 실제 DOM과의 차이를 비교(diffing)하여 리렌더링합니다.
+  상태 관리: 컴포넌트는 useState 훅 또는 클래스 컴포넌트의 this.setState 메서드를 통해 상태를 관리합니다.
