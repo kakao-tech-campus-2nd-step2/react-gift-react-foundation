@@ -7,7 +7,7 @@ interface InputProps {
   size?: 'small' | 'medium' | 'large' | 'responsive'; // size prop 추가
 }
 
-const Input: React.FC<InputProps> = ({
+const Input: React.FC<InputProps & React.InputHTMLAttributes<HTMLInputElement>> = ({
   disabled = false, // 기본값으로 false 설정
   invalid = false,
   size = 'medium', // 기본값
@@ -20,7 +20,7 @@ const Input: React.FC<InputProps> = ({
     <input
       className={`storybook-input ${sizeClass} ${invalidClass}`}
       disabled={disabled} //input 요소에 적용
-      {...props}
+      {...props} // 모든 props를 input요소에 전달
     />
   );
 };
