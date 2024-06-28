@@ -15,7 +15,8 @@
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -36,7 +37,12 @@
     "import"
   ],
   "rules": {
-    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".tsx"]
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -44,6 +50,13 @@
         "ts": "never",
         "tsx": "never"
       }
+    ],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "react/require-default-props": "off",
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": ["arrow-function", "function-declaration"] }
     ]
   },
   "settings": {
