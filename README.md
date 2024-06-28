@@ -12,13 +12,13 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [X] gitignore 추가
 - [X] 프로젝트에 불필요한 파일 정리
 ## 2단계 요구사항
-- [ ] Storybook 추가
+- [X] Storybook 추가
 - [ ] 공통 컴포넌트에 아래와 같은 컴포넌트 구현하고, Storybook에서 확인 가능
   - Button 컴포넌트 구현
-    - [ ] Theme Props에 따라 버튼의 컬러와 디자인이 다르게 보이도록 구현
-    - [ ] Size Props에 따라 버튼의 Size가 다르게 보이도록 구현
+    - [X] Theme Props에 따라 버튼의 컬러와 디자인이 다르게 보이도록 구현
+    - [X] Size Props에 따라 버튼의 Size가 다르게 보이도록 구현
       (value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 달라지도록 구현)
-    - [ ] Button Element의 기본 속성들을 모두 사용 가능하도록 구현
+    - [X] Button Element의 기본 속성들을 모두 사용 가능하도록 구현
   - Input 컴포넌트 구현
     - [ ] disabled Props에 따라 Input이 비활성화되고, UI에서도 비활성화 됨을 인지 가능하도록 구현
     - [ ] invaid Props에 따라 Input의 값이 잘못되었음을 UI에서 인지 가능하도록 구현
