@@ -9,6 +9,8 @@ const meta: Meta<typeof Input> = {
   },
   tags: ['autodocs'],
   argTypes: {
+    type: { control: 'text' },
+    value: { control: 'text' },
     disabled: { control: 'boolean' },
     invalid: { control: 'boolean' },
     placeholder: { control: 'text' },
@@ -20,6 +22,8 @@ type Story = StoryObj<typeof meta>
 
 export const Enabled: Story = {
   args: {
+    type: 'text',
+    value: '',
     placeholder: 'Enabled Input',
     disabled: false,
     invalid: false,
@@ -28,6 +32,8 @@ export const Enabled: Story = {
 
 export const Disabled: Story = {
   args: {
+    type: 'text',
+    value: '',
     placeholder: 'Disabled Input',
     disabled: true,
     invalid: false,
@@ -36,6 +42,8 @@ export const Disabled: Story = {
 
 export const Invalid: Story = {
   args: {
+    type: 'text',
+    value: '',
     placeholder: 'Invalid Input',
     disabled: false,
     invalid: true,
