@@ -1,6 +1,6 @@
 import React from "react";
-import Ranging from "./GoodItem/Ranging";
-import Default from "./GoodItem/Default";
+import Ranging from "./GoodItem/Ranging/Ranging";
+import Default from "./GoodItem/Default/Default";
 
 interface GoodItemProps {
   type: "default" | "ranging";

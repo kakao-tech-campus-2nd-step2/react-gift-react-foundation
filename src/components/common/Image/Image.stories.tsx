@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/react/*";
-import Image from "../Image";
+import Image from "./Image";
 
 export default {
   title: "Components/Image",
