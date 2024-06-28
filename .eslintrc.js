@@ -10,6 +10,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -22,10 +23,26 @@ module.exports = {
   rules: {
     quotes: ["error", "double"],
     "jsx-quotes": ["error", "prefer-double"],
+    "react/jsx-filename-extension": [1, { extensions: [".tsx", ".ts"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        js: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never",
+      },
+    ],
   },
   settings: {
     react: {
       version: "detect",
+    },
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
     },
   },
 };
