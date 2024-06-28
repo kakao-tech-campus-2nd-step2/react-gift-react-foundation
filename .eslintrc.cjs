@@ -10,6 +10,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
   ],
   overrides: [
     {
@@ -28,7 +29,7 @@ module.exports = {
     sourceType: "module",
     project: "./tsconfig.json",
   },
-  ignorePatterns: ["node_modules/", "vite.config.ts", "src/App.js"],
+  ignorePatterns: ["node_modules/", "src/stories"],
   plugins: ["@typescript-eslint", "react", "prettier"],
   rules: {
     "no-extra-semi": "error",
