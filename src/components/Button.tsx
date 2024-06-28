@@ -3,8 +3,8 @@ import styled from "@emotion/styled";
 
 interface ButtonProps {
   children?: string;
-  theme: string;
-  size: string;
+  theme?: string;
+  size?: string;
   onClick: () => void;
 }
 
