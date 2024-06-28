@@ -1,17 +1,17 @@
-import React, { ReactNode } from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import { ReactNode } from 'react';
 
 interface ButtonProps {
   width?: number;
   height?: number;
   theme?: string;
+  type?: 'button' | 'submit' | 'reset';
+  onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   children: ReactNode;
 }
-
-const primary = css`
-  background-color: blue;
-  color: white;
+const kakao = css`
+  background-color: #fee500;
 `;
 const danger = css`
   background-color: red;
@@ -19,21 +19,37 @@ const danger = css`
 `;
 
 function Button(props: ButtonProps) {
-  const { width = 300, height = 50, theme = 'primary', children } = props;
+  const {
+    width = 300,
+    height,
+    theme = 'kakao',
+    type = 'button',
+    onClick,
+    children,
+  } = props;
+
   let themeBtn;
-  if (theme === 'primary') {
-    themeBtn = primary;
+  if (theme === 'kakao') {
+    themeBtn = kakao;
   } else if (theme === 'danger') {
     themeBtn = danger;
   }
   return (
     <button
-      type="button"
+      // TODO: 고치기
+      // eslint-disable-next-line react/button-has-type
+      type={type}
+      onClick={onClick}
       css={css`
         width: ${width}px;
         height: ${height}px;
-        border-radius: 10px;
+        padding: 8px 0;
+        border-radius: 5px;
         border: none;
+        cursor: pointer;
+        &:hover {
+          opacity: 80%;
+        }
         ${themeBtn}
       `}
     >
