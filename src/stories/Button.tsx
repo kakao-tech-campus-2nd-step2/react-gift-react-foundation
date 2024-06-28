@@ -4,6 +4,7 @@ import { css } from '@emotion/react'
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
    theme?: 'kakao' | 'outline' | 'black' | 'lightGray' | 'darkGray'
+   size?: 'large' | 'small' | 'responsive'
 }
 
 const themeTypes = {
@@ -30,23 +31,39 @@ const themeTypes = {
    `,
 }
 
+const sizeTypes = {
+   large: css`
+      height: 60px;
+   `,
+   small: css`
+      height: 40px;
+   `,
+   responsive: css`
+      @media (max-width: 767px) {
+         height: 40px;
+      }
+      @media (min-width: 768px) {
+         height: 60px;
+      }
+   `,
+}
+
 const CustomButton = styled.button<ButtonProps>`
    ${(props) => props.theme && themeTypes[props.theme as keyof typeof themeTypes]}
-
+   ${(props) => props.size && sizeTypes[props.size as keyof typeof sizeTypes]}
    border: none;
    border-radius: 4px;
-   width: 100px;
-   height: 40px;
+   width: 120px;
    cursor: pointer;
    &:hover {
       opacity: 0.8;
    }
 `
 
-const Button: React.FC<ButtonProps> = ({ children, theme = 'kakao', ...props }) => {
+const Button: React.FC<ButtonProps> = ({ children = '버튼', theme = 'kakao', size = 'responsive', ...props }) => {
    return (
-      <CustomButton theme={theme} {...props}>
-         {children || '버튼'}
+      <CustomButton theme={theme} size={size} {...props}>
+         {children}
       </CustomButton>
    )
 }
