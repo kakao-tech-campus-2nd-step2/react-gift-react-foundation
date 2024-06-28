@@ -9,10 +9,10 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({
   disabled = false, // 기본값으로 false 설정
   invalid = false,
-  size = 'medium',
+  size = 'medium', // 기본값
   ...props
 }: InputProps) => {
-  const sizeClass = size === 'responsive' ? 'storybook-input--responsive' : `storybook-input--${size}`;
+  const sizeClass = size === 'responsive' ? 'storybook-input--responsive' : `storybook-input--${size}`; //size에 따라 class 선택
   const invalidClass = invalid ? 'storybook-input--invalid' : ''; // invalid prop을 기반으로 클래스 설정
   
   return (
