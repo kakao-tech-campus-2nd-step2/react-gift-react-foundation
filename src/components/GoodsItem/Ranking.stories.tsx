@@ -13,6 +13,7 @@ export default {
   }
 }
 
+
 // 템플릿을 만들자
 const Template = (args) => <RankingItem {...args} />
 
