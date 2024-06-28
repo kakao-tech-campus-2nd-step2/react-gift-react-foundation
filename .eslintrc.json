@@ -57,10 +57,17 @@
             "caseSensitive": false
          }
       ],
-      "react/self-closing-comp": "off"
-      // "react/jsx-props-no-spreading": "off",
-      // "react/require-default-props": "off",
-      // "import/prefer-default-export": "off"
+      "react/self-closing-comp": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/require-default-props": "off",
+      "import/prefer-default-export": "off",
+      "react/function-component-definition": [
+         "off",
+         {
+            "namedComponents": "arrow-function",
+            "unnamedComponents": "arrow-function"
+         }
+      ]
    },
    "env": {
       "browser": true,
