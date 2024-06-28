@@ -1,9 +1,11 @@
 import React from 'react';
 import './button.css';
 
-interface ButtonProps {
+// eslint-disable-next-line no-undef
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   primary?: boolean;
   backgroundColor?: string;
+  theme?: 'kakao' | 'outline' | 'black' | 'lightGray' | 'darkGray';
   size?: 'small' | 'medium' | 'large' | 'responsive';
   label: string;
   onClick?: () => void;

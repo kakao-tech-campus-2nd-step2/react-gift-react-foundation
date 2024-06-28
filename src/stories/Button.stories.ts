@@ -14,7 +14,13 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' }
+    backgroundColor: { control: 'color' },
+    theme: {
+      control: {
+        type: 'select',
+        options: ['kakao', 'outline', 'black', 'lightGray', 'darkGray']
+      }
+    }
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   args: { onClick: fn() }
@@ -48,5 +54,51 @@ export const Small: Story = {
   args: {
     size: 'small',
     label: 'Button'
+  }
+};
+
+export const Responsive: Story = {
+  args: {
+    size: 'responsive',
+    label: 'Responsive Button'
+  }
+};
+
+export const KakaoTheme: Story = {
+  args: {
+    theme: 'kakao',
+    label: 'Kakao Button',
+    backgroundColor: '#FFE459'
+  }
+};
+
+export const OutlineTheme: Story = {
+  args: {
+    theme: 'outline',
+    label: 'Outline Button'
+  }
+};
+
+export const BlackTheme: Story = {
+  args: {
+    theme: 'black',
+    label: 'Black Button',
+    backgroundColor: '#000000'
+  }
+};
+
+export const LightGrayTheme: Story = {
+  args: {
+    theme: 'lightGray',
+    label: 'Light Gray Button',
+    backgroundColor: '#E1E1E1'
+  }
+};
+
+export const DarkGrayTheme: Story = {
+  args: {
+    theme: 'darkGray',
+    label: 'Dark Gray Button',
+    backgroundColor: '#A0A0A0'
   }
 };

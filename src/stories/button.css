@@ -28,3 +28,21 @@
   font-size: 16px;
   padding: 12px 24px;
 }
+@media (max-width: 600px) {
+  .storybook-button--responsive {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  .storybook-button--responsive {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+}
+@media (min-width: 1201px) {
+  .storybook-button--responsive {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
