@@ -19,6 +19,9 @@ const reset = css`
         outline: inherit;
         resize: none;
     }
+    body{
+        background-color: #111111;
+    }
 `
 
 export default reset;

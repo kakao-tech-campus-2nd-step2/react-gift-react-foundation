@@ -1,9 +1,11 @@
 import React from 'react';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
-      TEST
+      <Button theme='basic' size={0}>버튼</Button>
+      <Button theme='kakao' size={0}>버튼</Button>
     </div>
   );
 }
