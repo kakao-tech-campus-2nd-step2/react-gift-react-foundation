@@ -11,6 +11,9 @@ export default {
       control: 'select',
       options: ['16:9', '4:3', '1:1', 'square', 16 / 9], // ratio options에 다양한 number 추가
     },
+    radius: {
+      control: 'text',
+    },
     src: {
       control: 'text',
     },
@@ -61,4 +64,12 @@ NumericSixteenByNine.args = {
   src: 'https://via.placeholder.com/800x450',
   alt: 'Numeric 16:9 Image',
   ratio: 16 / 9, // 숫자로 16:9 비율 설정
+};
+
+export const RoundedCorners = Template.bind({});
+RoundedCorners.args = {
+  src: 'https://via.placeholder.com/800x450',
+  alt: 'Rounded Corners Image',
+  ratio: '16:9',
+  radius: '10px', // 모서리를 둥글게 설정
 };
