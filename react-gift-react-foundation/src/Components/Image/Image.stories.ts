@@ -2,24 +2,11 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Image from './Image';
 
 const meta: Meta<typeof Image> = {
-  title: 'COMMON/Image',
   component: Image,
-  parameters: {
-    layout: 'centered',
-  },
-  tags: ['autodocs'],
-  argTypes: {
-    radius: {
-      control: { type: 'select', options: ['circle', 10, 20, 30] },
-    },
-    ratio: {
-      control: { type: 'select', options: ['square', 'auto', 1.5, 1.78, 2] },
-    },
-  },
 };
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof Image>;
 
 export const Default: Story = {
   args: {
