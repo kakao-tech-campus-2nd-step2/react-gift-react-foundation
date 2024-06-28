@@ -9,7 +9,11 @@ interface DefaultGoodsItemProps {
 }
 
 const DefaultGoodsItem: React.FC<DefaultGoodsItemProps> = ({
-  imageSrc, subtitle, title, amount }) => (
+  imageSrc,
+  subtitle,
+  title,
+  amount,
+}) => (
   <GoodsItemContainer>
     <Image src={imageSrc} alt={title} />
     <Text>{title}</Text>
