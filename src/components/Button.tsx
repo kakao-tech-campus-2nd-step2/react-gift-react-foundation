@@ -1,42 +1,72 @@
 import React from "react";
-import "@styles/button.css";
+import styled from "@emotion/styled";
 
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: "small" | "medium" | "large";
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
+  children?: string;
+  theme: string;
+  size: string;
+  onClick: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({ primary = false, size = "medium", backgroundColor, label, ...props }: ButtonProps) => {
-  const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
+const Button: React.FC<ButtonProps> = ({ children, theme, size, onClick }) => {
+  const handleClick = () => {
+    alert(`버튼 클릭`);
+    onClick();
+  };
+
   return (
-    <button
-      type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(" ")}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <StyledButton theme={theme} size={size} onClick={handleClick}>
+      {children}
+    </StyledButton>
   );
 };
+
+const StyledButton = styled.button<ButtonProps>`
+  height: ${(props) => (props.size === "small" ? "50px" : "75px")};
+  width: 120px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+
+  ${(props) => {
+    switch (props.theme) {
+      case "outline":
+        return `
+          border: 1px solid #D3D3D3;
+          background-color: #FEFEFE;
+          color: #000;
+        `;
+      case "black":
+        return `
+          background-color: #000;
+          color: #fff;
+        `;
+      case "lightGray":
+        return `
+          background-color: #f0f0f0;
+          color: #000;
+        `;
+      case "darkGray":
+        return `
+          background-color: #555;
+          color: #fff;
+        `;
+      case "kakao":
+      default:
+        return `
+            background-color: #FFEB00;
+            color: #000;
+          `;
+    }
+  }}
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+
+  @media (max-width: 768px) {
+    height: ${(props) => (props.size === "large" ? "75px" : "50px")};
+  }
+`;
+
+export default Button;

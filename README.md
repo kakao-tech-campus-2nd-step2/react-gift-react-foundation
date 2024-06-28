@@ -24,7 +24,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 ## 2단계 - Storybook을 사용하여 재사용 가능한 컴포넌트 구현
 
 - [x] Storybook 추가
-- [ ] Button 컴포넌트 구현
+- [x] Button 컴포넌트 구현
 - [ ] Input 컴포넌트 구현
 - [ ] Image 컴포넌트 구현
 - [ ] GoodsItem 컴포넌트 구현
