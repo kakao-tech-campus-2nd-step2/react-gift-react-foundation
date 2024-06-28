@@ -1,0 +1,23 @@
+/* image.css */
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0px;
+  aspect-ratio: 1 / 1;
+}
+
+.image.square {
+  width: 100%; /* Ensures the image is a square */
+  height: 100%; /* Ensures the image is a square */
+  object-fit: cover; /* Ensures the image covers the entire square area */
+}
+
+.image.round {
+  border-radius: 50%; /* Makes the image circular */
+}
