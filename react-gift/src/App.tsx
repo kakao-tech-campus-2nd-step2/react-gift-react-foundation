@@ -27,18 +27,53 @@ function App() {
 
   return (
     <div className="App">
-      <Button state="normal" size="small" colorType="black" onClick={handleClick}>
-        버튼
-      </Button><br/>
-      <Input 
-        value={inputValue} 
-        onChange={handleInputChange} 
-        placeholder="작성하세용" 
-        inputsize="medium"
-        invalid={isInvalid}
-        disabled={false}
-      />
-    </div>
+    <Button state="normal" size="small" colorType="black" onClick={handleClick}>
+      버튼
+    </Button><br/>
+    <Input 
+      value={inputValue} 
+      onChange={handleInputChange} 
+      placeholder="작성하세용" 
+      inputsize="medium"
+      invalid={isInvalid}
+      disabled={false}
+    />
+    <Image 
+      src="https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png" 
+      alt="Example" 
+      ratio="square"
+      radius={10}
+      width="100px"
+    />
+    <Image 
+      src="https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png" 
+      alt="Example" 
+      ratio="square"
+      radius="circle"
+      width="100px"
+    />
+    <GoodsItem
+      imageSrc="https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png"
+      title="[특가] 카카오 프렌즈 특별 한정판"
+      subtitle="카카오 프렌즈 특별 한정판"
+      amount="100000000000원"
+    />
+    <RankingGoodsItem
+      imageSrc="https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png"
+      title="[특가] 카카오 프렌즈 특별 한정판"
+      subtitle="카카오 프렌즈 특별 한정판 브라이트 쿠션"
+      amount="10000원"
+      rankingIndex={2}
+    />
+     <Grid columns={3} gap={10}>
+      {Array.from({ length: 16 }, (_, i) => (
+        <div key={i}>{i + 1}</div>
+      ))}
+    </Grid>
+    <Container flexDirection="row" justifyContent="space-around" alignItems="flex-start">
+      <div>Hello World!</div>
+    </Container>
+  </div>
   );
 }
 
