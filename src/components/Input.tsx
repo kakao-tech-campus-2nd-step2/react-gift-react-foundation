@@ -8,6 +8,7 @@ interface InputProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;
   placeholder?: string;
+  invalid?: boolean;
   width?: number;
   height?: number;
 }
@@ -16,7 +17,8 @@ const Input = (props: InputProps) => {
     value,
     onChange,
     disabled = false,
-    placeholder = '입력해주세요.',
+    placeholder = 'placeholder',
+    invalid = false,
     width = 100,
     height = 30,
   } = props;
@@ -31,7 +33,11 @@ const Input = (props: InputProps) => {
         width: ${width}px;
         height: ${height}px;
         padding: 5px;
-        border-radius: 5px;
+        border: none;
+        ${invalid
+          ? 'border-bottom:1px solid red;'
+          : 'border-bottom:1px solid gray;'}
+        outline: none;
       `}
     />
   );
