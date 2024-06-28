@@ -20,9 +20,23 @@ const ButtonStyle = styled.button<ButtonProps>`
         return css``
     }
   }}
-  padding: 5px 10px;
+  padding: 8px 16px;
   border: solid 2px #f1f1f1;
   border-radius: 10px;
+  aspect-ratio: 2.5;
+
+  ${({size}) => 
+    size==='responsive' ?
+      css`
+        @media screen and (max-width: 768px) {
+          width: 80px;
+        }
+        width: 100px;
+      ` :
+      css`
+        width: ${size}px;
+      `
+  }
 `
 
 export default ButtonStyle;
