@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image } from 'components/Image/Image';
+import 'components/GoodsItem/defaultGoodsItems.css';
 
 interface DefaultGoodsItemsProps {
   amount: number;
