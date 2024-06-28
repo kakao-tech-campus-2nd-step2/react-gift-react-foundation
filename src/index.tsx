@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import { Global } from '@emotion/react';
-import './styles/index.css';
+import '@styles/index.css';
 import App from './App.tsx';
 
 const root = ReactDOM.createRoot(
