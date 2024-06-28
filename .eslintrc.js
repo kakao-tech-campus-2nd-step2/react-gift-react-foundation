@@ -136,5 +136,7 @@ module.exports = {
 
     // React 17+에서는 React를 명시적으로 import하지 않아도 됨
     'react/react-in-jsx-scope': 'off',
+
+    '@typescript-eslint/no-var-requires': 'off',
   },
 };
