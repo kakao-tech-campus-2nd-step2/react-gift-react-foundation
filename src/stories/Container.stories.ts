@@ -42,3 +42,10 @@ export const Default: Story = {
     children: 'Hello, world!',
   },
 };
+
+export const FullScreen: Story = {
+  args: {
+    children: 'Hello, world!',
+    maxWidth: '100%',
+  },
+};

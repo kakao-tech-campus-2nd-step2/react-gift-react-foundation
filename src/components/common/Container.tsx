@@ -21,7 +21,6 @@ export const Container = ({
     flexDirection: flexDirection,
     justifyContent: justifyContent,
     alignItems: alignItems,
-    width: '100%',
   } as React.CSSProperties;
 
   return <div style={styles}>{children}</div>;
