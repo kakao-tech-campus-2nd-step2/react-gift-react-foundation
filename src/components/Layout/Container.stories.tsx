@@ -1,51 +1,42 @@
-/** @jsxImportSource @emotion/react */
 import React from 'react';
-import styled from '@emotion/styled';
+import { StoryObj, Meta } from '@storybook/react';
+import Container from './Container';
 
-type ContainerProps = {
-  padding?: string;
-  maxWidth?: string;
-  flexDirection?: 'row' | 'column';
-  justifyContent?:
-    | 'center'
-    | 'flex-start'
-    | 'flex-end'
-    | 'space-between'
-    | 'space-around';
-  alignItems?: 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'stretch';
-  children?: React.ReactNode;
+export default {
+  title: 'Common/Container',
+  component: Container,
+  argTypes: {
+    padding: { control: 'text' },
+    maxWidth: { control: 'text' },
+    flexDirection: { control: 'radio', options: ['row', 'column'] },
+    justifyContent: {
+      control: 'radio',
+      options: [
+        'center',
+        'flex-start',
+        'flex-end',
+        'space-between',
+        'space-around',
+      ],
+    },
+    alignItems: {
+      control: 'radio',
+      options: ['center', 'flex-start', 'flex-end', 'baseline', 'stretch'],
+    },
+    children: { control: 'text' },
+  },
+} as Meta<typeof Container>;
+
+type Story = StoryObj<React.ComponentProps<typeof Container>>;
+
+export const Default: Story = {
+  args: {
+    padding: '16px',
+    maxWidth: '1200px',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    children: 'Hello World!',
+  },
+  render: (args) => <Container {...args} />,
 };
-
-const StyledContainer = styled.div<ContainerProps>`
-  display: flex;
-  flex-direction: ${({ flexDirection }) => flexDirection || 'row'};
-  justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
-  align-items: ${({ alignItems }) => alignItems || 'stretch'};
-  width: 100%;
-  max-width: ${({ maxWidth }) => maxWidth || '1200px'};
-  margin: 0 auto;
-  padding: ${({ padding }) => padding || '16px'};
-`;
-
-const Container: React.FC<ContainerProps> = ({
-  padding = '16px',
-  maxWidth = '1200px',
-  flexDirection = 'row',
-  justifyContent = 'flex-start',
-  alignItems = 'stretch',
-  children,
-}) => {
-  return (
-    <StyledContainer
-      padding={padding}
-      maxWidth={maxWidth}
-      flexDirection={flexDirection}
-      justifyContent={justifyContent}
-      alignItems={alignItems}
-    >
-      {children}
-    </StyledContainer>
-  );
-};
-
-export default Container;
