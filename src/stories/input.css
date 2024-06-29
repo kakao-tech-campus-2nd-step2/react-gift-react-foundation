@@ -1,39 +1,38 @@
 /* src/components/Input.css */
 .input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .input.small {
-    width: 100px;
-  }
-  
-  .input.medium {
-    width: 200px;
-  }
-  
-  .input.large {
-    width: 300px;
-  }
-  
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input.small {
+  width: 100px;
+}
+
+.input.medium {
+  width: 200px;
+}
+
+.input.large {
+  width: 300px;
+}
+
+.input.responsive {
+  width: 100%;
+}
+
+.input.disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.input.invalid {
+  border-color: red;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
   .input.responsive {
     width: 100%;
   }
-  
-  .input.disabled {
-    background-color: #f0f0f0;
-    cursor: not-allowed;
-  }
-  
-  .input.invalid {
-    border-color: red;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 600px) {
-    .input.responsive {
-      width: 100%;
-    }
-  }
-  
+}
