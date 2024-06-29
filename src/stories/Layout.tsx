@@ -26,8 +26,6 @@ const LayoutStyles = styled.div<ILayoutProps>`
 
   width: 500px;
   height: 300px;
-
-  background-color: #f0f0f0;
 `;
 
 export const Layout = ({
