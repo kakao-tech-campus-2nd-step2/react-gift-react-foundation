@@ -32,8 +32,8 @@ FE 카카오 선물하기 1주차 과제: React 기초
     - [o] radius props에 따라 모서리 둥글게 적용
     - [o] image Element 기본 속성 모두 사용
 - GoodsItem 컴포넌트 구현
-    - [] default 형태와 ranking 형태 컴포넌트 구현
-    - [] Ranking 컴포넌트 랭킹 지정
+    - [o] default 형태와 ranking 형태 컴포넌트 구현
+    - [o] Ranking 컴포넌트 랭킹 지정
 - Grid, Container 컴포넌트 구현
 
 ## 요구 사항
