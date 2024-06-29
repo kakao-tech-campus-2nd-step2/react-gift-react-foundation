@@ -1,41 +1,65 @@
-import React, { ReactNode, FC } from 'react';
+import React from 'react';
+import { css } from '@emotion/react';
 
-interface ButtonProps {
-  size?: 'small' | 'medium' | 'large' | 'responsive';
-  theme?: 'primary' | 'secondary' | 'kakao';
-  children: ReactNode;
-  onClick?: () => void;
-  [key: string]: any;
+export interface ButtonProps {
+  size: 'small' | 'medium' | 'large' | 'responsive';
+  theme: 'primary' | 'secondary' | 'kakao';
+  onClick: () => void;
 }
 
-const Button: FC<ButtonProps> = ({
-  size = 'medium',
-  theme = 'primary',
-  children,
-  onClick,
-  ...props
-}) => {
-  const sizeStyles = {
-    small: 'px-2 py-1 text-sm',
-    medium: 'px-4 py-2 text-base',
-    large: 'px-6 py-3 text-lg',
-    responsive: 'px-4 py-2 text-base md:px-6 md:py-3 md:text-lg',
-  };
+// eslint-disable-next-line react/function-component-definition
+const Button: React.FC<ButtonProps> = ({ size, theme, onClick }) => {
+  const buttonStyles = css`
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
 
-  const themeStyles = {
-    primary: 'bg-blue-500 text-white hover:bg-blue-600',
-    secondary: 'bg-gray-200 text-gray-700 hover:bg-gray-300',
-    kakao: 'bg-yellow-400 text-black hover:bg-yellow-500',
-  };
+    &.btn-small {
+      font-size: 0.875rem;
+      padding: 0.375rem 0.75rem;
+    }
 
-  const buttonStyles = `rounded-md font-medium transition-colors duration-300 ${sizeStyles[size]} ${themeStyles[theme]}`;
+    &.btn-medium {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    &.btn-large {
+      font-size: 1.125rem;
+      padding: 0.625rem 1.25rem;
+    }
+
+    &.btn-responsive {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      width: 100%;
+    }
+
+    &.btn-primary {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    &.btn-secondary {
+      background-color: #6c757d;
+      color: #fff;
+    }
+
+    &.btn-kakao {
+      background-color: #fee500;
+      color: #3c1e1e;
+    }
+  `;
 
   return (
-    <button className={buttonStyles} onClick={onClick} {...props}>
-      {children}
+    <button type="button" className={`btn ${buttonStyles} btn-${theme} btn-${size}`} onClick={onClick}>
+      Button
     </button>
   );
 };
 
 export default Button;
-export type { ButtonProps };
