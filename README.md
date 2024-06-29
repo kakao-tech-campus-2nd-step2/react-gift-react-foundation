@@ -13,18 +13,18 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - 기능 단위로 나누어 커밋
 
 ### 폴더구조
- src/
-├── assets/			   //로컬 환경의 이미지들
-├── components/		//공용으로 쓰이는 react 컴포넌트
-├── hooks/			   //React hooks
-├── interfaces/		//typescript 의  type
-├── pages/			   //각 페이지별 컴포넌트들
-├── services/			//api관련, 통신관련
-├── stores/			   //상태관리
-├── styles/			   //공용으로 쓰이는 스타일
-├── utils/				//유틸리티 함수들
-├── App.tsx
-└── index.tsx
+ src/  
+├── assets/			   //로컬 환경의 이미지들  
+├── components/		//공용으로 쓰이는 react 컴포넌트  
+├── hooks/			   //React hooks  
+├── interfaces/		//typescript 의  type  
+├── pages/			   //각 페이지별 컴포넌트들  
+├── services/			//api관련, 통신관련  
+├── stores/			   //상태관리  
+├── styles/			   //공용으로 쓰이는 스타일  
+├── utils/				//유틸리티 함수들  
+├── App.tsx  
+└── index.tsx  
 
 ## 1주차 질문
 1. webpack은 무엇이고 어떤 역할을 하고 있나요?
