@@ -24,7 +24,7 @@ export const Disabled: Story = {
 
 export const Size: Story = {
   args: {
-    size: 'large',
+    inputSize: 'large',
   },
 };
 
