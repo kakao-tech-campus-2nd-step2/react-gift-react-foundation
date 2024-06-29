@@ -1,10 +1,12 @@
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
+export interface ButtonProps {
     theme: 'basic' | 'kakao',
-    size: number | 'responsive'
+    size: number | 'responsive',
+    buttonProps?: React.ButtonHTMLAttributes<HTMLButtonElement>
 }
 
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement>{
+export interface InputProps{
     disabled: boolean,
     invalid: boolean,
-    sizeI: number | 'responsive'
+    sizeI: number | 'responsive',
+    inputProps?: React.InputHTMLAttributes<HTMLInputElement>
 }

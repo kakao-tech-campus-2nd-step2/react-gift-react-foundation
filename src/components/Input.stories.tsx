@@ -6,7 +6,7 @@ const meta = {
     title: 'Input',
     component: Input,
     args: {
-        placeholder: "placeholder"
+        inputProps: {placeholder: "placeholder"}
     }
 } satisfies Meta<typeof Input>;
 
@@ -30,8 +30,8 @@ export const SizeChange: Story = {
 }
 export const Disabled: Story = {
     args: {
-        disabled: false,
-        invalid: true,
+        disabled: true,
+        invalid: false,
         sizeI: 'responsive'
     }
 }

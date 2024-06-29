@@ -11,16 +11,12 @@ const reset = css`
         vertical-align: baseline;
     }
     input, textarea, select{
-        background: var(--side-c);
         color: inherit;
         border: none;
         font: inherit;
         cursor: text;
         outline: inherit;
         resize: none;
-    }
-    body{
-        background-color: #111111;
     }
 `
 

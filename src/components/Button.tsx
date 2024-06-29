@@ -6,10 +6,11 @@ import ButtonStyle from '../styles/ButtonStyle';
 
 export default ({
   theme = 'basic',
-  size = 'responsive'
+  size = 'responsive',
+  buttonProps
 }: ButtonProps) => {
   return (
-    <ButtonStyle theme={theme} size={size}>
+    <ButtonStyle theme={theme} size={size} {...buttonProps}>
       버튼
     </ButtonStyle>
   );

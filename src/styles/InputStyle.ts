@@ -13,7 +13,7 @@ export default styled.input<InputProps>`
     }
     ${({disabled}) =>
         disabled ?
-            css`background: #555555` :
+            css`background: #aaaaaa` :
             css`background: inherit`
     }
     ${({sizeI}) => 
