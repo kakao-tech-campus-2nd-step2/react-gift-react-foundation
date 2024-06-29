@@ -2,7 +2,7 @@ import { Layout, ILayoutProps } from './Layout';
 import { Meta } from '@storybook/react';
 
 const layoutMeta: Meta = {
-  title: 'Example/Layout',
+  title: 'COMMON/Layout/Container',
   component: Layout,
   parameters: {
     layout: 'centered',
