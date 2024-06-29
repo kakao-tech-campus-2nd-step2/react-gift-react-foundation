@@ -24,9 +24,9 @@ FE 카카오 선물하기 1주차 과제: React 기초
     - [o] Size props에 따라 버튼 크기 지정
     - [o] Button Element 기본 속성 모두 사용 가능하도록 구현
 - Input 컴포넌트 구현
-    - [] disabled props에 따라 input 비활성화 지정
-    - [] isvalid props에 따라 input값 ui에서 오류 인지
-    - [] input Element 기본 속성 모두 사용
+    - [o] disabled props에 따라 input 비활성화 지정
+    - [o] isvalid props에 따라 input값 ui에서 오류 인지
+    - [o] input Element 기본 속성 모두 사용
 - Image 컴포넌트 구현
     - [] ratio props에 따라 이미지 비율 설정
     - [] radius props에 따라 모서리 둥글게 적용
