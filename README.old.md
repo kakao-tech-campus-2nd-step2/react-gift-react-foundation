@@ -28,9 +28,9 @@ FE 카카오 선물하기 1주차 과제: React 기초
     - [o] isvalid props에 따라 input값 ui에서 오류 인지
     - [o] input Element 기본 속성 모두 사용
 - Image 컴포넌트 구현
-    - [] ratio props에 따라 이미지 비율 설정
-    - [] radius props에 따라 모서리 둥글게 적용
-    - [] image Element 기본 속성 모두 사용
+    - [o] ratio props에 따라 이미지 비율 설정
+    - [o] radius props에 따라 모서리 둥글게 적용
+    - [o] image Element 기본 속성 모두 사용
 - GoodsItem 컴포넌트 구현
     - [] default 형태와 ranking 형태 컴포넌트 구현
     - [] Ranking 컴포넌트 랭킹 지정
