@@ -2,7 +2,7 @@ import { Ranking, IRankingProps } from './Ranking';
 import { Meta } from '@storybook/react';
 
 const rankingMeta: Meta = {
-  title: 'Example/Ranking',
+  title: 'COMMON/GoodsItem/Ranking',
   component: Ranking,
   parameters: {
     layout: 'centered',

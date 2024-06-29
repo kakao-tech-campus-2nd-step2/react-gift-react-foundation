@@ -2,7 +2,7 @@ import { Image, IImageProps } from './Image';
 import { Meta } from '@storybook/react';
 
 const imageMeta: Meta = {
-  title: 'Example/Image',
+  title: 'COMMON/Image',
   component: Image,
   parameters: {
     layout: 'centered',

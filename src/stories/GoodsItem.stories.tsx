@@ -2,7 +2,7 @@ import { GoodsItem, IGoodsItemProps } from './GoodsItem';
 import { Meta } from '@storybook/react';
 
 const goodsItemMeta: Meta = {
-  title: 'Example/GoodsItem',
+  title: 'COMMON/GoodsItem/GoodsItem',
   component: GoodsItem,
   parameters: {
     layout: 'centered',

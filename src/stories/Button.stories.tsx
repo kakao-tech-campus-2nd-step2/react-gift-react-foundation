@@ -3,7 +3,7 @@ import { Meta } from '@storybook/react';
 import { fn } from '@storybook/test';
 
 const buttonMeta: Meta = {
-  title: 'Example/Button',
+  title: 'COMMON/Button',
   component: Button,
   parameters: {
     layout: 'centered',

@@ -2,7 +2,7 @@ import { Input, IInputProps } from './Input';
 import { Meta } from '@storybook/react';
 
 const inputMeta: Meta = {
-  title: 'Example/Input',
+  title: 'COMMON/Input',
   component: Input,
   parameters: {
     layout: 'centered',
