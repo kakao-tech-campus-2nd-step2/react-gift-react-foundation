@@ -11,23 +11,34 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [ ] gitignore를 추가하고, 프로젝트에 불필요한 코드들 정리하기
 
 2. 폴더 구조
-root
-┣ public
-┃ ┣ index.html
-┃ ┗ manifest.json
-┣ src
-┃ ┣ components
-┃ ┣ pages
-┃ ┣ styles
-┃ ┃ ┗ reset.css
-┃ ┣ App.css
-┃ ┣ App.tsx
-┃ ┣ index.tsx
-┃ ┣ .eslintrc.json
-┃ ┣ .prettierrc
-┃ ┣ .gitignore
-┃ ┣ package.json
-┃ ┗ tsconfig.json
+- 프로젝트 폴더 구조는 다음과 같습니다.
+  root
+  ├── public
+  │   ├── index.html
+  │   └── manifest.json
+  ├── src
+  │   ├── stories
+  │   ├── components
+  │   ├── pages
+  │   ├── styles
+  │   │   └── reset.css
+  │   ├── App.css
+  │   ├── App.tsx
+  │   ├── index.tsx
+  │   ├── .eslintrc.json
+  │   ├── .prettierrc
+  │   ├── .gitignore
+  │   ├── package.json
+  │   └── tsconfig.json
+
+- 폴더 설명
+  - **public** : 웹앱의 정적 파일을 포함한다.
+  - **src** : 소스 코드와 관련된 모든 파일을 포함한다.
+   - **stories** : storybook 파일들을 포함하는 디렉토리이다.
+   - **components** : 재사용 가능한 컴포넌트들을 포함하는 디렉토리이다.
+   - **pages** : 페이지 컴포넌트들을 포함하는 디렉토리이다.
+   - **styles** : 스타일 파일들을 포함한다.
+
 
 
 3. Requirements
