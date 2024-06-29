@@ -2,7 +2,7 @@ import React, { ImgHTMLAttributes } from 'react';
 import './image.css';
 
 // eslint-disable-next-line no-undef
-interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
+export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   ratio?: '16/9' | 'square';
   radius?: number | 'circle';
 }

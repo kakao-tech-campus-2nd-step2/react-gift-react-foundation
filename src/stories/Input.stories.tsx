@@ -1,5 +1,9 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-extraneous-dependencies */
+// Input.stories.ts
 import React from 'react';
-import { Meta } from '@storybook/react';  // 이 부분을 확인하여 최신 버전에 맞는 임포트를 사용합니다.
+import { Meta, StoryFn } from '@storybook/react';
 import Input, { InputProps } from './Input';
 
 export default {
@@ -9,31 +13,34 @@ export default {
     disabled: { control: 'boolean' },
     invalid: { control: 'boolean' },
     size: {
-      control: { type: 'select', options: ['small', 'medium', 'large', 'responsive'] },
-    },
-  },
-} as Meta<typeof Input>;  // typeof Input을 사용하여 Input 컴포넌트의 타입을 지정합니다.
+      control: {
+        type: 'select',
+        options: ['small', 'medium', 'large', 'responsive']
+      }
+    }
+  }
+} as Meta<typeof Input>;
 
-const Template: React.FC<InputProps> = (args) => <Input {...args} />;
+const Template: StoryFn<InputProps> = (args: InputProps) => <Input {...args} />;
 
 export const Small = Template.bind({});
 Small.args = {
-  size: 'small'
+  inputSize: 'small'
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
-  size: 'medium'
+  inputSize: 'medium'
 };
 
 export const Large = Template.bind({});
 Large.args = {
-  size: 'large'
+  inputSize: 'large'
 };
 
 export const Responsive = Template.bind({});
 Responsive.args = {
-  size: 'responsive'
+  inputSize: 'responsive'
 };
 
 export const Disabled = Template.bind({});

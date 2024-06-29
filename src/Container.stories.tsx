@@ -1,16 +1,17 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Meta } from '@storybook/react';
-import Container, { ContainerProps } from './Container';
+import { Meta, StoryFn } from '@storybook/react';
+import Container, { ContainerProps } from './Container.tsx';
 
 export default {
   title: 'Components/Container',
   component: Container,
   argTypes: {
-    maxWidth: { control: 'text' },
-  },
+    maxWidth: { control: 'text' }
+  }
 } as Meta;
 
-const Template: React.FC<ContainerProps> = (args) => (
+const Template: StoryFn<ContainerProps> = (args) => (
   <Container {...args}>
     <div style={{ backgroundColor: 'lightgray', padding: '20px' }}>
       <h2>container h2</h2>
@@ -21,5 +22,5 @@ const Template: React.FC<ContainerProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  maxWidth: '800px',
+  maxWidth: '800px'
 };

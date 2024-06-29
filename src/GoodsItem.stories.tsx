@@ -1,6 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Meta } from '@storybook/react';
-import GoodsItem, { GoodsItemProps } from './GoodsItem';
+import { Meta, StoryFn } from '@storybook/react';
+import GoodsItem, { GoodsItemProps } from './GoodsItem.tsx';
 
 export default {
   title: 'Components/GoodsItem',
@@ -10,18 +11,18 @@ export default {
     subtitle: { control: 'text' },
     title: { control: 'text' },
     amount: { control: 'text' },
-    rankingIndex: { control: 'number' },
-  },
+    rankingIndex: { control: 'number' }
+  }
 } as Meta;
 
-const Template: React.FC<GoodsItemProps> = (args) => <GoodsItem {...args} />;
+const Template: StoryFn<GoodsItemProps> = (args) => <GoodsItem {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
   imageSrc: 'https://via.placeholder.com/150',
   subtitle: 'Subtitle',
   title: 'Title',
-  amount: '$100',
+  amount: '$100'
 };
 
 export const Ranking = Template.bind({});
@@ -30,6 +31,5 @@ Ranking.args = {
   subtitle: 'Subtitle',
   title: 'Ranked Title',
   amount: '$200',
-  rankingIndex: 1,
+  rankingIndex: 1
 };
-

@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unused-prop-types */
 import React from 'react';
 import './container.css';
 
-interface ContainerProps {
+export interface ContainerProps {
   children: React.ReactNode;
   maxWidth?: string;
 }

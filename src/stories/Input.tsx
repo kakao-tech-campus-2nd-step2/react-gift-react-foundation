@@ -5,12 +5,18 @@ import './input.css';
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   disabled?: boolean;
   invalid?: boolean;
+  inputSize?: 'small' | 'medium' | 'large' | 'responsive';
 }
 
-const Input: React.FC<InputProps> = ({ disabled, invalid, size, ...props }) => {
+const Input: React.FC<InputProps> = ({
+  disabled,
+  invalid,
+  inputSize,
+  ...props
+}) => {
   const classNames = [
     'input',
-    size,
+    inputSize,
     disabled ? 'disabled' : '',
     invalid ? 'invalid' : ''
   ].join(' ');
