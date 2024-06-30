@@ -1,50 +1,41 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
+import { fn } from '@storybook/test'
 import UnderlineTextField from './Input';
 
-export default {
+const meta: Meta<typeof UnderlineTextField> = {
   title: 'Common/Form/Input/UnderlineTextField',
   component: UnderlineTextField,
+  parameters: {
+    layout: 'fullscreen',
+  },
+  tags: ['autodocs'],
   argTypes: {
-    size: {
-      control: 'select',
-      options: ['small', 'medium', 'large', 'responsive'],
-    },
     invalid: {
       control: 'boolean',
     },
     disabled: {
       control: 'boolean',
     },
+    placeholder: {
+      control: 'text',
+    },
+    size: {
+      control: 'select',
+    },
   },
-} as Meta;
-
-const Template: StoryFn = (args) => <UnderlineTextField {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  size: 'medium',
-  disabled: false,
-  invalid: false,
+  args: {
+  },
 };
 
-export const Invalid = Template.bind({});
-Invalid.args = {
-  size: 'medium',
-  disabled: false,
-  invalid: true,
-};
+export default meta;
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  size: 'medium',
-  disabled: true,
-  invalid: false,
-};
+type Story = StoryObj<typeof meta>;
 
-export const Responsive = Template.bind({});
-Responsive.args = {
-  size: 'responsive',
-  disabled: false,
-  invalid: false,
+export const Default: Story = {
+  args: {
+    disabled: false,
+    invalid: false,
+    placeholder: '내용을 입력하세요',
+  },
 };

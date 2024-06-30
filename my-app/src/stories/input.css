@@ -1,30 +1,22 @@
 .storybook-input {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  border-radius: 3em;
-  border: 1px solid #ddd;
-  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  width: 93%;
   box-sizing: border-box;
+  margin-top: 30px; 
+  margin-left: 20px;
+  line-height: normal;
 }
 
-.storybook-input--small {
-  font-size: 12px;
-}
-
-.storybook-input--medium {
-  font-size: 14px;
-}
-
-.storybook-input--large {
-  font-size: 16px;
+.storybook-input:focus {
+  outline: none;
+  border-bottom: 2px solid #000;
 }
 
 .storybook-input--responsive {
   @media (min-width: 600px) {
     width: auto;
   }
-}
-
-.storybook-input--invalid {
-  border-color: red;
 }
