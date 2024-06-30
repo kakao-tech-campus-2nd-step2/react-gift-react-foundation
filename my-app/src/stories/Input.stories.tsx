@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import Input from './Input';
+import UnderlineTextField from './Input';
 
 export default {
-  title: 'Common/Input',
-  component: Input,
+  title: 'Common/Form/Input/UnderlineTextField',
+  component: UnderlineTextField,
   argTypes: {
     size: {
       control: 'select',
@@ -19,7 +19,7 @@ export default {
   },
 } as Meta;
 
-const Template: StoryFn = (args) => <Input {...args} />;
+const Template: StoryFn = (args) => <UnderlineTextField {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
