@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import Grid from './Grid';
 
 const meta: Meta = {
-  title: 'Common/Layuot/Grid',
+  title: 'Common/Layout/Grid',
   component: Grid,
   parameters: {
     layout: 'fullscreen',
