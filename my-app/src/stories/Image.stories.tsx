@@ -2,9 +2,13 @@ import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import Image from './Image';
 
-export default {
+const meta: Meta =  {
   title: 'Common/Image',
   component: Image,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
   argTypes: {
     ratio: {
       control: 'select',
@@ -14,7 +18,8 @@ export default {
       control: 'text',
     },
   },
-} as Meta;
+};
+export default meta;
 
 const Template: StoryFn = (args) => <Image {...args} />;
 
