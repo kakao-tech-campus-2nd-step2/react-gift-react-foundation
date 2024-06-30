@@ -1,5 +1,5 @@
 import React from 'react';
-import 'components/Image/image.css';
+import './image.css';
 
 interface ImageProps {
   src: string;
