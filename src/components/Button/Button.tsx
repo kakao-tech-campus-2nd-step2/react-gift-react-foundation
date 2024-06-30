@@ -6,7 +6,7 @@ interface ButtonProps {
   theme?: string;
   size?: 'small' | 'medium' | 'large' | 'responsive';
   label: string;
-  onClick?: () => void;
+  onClick?: (event?: MouseEvent) => void;
 }
 
 export const Button = ({
