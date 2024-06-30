@@ -13,7 +13,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ### 📝 step 2
 - [x]  Stroybook 추가
-- [ ]  Button 컴포넌트 구현
+- [x]  Button 컴포넌트 구현
 - [ ]  Input 컴포넌트 구현
 - [ ]  Image 컴포넌트 구현
 - [ ]  GoodsItem 컴포넌트 구현
