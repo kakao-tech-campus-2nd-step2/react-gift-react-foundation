@@ -1,24 +1,22 @@
 import React from 'react';
 import './underlinetextField.css';
 
-interface InputProps {
-  disabled: boolean;
-  invalid: boolean;
-  size: 'small' | 'medium' | 'large' | 'responsive';
+export interface InputProps {
+  disabled?: boolean;
   placeholder?: string;
+  className?: string;
 }
 
 export const UnderlineTextField = ({
-  disabled,
-  size,
-  invalid,
+  disabled = false,
   placeholder = '',
+  className = 'underline--input',
 }: InputProps) => {
   return (
     <input
       disabled={disabled}
       placeholder={placeholder}
-      className={['underline--input', size, invalid ? 'invalid' : ''].join(' ')}
+      className={className}
       autoComplete={'off'}
     />
   );
