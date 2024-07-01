@@ -4,7 +4,12 @@ import { StyledContainer } from './Container.style';
 interface ContainerProps {
   maxWidth?: string;
   flexDirection?: 'row' | 'column';
-  justifyContent?: 'center' | 'flex-start' | 'flex-end' | 'space-between' | 'space-around';
+  justifyContent?:
+    | 'center'
+    | 'flex-start'
+    | 'flex-end'
+    | 'space-between'
+    | 'space-around';
   alignItems?: 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'stretch';
   children: React.ReactNode;
 }

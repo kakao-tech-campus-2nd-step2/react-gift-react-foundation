@@ -47,7 +47,10 @@ const getThemeStyles = (theme: ThemeProps) => colors[theme];
 
 const getSizeStyles = (size: SizeProps) => sizes[size];
 
-export const StyledButton = styled.button<{ theme: ThemeProps; size: SizeProps }>`
+export const StyledButton = styled.button<{
+  theme: ThemeProps;
+  size: SizeProps;
+}>`
   cursor: pointer;
   text-align: center;
   ${({ theme }) => getThemeStyles(theme)}

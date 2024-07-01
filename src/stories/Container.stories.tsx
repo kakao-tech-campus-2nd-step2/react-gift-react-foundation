@@ -16,7 +16,13 @@ const meta: Meta<typeof Container> = {
     },
     justifyContent: {
       control: 'select',
-      options: ['center', 'flex-start', 'flex-end', 'space-between', 'space-around'],
+      options: [
+        'center',
+        'flex-start',
+        'flex-end',
+        'space-between',
+        'space-around',
+      ],
     },
     alignItems: {
       control: 'select',

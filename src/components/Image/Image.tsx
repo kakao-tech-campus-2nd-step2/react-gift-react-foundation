@@ -20,12 +20,10 @@ const StyledImage = styled.img<ImageProps>`
     if (radius === 'circle') return '50%';
     if (typeof radius === 'number') return `${radius}px`;
     return '0';
-  }}
+  }};
 `;
 
-const Image = (props: ImageProps) => (
-  <StyledImage {...props} />
-);
+const Image = (props: ImageProps) => <StyledImage {...props} />;
 
 export default Image;
 export {};

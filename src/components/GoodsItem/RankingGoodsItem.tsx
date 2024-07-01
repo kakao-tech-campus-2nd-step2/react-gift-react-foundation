@@ -1,5 +1,11 @@
 import React from 'react';
-import { GoodsItemContainer, Image, Text, Amount, RankingBadge } from './GoodsItem.styles';
+import {
+  GoodsItemContainer,
+  Image,
+  Text,
+  Amount,
+  RankingBadge,
+} from './GoodsItem.styles';
 
 interface RankingGoodsItemProps {
   imageSrc: string;
@@ -9,9 +15,13 @@ interface RankingGoodsItemProps {
   rankingIndex: number;
 }
 
-const RankingGoodsItem: React.FC<RankingGoodsItemProps> = (
-  { imageSrc, subtitle, title, amount, rankingIndex },
-) => (
+const RankingGoodsItem: React.FC<RankingGoodsItemProps> = ({
+  imageSrc,
+  subtitle,
+  title,
+  amount,
+  rankingIndex,
+}) => (
   <GoodsItemContainer>
     <RankingBadge rankingIndex={rankingIndex}>{rankingIndex}</RankingBadge>
     <Image src={imageSrc} alt={title} />

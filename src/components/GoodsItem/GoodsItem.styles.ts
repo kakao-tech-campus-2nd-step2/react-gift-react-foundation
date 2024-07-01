@@ -35,7 +35,8 @@ export const RankingBadge = styled.div<{ rankingIndex: number }>`
   position: absolute;
   top: 8px;
   left: 8px;
-  background-color: ${({ rankingIndex }) => (rankingIndex <= 3 ? 'pink' : 'gray')};
+  background-color: ${({ rankingIndex }) =>
+    rankingIndex <= 3 ? 'pink' : 'gray'};
   color: white;
   border-radius: 50%;
   width: 24px;
