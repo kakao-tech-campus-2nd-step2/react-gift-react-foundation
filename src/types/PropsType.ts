@@ -14,3 +14,13 @@ export interface ImageProps{
     radius: number | 'circle',
     imageProps?: React.ImgHTMLAttributes<HTMLImageElement>
 }
+
+export interface DefaultGoodsItem{
+    imageSrc: string,
+    subtitle: string,
+    title: string,
+    amount: number
+}
+export interface RankingGoodsItem extends DefaultGoodsItem{
+    rankingIndex: number
+}

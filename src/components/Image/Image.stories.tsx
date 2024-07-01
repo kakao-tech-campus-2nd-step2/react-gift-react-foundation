@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
 import Image from './Image'
-import imageSource from '../../public/testimage.jpg'
+import imageSource from '../../../public/testimage.jpg'
 
 const meta = {
-    title: 'Image',
+    title: 'Common/Image',
     component: Image,
     args: {
         imageProps: {

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { ButtonProps } from '../../types/PropsType';
-import ButtonStyle from './ButtonStyle';
+import { ButtonProps } from '../../types/PropsType'
+import ButtonStyle from './ButtonStyle'
 
 
 const Button = ({
@@ -13,7 +13,7 @@ const Button = ({
     <ButtonStyle theme={theme} size={size} {...buttonProps}>
       버튼
     </ButtonStyle>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button
