@@ -9,13 +9,13 @@ export default {
     theme: {
       control: {
         type: 'radio',
-        options: ['primary', 'secondary'],
+        options: ['kakao', 'outline', 'black', 'lightGray', 'darkGray'],
       },
     },
     size: {
       control: {
         type: 'radio',
-        options: ['small', 'medium', 'large', 'responsive'],
+        options: ['large', 'small', 'responsive'],
       },
     },
     onClick: { action: 'clicked' },
@@ -24,34 +24,46 @@ export default {
 
 const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  theme: 'primary',
-  children: 'Primary Button',
+export const Kakao = Template.bind({});
+Kakao.args = {
+  theme: 'kakao',
+  children: 'Kakao Button',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  theme: 'secondary',
-  children: 'Secondary Button',
+export const Outline = Template.bind({});
+Outline.args = {
+  theme: 'outline',
+  children: 'Outline Button',
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  children: 'Small Button',
+export const Black = Template.bind({});
+Black.args = {
+  theme: 'black',
+  children: 'Black Button',
 };
 
-export const Medium = Template.bind({});
-Medium.args = {
-  size: 'medium',
-  children: 'Medium Button',
+export const LightGray = Template.bind({});
+LightGray.args = {
+  theme: 'lightGray',
+  children: 'LightGray Button',
+};
+
+export const DarkGray = Template.bind({});
+DarkGray.args = {
+  theme: 'darkGray',
+  children: 'DarkGray Button',
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
   children: 'Large Button',
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  size: 'small',
+  children: 'Small Button',
 };
 
 export const Responsive = Template.bind({});
