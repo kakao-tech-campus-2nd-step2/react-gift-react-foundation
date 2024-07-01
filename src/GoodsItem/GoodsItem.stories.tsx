@@ -9,10 +9,10 @@ const meta: Meta<typeof GoodsItem> = {
     imageSrc: {
       control: 'text',
     },
-    subtitle: {
+    title: {
       control: 'text',
     },
-    title: {
+    subtitle: {
       control: 'text',
     },
     amount: {
@@ -37,8 +37,8 @@ type Story = StoryObj<typeof GoodsItem>;
 export const Default: Story = {
   args: {
     imageSrc: 'https://via.placeholder.com/300',
-    subtitle: 'Sample Subtitle',
     title: 'Sample Goods Item',
+    subtitle: 'Top Ranked',
     amount: '$19.99',
     description: 'This is a sample description of the goods item.',
   },
@@ -47,8 +47,8 @@ export const Default: Story = {
 export const Ranking: Story = {
   args: {
     imageSrc: 'https://via.placeholder.com/300',
-    subtitle: 'Top Ranked',
     title: 'Ranked Goods Item',
+    subtitle: 'Top Ranked',
     amount: '$29.99',
     description: 'This is a ranked goods item.',
     ranking: 1,
