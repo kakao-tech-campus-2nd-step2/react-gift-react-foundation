@@ -24,6 +24,10 @@ module.exports = {
       },
     ],
     'comma-dangle': ['error', 'never'],
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+    ],
   },
+  ignorePatterns: ['src/stories/**/*', 'src/components/**/*'],
 };
