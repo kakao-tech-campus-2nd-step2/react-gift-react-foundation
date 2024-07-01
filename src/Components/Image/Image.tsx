@@ -10,12 +10,15 @@ const ImageStyled = styled.img<ImageProps>`
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: ${(props) =>
-    typeof props.radius === 'number'
-      ? `${props.radius}px`
-      : props.radius === 'circle'
-        ? '50%'
-        : '0'};
+  border-radius: ${(props) => {
+    if (typeof props.radius === 'number') {
+      return `${props.radius}px`;
+    }
+    if (props.radius === 'circle') {
+      return '50%';
+    }
+    return '0';
+  }};
   object-fit: ${(props) => (props.ratio === 'square' ? 'cover' : 'contain')};
   aspect-ratio: ${(props) =>
     typeof props.ratio === 'number'
