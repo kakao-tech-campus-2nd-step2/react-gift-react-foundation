@@ -15,7 +15,7 @@ export interface GoodsItemProps {
 
 const GoodsItemWrapper = styled.div`
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   overflow: hidden;
   max-width: 300px;
   text-align: center;
@@ -28,25 +28,25 @@ const GoodsImage = styled.img`
 `;
 
 const GoodsSubtitle = styled.h4`
-  font-size: 16px;
+  font-size: var(--font-size-medium);
+  color: var(--subtitle-color);
   margin: 8px 0;
-  color: #777;
 `;
 
 const GoodsTitle = styled.h3`
-  font-size: 18px;
+  font-size: var(--font-size-large);
   margin: 10px 0;
 `;
 
 const GoodsAmount = styled.p`
-  font-size: 16px;
-  color: #b12704;
+  font-size: var(--font-size-medium);
+  color: var(--amount-color);
   margin: 5px 0;
 `;
 
 const GoodsDescription = styled.p`
-  font-size: 14px;
-  color: #555;
+  font-size: var(--font-size-small);
+  color: var(--description-color);
   margin: 10px;
 `;
 
