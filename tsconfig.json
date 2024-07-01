@@ -10,9 +10,12 @@
     "include": [
         "src/**/*.ts",
         "api/**/*.ts"
-, "src/index.ts"    ],
+, "src/index.js"    ],
     "exclude": [
         "node_modules",
         "dist"
-    ]
+    ],
+    "paths": {
+        "@components/*": ["src/components/*"]        
+    }
 }
