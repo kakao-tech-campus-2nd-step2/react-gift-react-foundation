@@ -8,16 +8,21 @@ export interface ButtonProps {
 }
 
 const ButtonStyled = styled.button<ButtonProps>`
-  background-color: ${(props) =>
-    props.theme === 'outline'
-      ? 'transparent'
-      : props.theme === 'black'
-        ? 'black'
-        : props.theme === 'lightGray'
-          ? 'lightgray'
-          : props.theme === 'darkGray'
-            ? 'darkgray'
-            : 'yellow'};
+  background-color: ${(props) => {
+    if (props.theme === 'outline') {
+      return 'transparent';
+    }
+    if (props.theme === 'black') {
+      return 'black';
+    }
+    if (props.theme === 'lightGray') {
+      return 'lightgray';
+    }
+    if (props.theme === 'darkGray') {
+      return 'darkgray';
+    }
+    return 'yellow';
+  }};
   outline: ${(props) =>
     props.theme === 'outline' ? '1px solid lightGray' : 'none'};
   color: ${(props) => (props.theme === 'black' ? 'white' : 'black')};
