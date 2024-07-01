@@ -10,7 +10,7 @@
     //ESM 모듈 방식 호환성 활성화 여부
     "esModuleInterop": true,
     //모든 파일을 모듈로 컴파일, import 혹은 export 키워드 필수
-    "isolatedModules": true,
+    "isolatedModules": false,
     //컴파일러에서 사용할 라이브러리 지정
     "lib": ["ESNEXT", "DOM"],
     //더 엄격한 타입 검사 활성화
