@@ -46,12 +46,6 @@
         "jsx": "never"
       }
     ],
-    "import/no-unresolved": [
-      "error",
-      {
-        "ignore": ["@/"] // 절대 경로를 무시하도록 설정
-      }
-    ],
     "@typescript-eslint/no-var-requires": 0
   }
 }
