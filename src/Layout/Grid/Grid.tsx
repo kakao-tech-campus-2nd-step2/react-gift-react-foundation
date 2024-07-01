@@ -2,52 +2,58 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
+interface ResponsiveProps {
+  sm?: number;
+  md?: number;
+  lg?: number;
+  vertical?: boolean;
+}
+
 interface GridProps {
   columns?: number;
   gap?: string;
   children: ReactNode;
-  responsive?: {
-    sm?: number;
-    md?: number;
-    lg?: number;
-    vertical?: boolean;
-  };
+  responsive?: ResponsiveProps;
 }
+
+const getGridTemplateColumns = (
+  columns: number,
+  responsive?: ResponsiveProps,
+  breakpoint?: keyof ResponsiveProps,
+) => {
+  if (responsive) {
+    if (breakpoint && responsive[breakpoint]) {
+      return `repeat(${responsive[breakpoint]}, 1fr)`;
+    }
+    if (responsive.vertical) {
+      return '1fr';
+    }
+  }
+  return `repeat(${columns}, 1fr)`;
+};
 
 const StyledGrid = styled.div<{
   columns: number;
   gap: string;
-  responsive?: GridProps['responsive'];
+  responsive?: ResponsiveProps;
 }>`
   display: grid;
-  grid-template-columns: repeat(${(props) => props.columns}, 1fr);
-  gap: ${(props) => props.gap};
+  grid-template-columns: ${(props) =>
+    getGridTemplateColumns(props.columns, props.responsive)};
 
   @media (max-width: 768px) {
     grid-template-columns: ${(props) =>
-      props.responsive?.sm
-        ? `repeat(${props.responsive.sm}, 1fr)`
-        : props.responsive?.vertical
-          ? '1fr'
-          : `repeat(${props.columns}, 1fr)`};
-  }
+      getGridTemplateColumns(props.columns, props.responsive, 'sm')};
+  
 
   @media (max-width: 1024px) {
     grid-template-columns: ${(props) =>
-      props.responsive?.md
-        ? `repeat(${props.responsive.md}, 1fr)`
-        : props.responsive?.vertical
-          ? '1fr'
-          : `repeat(${props.columns}, 1fr)`};
-  }
+      getGridTemplateColumns(props.columns, props.responsive, 'md')};
+  
 
   @media (min-width: 1025px) {
-    grid-template-columns: ${(props) =>
-      props.responsive?.lg
-        ? `repeat(${props.responsive.lg}, 1fr)`
-        : props.responsive?.vertical
-          ? '1fr'
-          : `repeat(${props.columns}, 1fr)`};
+  grid-template-columns: ${(props) =>
+    getGridTemplateColumns(props.columns, props.responsive, 'lg')};
   }
 `;
 
