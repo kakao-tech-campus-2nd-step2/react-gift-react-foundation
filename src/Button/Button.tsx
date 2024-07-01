@@ -9,73 +9,86 @@ export interface ButtonProps
   size?: 'small' | 'medium' | 'large' | 'responsive';
 }
 
-const ButtonStyled = styled.button<{ themeType: string; sizeType: string }>`
+const ButtonStyled = styled.button<{
+  themeType: ButtonProps['theme'];
+  sizeType: ButtonProps['size'];
+}>`
   border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
 
-  ${(props) =>
-    props.themeType === 'primary' &&
-    css`
-      background-color: blue;
-      color: white;
-    `}
-  ${(props) =>
-    props.themeType === 'secondary' &&
-    css`
-      background-color: grey;
-      color: white;
-    `}
-  ${(props) =>
-    props.themeType === 'danger' &&
-    css`
-      background-color: red;
-      color: white;
-    `}
-  
-  ${(props) =>
-    props.sizeType === 'small' &&
-    css`
-      padding: 5px 10px;
-      font-size: 12px;
-    `}
-  ${(props) =>
-    props.sizeType === 'medium' &&
-    css`
-      padding: 10px 20px;
-      font-size: 16px;
-    `}
-  ${(props) =>
-    props.sizeType === 'large' &&
-    css`
-      padding: 15px 30px;
-      font-size: 20px;
-    `}
+  ${(props) => themeMapper(props.themeType)}
+  ${(props) => sizeMapper(props.sizeType)}
+`;
 
-  /* responsive size에 따른 스타일링 */
-  ${(props) =>
-    props.sizeType === 'responsive' &&
-    css`
-      padding: 10px 20px;
-      font-size: 16px;
+const themeMapper = (theme: ButtonProps['theme']) => {
+  switch (theme) {
+    case 'primary':
+      return css`
+        background-color: blue;
+        color: white;
+      `;
+    case 'secondary':
+      return css`
+        background-color: grey;
+        color: white;
+      `;
+    case 'danger':
+      return css`
+        background-color: red;
+        color: white;
+      `;
+    default:
+      return css``;
+  }
+};
 
-      @media (max-width: 600px) {
+const sizeMapper = (size: ButtonProps['size']) => {
+  switch (size) {
+    case 'small':
+      return css`
         padding: 5px 10px;
         font-size: 12px;
-      }
-
-      @media (min-width: 601px) and (max-width: 1200px) {
+      `;
+    case 'medium':
+      return css`
         padding: 10px 20px;
         font-size: 16px;
-      }
-
-      @media (min-width: 1201px) {
+      `;
+    case 'large':
+      return css`
         padding: 15px 30px;
         font-size: 20px;
-      }
-    `}
-`;
+      `;
+    case 'responsive':
+      return css`
+        padding: 10px 20px;
+        font-size: 16px;
+
+        @media (max-width: 600px) {
+          padding: 5px 10px;
+          font-size: 12px;
+        }
+
+        @media (max-width: 601px) and (max-width: 1200px) {
+          padding: 10px 20px;
+          font-zie: 16px;
+        }
+
+        @media (min-width: 601px) and (max-width: 1200px) {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+
+        @media (min-width: 1201px) {
+          padding: 15px 30px;
+          font-size: 20px;
+        }
+      `;
+    default:
+      return css``;
+  }
+};
 
 export const Button: React.FC<ButtonProps> = ({
   label,
