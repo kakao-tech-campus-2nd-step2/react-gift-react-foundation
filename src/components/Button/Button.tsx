@@ -60,7 +60,7 @@ const CustomButton = styled.button<ButtonProps>`
    }
 `
 
-const Button: React.FC<ButtonProps> = ({ children = '버튼', theme = 'kakao', size = 'responsive', ...props }) => {
+const Button: React.FC<ButtonProps> = ({ children = '확인', theme = 'kakao', size = 'responsive', ...props }) => {
    return (
       <CustomButton theme={theme} size={size} {...props}>
          {children}
