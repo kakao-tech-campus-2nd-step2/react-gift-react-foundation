@@ -17,7 +17,7 @@ FE 카카오 선물하기 1주차 과제: React 기초
 - [x]  Input 컴포넌트 구현
 - [x]  Image 컴포넌트 구현
 - [x]  GoodsItem 컴포넌트 구현
-- [ ]  Grid, Container 컴포넌트 구현
+- [x]  Grid, Container 컴포넌트 구현
 
 ### 📝 step 3
 ##### 질문 1. webpack은 무엇이고 어떤 역할을 하고 있나요?
