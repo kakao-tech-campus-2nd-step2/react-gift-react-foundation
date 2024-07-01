@@ -25,7 +25,7 @@ const getRatio = (ratio?: RatioType) => {
 
 const getRadius = (radius?: RadiusType) => {
    if (radius === 'circle') {
-      return 'border-radius: 50%;'
+      return 'border-radius: 100%;'
    }
    if (typeof radius === 'number') {
       return `border-radius: ${radius}px;`
