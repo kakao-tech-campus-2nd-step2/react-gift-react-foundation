@@ -26,7 +26,8 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "format": "prettier --write .",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
