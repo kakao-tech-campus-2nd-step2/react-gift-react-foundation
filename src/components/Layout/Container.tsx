@@ -22,7 +22,7 @@ const CustomContainer = styled.div<ContainerProps>`
    max-width: ${(props) => props.maxWidth || '1024px'};
    flex-direction: ${(props) => props.flexDirection || 'column'};
    justify-content: ${(props) => props.justifyContent || 'flex-start'};
-   align-items: ${(props) => props.alignItems || 'flex-star'};
+   align-items: ${(props) => props.alignItems || 'flex-start'};
 `
 
 const Container: React.FC<ContainerProps> = ({ maxWidth, flexDirection, justifyContent, alignItems, children }) => {
