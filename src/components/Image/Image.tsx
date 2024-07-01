@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
+type RadiusType = number | 'circle'
+type RatioType = number | 'square' | 'auto'
+
 type ImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
-   radius?: 'circle' | number
-   ratio?: 'square' | 'auto' | number
+   radius?: RadiusType
+   ratio?: RatioType
    src: string
 }
 
-const getRatio = (ratio?: number | 'square' | 'auto') => {
+const getRatio = (ratio?: RatioType) => {
    if (ratio === 'square') {
       return 'padding-top: 100%;'
    }
@@ -20,7 +23,7 @@ const getRatio = (ratio?: number | 'square' | 'auto') => {
    return ''
 }
 
-const getRadius = (radius?: number | 'circle') => {
+const getRadius = (radius?: RadiusType) => {
    if (radius === 'circle') {
       return 'border-radius: 50%;'
    }
@@ -30,7 +33,7 @@ const getRadius = (radius?: number | 'circle') => {
    return ''
 }
 
-const Wrapper = styled.div<{ ratio?: number | 'square' | 'auto'; radius?: number | 'circle' }>`
+const Wrapper = styled.div<{ ratio?: RatioType; radius?: RadiusType }>`
    position: relative;
    width: 100%;
    overflow: hidden;
