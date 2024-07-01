@@ -6,11 +6,11 @@ type SizeProps = 'small' | 'large' | 'responsive';
 interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   disabled?: boolean;
   invalid?: boolean;
-  size?: SizeProps;
+  inputSize: SizeProps;
 }
 
-const Input: React.FC<InputProps> = ({ disabled, invalid, size = 'large', ...props }) => (
-  <StyledInput disabled={disabled} invalid={invalid} size={size} {...props} />
+const Input: React.FC<InputProps> = ({ disabled, invalid, inputSize = 'large', ...props }) => (
+  <StyledInput disabled={disabled} invalid={invalid} inputSize={inputSize} {...props} />
 );
 
 export default Input;
