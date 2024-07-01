@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ranked-goods--wrap {
+    position: relative;
+}
+
+.ranked-goods--rank {
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    top: 4px;
+    left: 4px;
+    color: rgb(255, 255, 255);
+}
