@@ -12,7 +12,10 @@ interface GridProps {
 	columns?: number | ResponseGridStyle;
 }
 
-const getGridTemplateColumns = (columns: number | ResponseGridStyle) => {
+const getGridTemplateColumns = (columns: GridProps['columns']) => {
+	if (columns === undefined) {
+		return 'repeat(4, 1fr)';
+	}
 	if (typeof columns === 'number') {
 		return `repeat(${columns}, 1fr)`;
 	}
@@ -32,7 +35,7 @@ const getGridTemplateColumns = (columns: number | ResponseGridStyle) => {
 const GridContainer = styled.div<GridProps>`
 	display: grid;
 	gap: ${(props) => props.gap || '16px'};
-	grid-template-columns: ${(props) => getGridTemplateColumns(props.columns || 4)};
+	grid-template-columns: ${(props) => getGridTemplateColumns(props.columns)};
 `;
 
 interface GridItemProps {

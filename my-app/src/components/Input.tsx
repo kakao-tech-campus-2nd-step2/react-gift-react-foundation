@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+interface ResponsiveSize {
+	fontSize?: string;
+}
+
 interface SizeProps {
 	fontSize: string;
 	responsive?: {
-		small: {
-			fontSize: string;
-		};
-		medium: {
-			fontSize: string;
-		};
-		large: {
-			fontSize: string;
-		};
+		small: ResponsiveSize;
+		medium: ResponsiveSize;
+		large: ResponsiveSize;
 	};
 }
 
