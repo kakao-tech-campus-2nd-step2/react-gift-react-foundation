@@ -7,22 +7,18 @@ interface ThemeProps {
 	border?: string;
 }
 
+interface ResponsiveSize {
+	padding?: string;
+	fontSize?: string;
+}
+
 interface SizeProps {
 	padding: string;
 	fontSize: string;
 	responsive?: {
-		small: {
-			padding: string;
-			fontSize: string;
-		};
-		medium: {
-			padding: string;
-			fontSize: string;
-		};
-		large: {
-			padding: string;
-			fontSize: string;
-		};
+		small: ResponsiveSize;
+		medium: ResponsiveSize;
+		large: ResponsiveSize;
 	};
 }
 
