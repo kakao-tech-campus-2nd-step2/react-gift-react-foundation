@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #ffcc00;
+    --secondary-color: #ff69b4;
+    --default-color: #ccc;
+    --text-color: #fff;
+    --amount-color: #b12704;
+    --subtitle-color: #777;
+    --description-color: #555;
+    --border-radius: 8px;
+    --padding: 5px 10px;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
