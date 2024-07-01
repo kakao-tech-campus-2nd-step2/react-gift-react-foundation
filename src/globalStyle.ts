@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 
-const reset = css`
+const globalStyle = css`
     @import url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     * {
         margin: 0;
@@ -20,4 +20,4 @@ const reset = css`
     }
 `
 
-export default reset;
+export default globalStyle;

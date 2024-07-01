@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 
-import { ButtonProps } from "../types/PropsType"
+import { ButtonProps } from "../../types/PropsType"
 
 const ButtonStyle = styled.button<ButtonProps>`
   ${({ theme }) => {

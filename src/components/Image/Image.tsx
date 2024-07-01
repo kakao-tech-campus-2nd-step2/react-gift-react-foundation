@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { ImageProps } from "../types/PropsType"
-import ImageStyle from "../styles/ImageStyle"
+import { ImageProps } from "../../types/PropsType"
+import ImageStyle from "./ImageStyle"
 
 const Image = ({
     ratio,

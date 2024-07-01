@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 
-import { InputProps } from '../types/PropsType'
+import { InputProps } from '../../types/PropsType'
 
 export default styled.input<InputProps>`
     border: none;

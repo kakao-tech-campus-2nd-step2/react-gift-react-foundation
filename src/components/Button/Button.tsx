@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { ButtonProps } from '../types/PropsType';
-import ButtonStyle from '../styles/ButtonStyle';
+import { ButtonProps } from '../../types/PropsType';
+import ButtonStyle from './ButtonStyle';
 
 
 const Button = ({
