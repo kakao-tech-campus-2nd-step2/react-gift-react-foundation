@@ -1,7 +1,16 @@
-import { ImageProps } from "../types/PropsType"
+import React from 'react';
 
-export default ({ratio, radius, imageProps}: ImageProps) => {
+import { ImageProps } from "../types/PropsType"
+import ImageStyle from "../styles/ImageStyle"
+
+const Image = ({
+    ratio,
+    radius=10,
+    imageProps}
+: ImageProps) => {
     return(
-        <img></img>
+        <ImageStyle ratio={ratio} radius={radius} {...imageProps}/>
     )
 }
+
+export default Image;

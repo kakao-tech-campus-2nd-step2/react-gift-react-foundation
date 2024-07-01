@@ -1,13 +1,14 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react'
 
-import Image from './Image';
+import Image from './Image'
+import imageSource from '../../public/testimage.jpg'
 
 const meta = {
     title: 'Image',
     component: Image,
     args: {
         imageProps: {
-            src: '/testimage.jpg',
+            src: imageSource,
             alt: 'test image'
         }
     }
@@ -19,7 +20,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        ratio: 1/2,
         radius: 30
     }
 }

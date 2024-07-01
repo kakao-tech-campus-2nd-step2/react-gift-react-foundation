@@ -4,7 +4,7 @@ import { ButtonProps } from '../types/PropsType';
 import ButtonStyle from '../styles/ButtonStyle';
 
 
-export default ({
+const Button = ({
   theme = 'basic',
   size = 'responsive',
   buttonProps
@@ -15,3 +15,5 @@ export default ({
     </ButtonStyle>
   );
 };
+
+export default Button;

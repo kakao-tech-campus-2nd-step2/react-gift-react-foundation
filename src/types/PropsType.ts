@@ -10,7 +10,7 @@ export interface InputProps{
     inputProps?: React.InputHTMLAttributes<HTMLInputElement>
 }
 export interface ImageProps{
-    ratio: number | 'square',
+    ratio?: number | 'square',
     radius: number | 'circle',
-    imageProps?: React.InputHTMLAttributes<HTMLImageElement>
+    imageProps?: React.ImgHTMLAttributes<HTMLImageElement>
 }

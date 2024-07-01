@@ -10,12 +10,12 @@ export default styled.input<InputProps>`
         invalid ?
             css`border-color: red` :
             css`border-color: #111111`
-    }
+    };
     ${({disabled}) =>
         disabled ?
             css`background: #aaaaaa` :
             css`background: inherit`
-    }
+    };
     ${({sizeI}) => 
         sizeI==='responsive' ?
         css`
