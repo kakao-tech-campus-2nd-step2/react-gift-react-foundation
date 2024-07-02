@@ -19,9 +19,9 @@ export const GoodsItem = ({
     return (
         <div className='storybook-goods'>
             <img src={imageSrc} />
-            <span className='storybook-goods--sub'>{subtitle}</span>
-            <span className='storybook-goods--title'>{title}</span>
-            <span className='storybook-goods--amount'>{amount}원</span>
+            <div className='storybook-goods--sub'>{subtitle}</div>
+            <div className='storybook-goods--title'>{title}</div>
+            <div className='storybook-goods--amount'>{amount}원</div>
         </div>
     );
 };

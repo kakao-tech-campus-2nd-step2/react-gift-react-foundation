@@ -20,11 +20,11 @@ export const Ranking = ({
 
     return (
         <div className='storybook-ranking'>
-            <span className='storybook-ranking--ranking'>{rankingIndex}</span>
+            <div className='storybook-ranking--ranking'>{rankingIndex}</div>
             <img src={imageSrc} />
-            <span className='storybook-ranking--sub'>{subtitle}</span>
-            <span className='storybook-ranking--title'>{title}</span>
-            <span className='storybook-ranking--amount'>{amount}원</span>
+            <div className='storybook-ranking--sub'>{subtitle}</div>
+            <div className='storybook-ranking--title'>{title}</div>
+            <div className='storybook-ranking--amount'>{amount}원</div>
         </div>
     );
 };
