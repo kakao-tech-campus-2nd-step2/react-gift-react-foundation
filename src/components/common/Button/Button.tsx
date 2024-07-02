@@ -1,6 +1,12 @@
 import React, { ButtonHTMLAttributes } from "react";
 import { css } from "@emotion/css";
 
+const themes = {
+  primary: "blue",
+  warning: "orange",
+  danger: "red",
+};
+
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   theme: "primary" | "warning" | "danger";
   text: string;
@@ -14,17 +20,11 @@ export default function Button({
   return (
     <button
       className={css({
-        padding:
-          theme === "primary"
-            ? "10px 20px"
-            : theme === "warning"
-              ? "15px 25px"
-              : "25px 35px",
+        padding: "25px 35px",
         border: "none",
         borderRadius: 4,
         color: "white",
-        backgroundColor:
-          theme === "primary" ? "blue" : theme === "warning" ? "orange" : "red",
+        backgroundColor: theme in themes ? themes[theme] : themes["primary"],
       })}
       {...props}
     >
