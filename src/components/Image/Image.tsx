@@ -10,7 +10,7 @@ type ImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
    src: string
 }
 
-const getRatio = (ratio?: RatioType) => {
+const getPaddingTop = (ratio?: RatioType) => {
    if (ratio === 'square') {
       return 'padding-top: 100%;'
    }
@@ -20,25 +20,25 @@ const getRatio = (ratio?: RatioType) => {
       }
       return `padding-top: ${(1 / ratio) * 100}%;`
    }
-   return ''
+   return 'padding-top: auto;'
 }
 
-const getRadius = (radius?: RadiusType) => {
+const getBorderRadius = (radius?: RadiusType) => {
    if (radius === 'circle') {
       return 'border-radius: 100%;'
    }
    if (typeof radius === 'number') {
       return `border-radius: ${radius}px;`
    }
-   return ''
+   return 'border-radius: 0;'
 }
 
 const Wrapper = styled.div<{ ratio?: RatioType; radius?: RadiusType }>`
    position: relative;
    width: 100%;
    overflow: hidden;
-   ${(props) => getRatio(props.ratio)}
-   ${(props) => getRadius(props.radius)}
+   ${(props) => getPaddingTop(props.ratio)}
+   ${(props) => getBorderRadius(props.radius)}
 `
 
 const CustomImage = styled.img<{ radius?: number | 'circle' }>`
