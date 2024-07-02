@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import imgSrc from '@assets/img/kakao.png'
 import GoodsItem from './GoodsItem'
-import imgSrc from '../../assets/img/kakao.png'
 
 const meta: Meta<typeof GoodsItem> = {
    title: 'COMMON/GoodsItem/Default',
