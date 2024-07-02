@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 type ContainerProps = {
-   maxWidth?: string
+   maxWidth?: string | number
    flexDirection?: 'row' | 'column'
    justifyContent?: 'center' | 'flex-start' | 'flex-end' | 'space-between' | 'space-around'
    alignItems?: 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'stretch'
@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 const CustomContainer = styled.div<ContainerProps>`
    display: flex;
    width: 100%;
-   max-width: ${(props) => props.maxWidth || '1024px'};
+   max-width: ${(props) => (typeof props.maxWidth === 'number' ? `${props.maxWidth}px` : props.maxWidth || '1024px')};
    flex-direction: ${(props) => props.flexDirection || 'column'};
    justify-content: ${(props) => props.justifyContent || 'flex-start'};
    align-items: ${(props) => props.alignItems || 'flex-start'};

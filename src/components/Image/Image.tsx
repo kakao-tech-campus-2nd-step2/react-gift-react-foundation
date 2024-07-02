@@ -47,7 +47,7 @@ const CustomImage = styled.img<{ radius?: number | 'circle' }>`
    left: 0;
    width: 100%;
    height: 100%;
-   ${(props) => getRadius(props.radius)}
+   ${(props) => getBorderRadius(props.radius)}
 `
 
 const Image: React.FC<ImageProps> = ({ ratio, radius, src, ...props }) => {
