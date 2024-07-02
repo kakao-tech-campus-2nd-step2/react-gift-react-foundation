@@ -1,3 +1,10 @@
+# 프로젝트 설명
+
+- CRA 기반의 프로젝트로 Typescript로 프로젝트가 동작되게 세팅하였습니다.
+- 절대 경로를 이용할 수 있도록 alias를 설정하였습니다.
+- ESLint(airbnb), Prettier를 추가하였습니다.
+- storybook을 이용하여 재사용 가능한 component들을 제작해보았습니다.
+
 # 1주차 질문
 
 ## 질문 1. webpack은 무엇이고 어떤 역할을 하고 있나요?
@@ -37,50 +44,3 @@ React에서 상태(state)가 변경되면 컴포넌트가 리렌더링되어 UI�
 - **상태 변화 감지**: React는 상태(state)가 변경되면 해당 컴포넌트와 그 자식 컴포넌트들에 대해 다시 렌더링을 수행합니다. 이 때 상태 변화가 발생한 컴포넌트의 render 메서드가 호출되고, 변경된 상태에 맞게 UI가 업데이트됩니다.
 
 - **라이프사이클 메서드**: 컴포넌트의 라이프사이클 메서드를 사용하여 상태 변화를 감지하고, 이에 따른 작업을 수행할 수 있습니다. 예를 들어, componentDidUpdate 메서드를 사용하여 상태 변화 후의 추가적인 작업을 처리할 수 있습니다.
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
