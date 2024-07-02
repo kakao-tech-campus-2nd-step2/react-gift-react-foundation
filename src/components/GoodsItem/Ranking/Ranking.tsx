@@ -3,7 +3,7 @@ import './ranking.css';
 
 interface GoodsItemProps {
     rankingIndex: number;
-    imageSrc: string; // 이미지 링크
+    imageSrc: string;
     subtitle?: string,
     title?: string,
     amount?: number

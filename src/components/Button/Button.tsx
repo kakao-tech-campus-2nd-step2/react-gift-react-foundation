@@ -2,15 +2,12 @@ import React from 'react';
 import './button.css';
 
 interface ButtonProps {
-    children: string; // 버튼 글자
-    theme?: string; // 버튼 색 
-    size?: string; // 버튼 크기 : 'responsive' | 'small' | 'medium' | 'large'
-    onClick?: () => void; // 클릭 여부
+    children: string;
+    theme?: string;
+    size?: 'responsive' | 'small' | 'medium' | 'large';
+    onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({
     children,
     size = 'responsive',
