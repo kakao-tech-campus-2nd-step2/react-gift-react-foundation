@@ -7,25 +7,41 @@ export interface ButtonProps {
   onClick: () => void;
 }
 
+const themeStyles: Record<
+  string,
+  { backgroundColor: string; outline: string; color: string }
+> = {
+  kakao: {
+    backgroundColor: 'yellow',
+    outline: 'none',
+    color: 'black',
+  },
+  outline: {
+    backgroundColor: 'transparent',
+    outline: '1px solid lightGray',
+    color: 'black',
+  },
+  black: {
+    backgroundColor: 'black',
+    outline: 'none',
+    color: 'white',
+  },
+  lightGray: {
+    backgroundColor: 'lightgray',
+    outline: 'none',
+    color: 'black',
+  },
+  darkGray: {
+    backgroundColor: 'darkgray',
+    outline: 'none',
+    color: 'black',
+  },
+};
+
 const ButtonStyled = styled.button<ButtonProps>`
-  background-color: ${(props) => {
-    if (props.theme === 'outline') {
-      return 'transparent';
-    }
-    if (props.theme === 'black') {
-      return 'black';
-    }
-    if (props.theme === 'lightGray') {
-      return 'lightgray';
-    }
-    if (props.theme === 'darkGray') {
-      return 'darkgray';
-    }
-    return 'yellow';
-  }};
-  outline: ${(props) =>
-    props.theme === 'outline' ? '1px solid lightGray' : 'none'};
-  color: ${(props) => (props.theme === 'black' ? 'white' : 'black')};
+  background-color: ${(props) => themeStyles[props.theme].backgroundColor};
+  outline: ${(props) => themeStyles[props.theme].outline};
+  color: ${(props) => themeStyles[props.theme].color};
   width: 120px;
   height: ${(props) => (props.size === 'small' ? '40px' : '60px')};
   border: none;
