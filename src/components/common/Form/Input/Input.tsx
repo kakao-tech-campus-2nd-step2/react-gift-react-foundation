@@ -1,18 +1,16 @@
 import { css } from "@emotion/css";
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 
-interface InputProps {
-  disabled?: boolean;
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   invalid?: boolean;
-  size: "small" | "medium" | "large" | "responsive";
-  props?: any;
+  inputSize: "small" | "medium" | "large" | "responsive";
 }
 
 export default function Input({
   disabled,
   invalid,
-  size,
-  props,
+  inputSize,
+  ...props
 }: Readonly<InputProps>) {
   return (
     <input
@@ -20,13 +18,13 @@ export default function Input({
       disabled={disabled}
       className={css({
         padding:
-          size === "small"
+          inputSize === "small"
             ? "5px 10px"
-            : size === "medium"
+            : inputSize === "medium"
               ? "10px 15px"
-              : size === "large"
+              : inputSize === "large"
                 ? "15px 20px"
-                : size === "responsive"
+                : inputSize === "responsive"
                   ? "1vw 1vh"
                   : "10px 15px",
         border: "1px solid",
