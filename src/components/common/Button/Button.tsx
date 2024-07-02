@@ -1,13 +1,16 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import { css } from "@emotion/css";
 
-export type ButtonProps = {
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   theme: "primary" | "warning" | "danger";
   text: string;
-  props?: any;
 };
 
-export default function Button({ theme, text, props }: Readonly<ButtonProps>) {
+export default function Button({
+  theme,
+  text,
+  ...props
+}: Readonly<ButtonProps>) {
   return (
     <button
       className={css({
