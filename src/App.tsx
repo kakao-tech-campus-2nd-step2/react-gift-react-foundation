@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import PinkBtn from '@Components/Buttons/PinkBtn';
+import Btn from '@/Components/Buttons/Btn';
 
 function App() {
   return (
     <div className="App">
-      <PinkBtn/>
+      <Btn/>
     </div>
   );
 }
