@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled';
 
 const Btn = styled.button`
-  background-color: hotpink;
+  background-color: ${(props) => props.bgColor};
   border: none;
   border-radius: 4px;
   color: white;
@@ -19,7 +19,11 @@ const Btn = styled.button`
 export default function PinkBtn() {
   return (
     <div>
-      <Btn>Button</Btn>
+      <Btn
+        bgColor={pink}
+      >
+        Button
+      </Btn>
     </div>
   )
 }
