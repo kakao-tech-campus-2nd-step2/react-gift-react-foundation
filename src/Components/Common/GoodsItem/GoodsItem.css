@@ -1,0 +1,50 @@
+.goods-item {
+  width: 150px;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.goods-item__badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.goods-item__badge.pink {
+  background-color: pink;
+}
+
+.goods-item__image {
+  width: 150px;
+  height: 150px;
+}
+
+.goods-item__subtitle {
+  color: gray;
+  font-size: 12px;
+}
+
+.goods-item__title {
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.goods-item__amount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin: 8px 0;
+}
