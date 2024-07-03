@@ -20,7 +20,7 @@ export default function PinkBtn() {
   return (
     <div>
       <Btn
-        bgColor={pink}
+        bgColor={'pink'}
       >
         Button
       </Btn>
