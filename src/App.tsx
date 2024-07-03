@@ -5,7 +5,9 @@ import Btn from '@/Components/Buttons/Btn';
 function App() {
   return (
     <div className="App">
-      <Btn/>
+      <Btn
+        bgColor= 'pink'
+      />
     </div>
   );
 }

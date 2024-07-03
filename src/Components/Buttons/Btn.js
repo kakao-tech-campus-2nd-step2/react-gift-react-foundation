@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled';
 
-const Btn = styled.button`
+const BtnStyle = styled.button`
   background-color: ${(props) => props.bgColor};
   border: none;
   border-radius: 4px;
@@ -16,14 +16,14 @@ const Btn = styled.button`
 `;
 
 
-export default function PinkBtn() {
+export default function Btn({ bgColor }) {
   return (
     <div>
-      <Btn
-        bgColor={'pink'}
+      <BtnStyle
+        bgColor={bgColor}
       >
         Button
-      </Btn>
+      </BtnStyle>
     </div>
   )
 }
