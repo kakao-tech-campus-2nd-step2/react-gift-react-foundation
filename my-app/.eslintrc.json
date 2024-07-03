@@ -7,10 +7,8 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "prettier"
   ],
   "plugins": [
     "@typescript-eslint",
@@ -38,6 +36,8 @@
       "error",
       "prefer-double"
     ],
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "linebreak-style": ["error", "unix"]
   }
 }
+

@@ -8,8 +8,8 @@ const meta: Meta<typeof Page> = {
   component: Page,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/configure/story-layout
-    layout: 'fullscreen',
-  },
+    layout: 'fullscreen'
+  }
 };
 
 export default meta;
@@ -28,5 +28,5 @@ export const LoggedIn: Story = {
 
     const logoutButton = canvas.getByRole('button', { name: /Log out/i });
     await expect(logoutButton).toBeInTheDocument();
-  },
+  }
 };
