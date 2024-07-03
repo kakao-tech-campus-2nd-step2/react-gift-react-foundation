@@ -4,7 +4,6 @@
     "airbnb",
     "airbnb/hooks",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "prettier"
   ],
@@ -69,6 +68,19 @@
             "ignoreRestSiblings": true
           }
         ]
+      }
+    },
+    {
+      "files": ["craco.config.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    },
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
       }
     }
   ]
