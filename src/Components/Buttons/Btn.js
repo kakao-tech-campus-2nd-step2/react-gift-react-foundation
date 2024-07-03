@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 const BtnStyle = styled.button`
@@ -27,3 +28,7 @@ export default function Btn({ bgColor }) {
     </div>
   )
 }
+
+Btn.propTypes = {
+  bgColor: PropTypes.string.isRequired,
+};
