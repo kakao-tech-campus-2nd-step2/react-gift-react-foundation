@@ -1,6 +1,8 @@
+@import '/src/styles/style.css';
+
 .underline-textfield {
   box-sizing: border-box;
-  color: rgb(25, 25, 25);
+  color: var(--text-main-color);
   transition: border-color 200ms ease 0s;
   border-style: solid;
   min-height: 42px;
@@ -8,7 +10,7 @@
   line-height: 1.5;
   padding: 9px 0px;
   border-width: 0px 0px 1px;
-  border-color: rgb(204, 204, 204);
+  border-color: var(--border-main-color);
 }
 
 .underline-textfield.invalid {
@@ -22,7 +24,7 @@
 
 .underline-textfield:focus {
   outline: none;
-  border-color: black;
+  border-color: var(--text-main-color);
 }
 
 .underline-textfield.small {
