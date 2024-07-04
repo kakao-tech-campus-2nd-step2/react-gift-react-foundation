@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import Grid from './Grid';
+import { GridProps } from './Grid'; 
 
 export default {
   title: 'Layout/Grid',
@@ -15,7 +16,7 @@ export default {
   },
 } as Meta;
 
-const Template: StoryFn = (args) => <Grid {...args} />;
+const Template: StoryFn<GridProps> = (args: GridProps) => <Grid {...args} />;
 
 export const NumberColumns = Template.bind({});
 NumberColumns.args = {

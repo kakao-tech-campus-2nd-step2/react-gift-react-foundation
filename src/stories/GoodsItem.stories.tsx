@@ -1,4 +1,5 @@
-import { Meta, Story } from '@storybook/react';
+import React from 'react';
+import { Meta, StoryFn } from '@storybook/react';
 import { GoodsItem, RankingGoodsItem, GoodsItemProps, RankingGoodsItemProps } from './GoodsItem';
 
 export default {
@@ -13,8 +14,8 @@ export default {
   },
 } as Meta;
 
-const Template: Story<GoodsItemProps> = (args) => <GoodsItem {...args} />;
-const RankingTemplate: Story<RankingGoodsItemProps> = (args) => <RankingGoodsItem {...args} />;
+const Template: StoryFn<GoodsItemProps> = (args: GoodsItemProps) => <GoodsItem {...args} />;
+const RankingTemplate: StoryFn<RankingGoodsItemProps> = (args: RankingGoodsItemProps) => <RankingGoodsItem {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

@@ -3,7 +3,7 @@ import './Container.css';
 
 interface ContainerProps {
   maxWidth?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   flexDirection?: 'row' | 'column';
   justifyContent?: 'center' | 'flex-start' | 'flex-end' | 'space-between' | 'space-around';
   alignItems?: 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'stretch';
@@ -11,7 +11,7 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({
   maxWidth,
-  children,
+  children=null,
   flexDirection = 'row',
   justifyContent = 'flex-start',
   alignItems = 'stretch',

@@ -13,7 +13,7 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large' | 'responsive';
+  size?: 'small' | 'medium' | 'large';
   /**
    * Button contents
    */
@@ -22,10 +22,6 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
-  /**
-   * Custom theme for the button
-   */
-  theme?: 'kakao' | 'outline' | 'black' | 'lightGray' | 'darkGray';
 }
 
 /**
@@ -36,26 +32,14 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
-  theme,
-  onClick,
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  const themeClass = theme ? `storybook-button--${theme}` : '';
-
-  const handleClick = () => {
-    if (onClick) {
-      onClick();
-    }
-    alert('버튼 클릭');
-  };
-
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode, themeClass].join(' ')}
+      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
-      onClick={handleClick}
       {...props}
     >
       {label}
