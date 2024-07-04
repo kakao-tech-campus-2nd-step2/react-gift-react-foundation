@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
 import './Input.css';
 
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends ComponentProps<'input'>  {
   disabled?: boolean;
   invalid?: boolean;
   placeholder?: string;
