@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components'
 
 export interface InputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
-  disabled?: boolean
   invalid?: boolean
   size?: 'small' | 'medium' | 'large' | 'responsive'
 }
