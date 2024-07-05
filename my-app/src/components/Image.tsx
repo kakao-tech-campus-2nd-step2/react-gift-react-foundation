@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Image.css'
+import styled from 'styled-components'
 
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string
@@ -9,6 +9,34 @@ export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   width?: string
 }
 
+const ImageWrapper = styled.div<{
+  ratio?: ImageProps['ratio']
+  width?: string
+}>`
+  position: relative;
+  width: ${({ width }) => width || '100%'};
+  overflow: hidden;
+  display: inline-block;
+  ${({ ratio }) =>
+    typeof ratio === 'number'
+      ? `aspect-ratio: ${ratio};`
+      : ratio === 'square'
+        ? 'aspect-ratio: 1 / 1;'
+        : ''}
+`
+
+const StyledImage = styled.img<{ radius?: ImageProps['radius'] }>`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  ${({ radius }) =>
+    typeof radius === 'number'
+      ? `border-radius: ${radius}px;`
+      : radius === 'circle'
+        ? 'border-radius: 50%;'
+        : ''}
+`
+
 const Image: React.FC<ImageProps> = ({
   src,
   alt,
@@ -17,40 +45,10 @@ const Image: React.FC<ImageProps> = ({
   width,
   ...props
 }) => {
-  const getRatioStyle = (ratio: ImageProps['ratio']) => {
-    if (typeof ratio === 'number') {
-      return { aspectRatio: ratio }
-    }
-    switch (ratio) {
-      case 'square':
-        return { aspectRatio: '1 / 1' }
-      default:
-        return {}
-    }
-  }
-
-  const getRadiusStyle = (radius: ImageProps['radius']) => {
-    if (typeof radius === 'number') {
-      return { borderRadius: `${radius}px` }
-    }
-    switch (radius) {
-      case 'circle':
-        return { borderRadius: '50%' }
-      default:
-        return {}
-    }
-  }
-
   return (
-    <div className="image-wrapper" style={{ ...getRatioStyle(ratio), width }}>
-      <img
-        src={src}
-        alt={alt}
-        className="image"
-        style={{ ...getRadiusStyle(radius) }}
-        {...props}
-      />
-    </div>
+    <ImageWrapper ratio={ratio} width={width}>
+      <StyledImage src={src} alt={alt} radius={radius} {...props} />
+    </ImageWrapper>
   )
 }
 
