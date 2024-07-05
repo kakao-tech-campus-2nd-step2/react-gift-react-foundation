@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Grid.css'
+import styled, { css } from 'styled-components'
 
 export interface GridProps extends React.HTMLAttributes<HTMLDivElement> {
   gap?: string
@@ -22,31 +22,35 @@ const getGridTemplateColumns = (columns: GridProps['columns']) => {
   return 'repeat(1, 1fr)'
 }
 
+const GridContainer = styled.div<Pick<GridProps, 'gap' | 'columns'>>`
+  display: grid;
+  gap: ${({ gap }) => gap || '0'};
+  ${({ columns }) =>
+    typeof columns === 'number'
+      ? css`
+          grid-template-columns: ${getGridTemplateColumns(columns)};
+        `
+      : css`
+          ${columns &&
+          Object.entries(columns)
+            .map(
+              ([key, value]) =>
+                `@media (min-width: ${key}px) { grid-template-columns: repeat(${value}, 1fr); }`,
+            )
+            .join(' ')}
+        `}
+`
+
 const Grid: React.FC<GridProps> = ({
   gap = '0',
   columns = 1,
   children,
   ...props
 }) => {
-  const gridStyle =
-    typeof columns === 'object'
-      ? { gap }
-      : { gap, gridTemplateColumns: getGridTemplateColumns(columns) }
-
   return (
-    <div className="grid" style={gridStyle} {...props}>
+    <GridContainer gap={gap} columns={columns} {...props}>
       {children}
-      {typeof columns === 'object' && (
-        <style>
-          {Object.entries(columns)
-            .map(
-              ([key, value]) =>
-                `@media (min-width: ${key}px) { .grid { grid-template-columns: repeat(${value}, 1fr); } }`,
-            )
-            .join(' ')}
-        </style>
-      )}
-    </div>
+    </GridContainer>
   )
 }
 
