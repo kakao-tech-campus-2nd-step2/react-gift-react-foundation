@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Container.css'
+import styled from 'styled-components'
 
 export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   maxWidth?: string
@@ -14,6 +14,18 @@ export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode
 }
 
+const StyledContainer = styled.div<ContainerProps>`
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+  max-width: ${({ maxWidth }) => maxWidth || '100%'};
+  display: flex;
+  flex-direction: ${({ flexDirection }) => flexDirection || 'row'};
+  justify-content: ${({ justifyContent }) => justifyContent || 'center'};
+  align-items: ${({ alignItems }) => alignItems || 'center'};
+`
+
 const Container: React.FC<ContainerProps> = ({
   maxWidth = '100%',
   flexDirection = 'row',
@@ -23,19 +35,15 @@ const Container: React.FC<ContainerProps> = ({
   ...props
 }) => {
   return (
-    <div
-      className="container"
-      style={{
-        maxWidth,
-        display: 'flex',
-        flexDirection,
-        justifyContent,
-        alignItems,
-      }}
+    <StyledContainer
+      maxWidth={maxWidth}
+      flexDirection={flexDirection}
+      justifyContent={justifyContent}
+      alignItems={alignItems}
       {...props}
     >
       {children}
-    </div>
+    </StyledContainer>
   )
 }
 
